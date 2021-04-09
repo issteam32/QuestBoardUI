@@ -1,0 +1,6 @@
+framework module Pods_QuestBoardUI_QuestBoardUIUITests {
+  umbrella header "Pods-QuestBoardUI-QuestBoardUIUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
