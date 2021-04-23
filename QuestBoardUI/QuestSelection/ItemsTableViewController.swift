@@ -11,80 +11,102 @@ class ItemsTableViewController: UITableViewController {
 
     
     var category: Category?
+    var questArray: [Item] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        tableView.tableFooterView = UIView()
+        self.title = category?.name
         print("selected cat \(String(describing: category?.name))")
+//        if category != nil
+//        {
+//            loadQuest()
+//        }
+        
+        loadQuest()
         
         }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+
     }
 
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    
+        print(questArray.count)
+        return questArray.count
     }
 
-    /*
+  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        
+        
+        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! QuestTableViewCell
+        
+        cell.generateCell(questArray[indexPath.row])
+        
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        showQuestView(questArray[indexPath.row])
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    func showQuestView(_ item: Item)
+    {
+        
+        //to push view without defining segueway
+        let questVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "questDetails") as! QuestDetailsViewController
+        
+        questVC.quest = item
+        self.navigationController?.pushViewController(questVC, animated: true)
     }
-    */
+    
+    func loadQuest()
+    {
+        let quest1 = Item()
+        quest1.id = "1"
+        quest1.name = "Quest1"
+        quest1.categoryId = "3"
+        quest1.description = "This is the description for quest. Some help needed for XXXXXX location is at XXXXX"
+        quest1.reward = "3000"
+        quest1.location = "Some where in yishun"
+        quest1.skillRequired = "Nil"
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+        
+        let quest2 = Item()
+        quest2.id = "2"
+        quest2.name = "Quest2"
+        quest1.categoryId = "3"
+        quest2.description = "This is the description for quest2. Some help needed for XXXXXX location is at XXXXX"
+        quest2.reward = "5000"
+        quest2.location = "Some where in Serangoon"
+        quest2.skillRequired = "Able to stand very long"
+        
+        
+        let quest3 = Item()
+        quest3.id = "3"
+        quest3.name = "Quest3"
+        quest1.categoryId = "3"
+        quest3.description = "This is the description for quest3. Some help needed for XXXXXX location is at XXXXX"
+        quest3.reward = "1000"
+        quest3.location = "Some where in Bishan"
+        quest3.skillRequired = "Able to run"
+        
+        
+        questArray.append(quest1)
+        questArray.append(quest2)
+        questArray.append(quest3)
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
