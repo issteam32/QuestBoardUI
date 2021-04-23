@@ -13,6 +13,8 @@ class ChatViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     
     @IBOutlet weak var webWindow: WKWebView!
     
+    var chatToken = ChatToken()
+    
     var token: String = "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJzcU5VcEZwcmZHU1BIVWF6YU5jQ3NoX2U1bmhrMTNmS1J3OGxiNzk1QlRBIn0.eyJleHAiOjE2MTkyMTg1NjQsImlhdCI6MTYxOTE4OTc2NCwianRpIjoiNjMxYzIwNzktZTQ0MS00NWFmLTlkNjYtNzRiMjJjZGMwZTI1IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnF1ZXN0c2JvdC54eXovYXV0aC9yZWFsbXMvUXVlc3Rib2FyZCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJjNzA5NTg2MC00MjFlLTQ4ZGYtYWFkYy04ZTM0OTcwYWUyYjIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJxdWVzdGJvYXJkLW1vYmlsZS1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiZTRmMGNjNGItNzcyMS00ZDNhLThjMTItMTc3NjJiMTc1ZTM5IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovLzM1LjE5Ny4xNDYuMjIxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoieW9uZ2ppYSBjaGFuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoieW9uZ2ppYSIsImdpdmVuX25hbWUiOiJ5b25namlhIiwiZmFtaWx5X25hbWUiOiJjaGFuIiwiZW1haWwiOiJ5b25namlhQGVtYWlsLmNvbSJ9.QXITtyBhe2ShQOW7V1rIzYTyeRlbz_2iitdOzO9Uadii1qbTKX120Usjh8O2UqFbf36iHjK5YtBAOAkPDPLmg0VVtG0qDBLe3tw0d4NxX2r-yepzXfw2TFU__Bq8024iBcH2yKspdrfIfgCUYRFp9rOnB4Hj1cm9VYvFkllG9qJbhcNURxanvtR_YhQykz9XcmIpaOL9NxueuiqxqPd0gjz-_qNtwJNUgAO1bFOiY85N3pposaDWThjEte9RwpaHROoLfH3mz_eqo9ZKa3-YSQoRmO4zZgvBWO9ulhjkRNlv6gG0VATXrpmnPLgdDrL9PBpppwaFf2igyJ2SjQuyAw"
     var username: String = "yongjia"
     var recipient: String = "user2"
@@ -20,6 +22,9 @@ class ChatViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         
         webWindow.uiDelegate = self
         webWindow.navigationDelegate = self
@@ -50,10 +55,10 @@ class ChatViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
             "<style>\(globalCss)</style>" +
             "</head>" +
             "<body>" +
-            "<input id='username' name='username' type='hidden' value='\(username)' />" +
-            "<input id='recipient' name='recipient' type='hidden' value='\(recipient)' />" +
-            "<input id='questid' name='questid' type='hidden' value='\(questId)' />" +
-            "<input id='token' name='token' type='hidden' value='\(token)'/>" +
+            "<input id='username' name='username' type='hidden' value='\(chatToken.senderId!)' />" +
+            "<input id='recipient' name='recipient' type='hidden' value='\(chatToken.recipientId!)' />" +
+            "<input id='questid' name='questid' type='hidden' value='\(chatToken.questId!)' />" +
+            "<input id='token' name='token' type='hidden' value='\(chatToken.token!)'/>" +
             "<script>\(js)</script>" +
             "</body>" +
             "</html>"
