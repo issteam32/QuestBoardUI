@@ -42,6 +42,7 @@
 		66F728A9262055D3007BCFE0 /* square-individual-nine-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F728A8262055D3007BCFE0 /* square-individual-nine-7.png */; };
 		66F728AB262055DC007BCFE0 /* star-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F728AA262055DC007BCFE0 /* star-7.png */; };
 		66F728AD262055E4007BCFE0 /* text-list-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F728AC262055E4007BCFE0 /* text-list-7.png */; };
+		66F9DCD826333CFF000D3CA0 /* ChatToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F9DCD726333CFF000D3CA0 /* ChatToken.swift */; };
 		66FDF0AB261B486500155EDF /* home-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FDF0A9261B486500155EDF /* home-7.png */; };
 		66FDF0B5261B5F4F00155EDF /* LoginOrProfileNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FDF0B4261B5F4F00155EDF /* LoginOrProfileNavigationViewController.swift */; };
 		6E46B74026331F7B00590F56 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 6E46B73F26331F7B00590F56 /* www */; };
@@ -114,6 +115,7 @@
 		66F728A8262055D3007BCFE0 /* square-individual-nine-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-individual-nine-7.png"; sourceTree = "<group>"; };
 		66F728AA262055DC007BCFE0 /* star-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-7.png"; sourceTree = "<group>"; };
 		66F728AC262055E4007BCFE0 /* text-list-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-list-7.png"; sourceTree = "<group>"; };
+		66F9DCD726333CFF000D3CA0 /* ChatToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatToken.swift; sourceTree = "<group>"; };
 		66FDF0A9261B486500155EDF /* home-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-7.png"; sourceTree = "<group>"; };
 		66FDF0B4261B5F4F00155EDF /* LoginOrProfileNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrProfileNavigationViewController.swift; sourceTree = "<group>"; };
 		6E46B73F26331F7B00590F56 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				662682E5261E125F00562DCA /* Category.swift */,
 				6648F373261F5A6600AC001F /* Item.swift */,
+				66F9DCD726333CFF000D3CA0 /* ChatToken.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -637,6 +640,7 @@
 				662682E6261E125F00562DCA /* Category.swift in Sources */,
 				662682EA261E13FD00562DCA /* Constants.swift in Sources */,
 				662EF192262F33C300DBDAE1 /* QuestDetailsViewController.swift in Sources */,
+				66F9DCD826333CFF000D3CA0 /* ChatToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

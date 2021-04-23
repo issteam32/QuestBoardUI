@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X66-lX-dLK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X66-lX-dLK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXG-zs-BPd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2674" y="1436"/>
+            <point key="canvasLocation" x="3584.057971014493" y="1435.7142857142856"/>
         </scene>
         <!--Home-->
         <scene sceneID="5vn-dA-qvo">
@@ -128,7 +128,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ia-c3-TU3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1695.6521739130435" y="2803.7946428571427"/>
+            <point key="canvasLocation" x="1345" y="2995"/>
         </scene>
         <!--Profile-->
         <scene sceneID="5Yy-3y-mFR">
@@ -196,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTP-bU-ig8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2614" y="2208"/>
+            <point key="canvasLocation" x="3523.1884057971015" y="2207.8125"/>
         </scene>
         <!--New Quest-->
         <scene sceneID="rsP-bL-QsH">
@@ -360,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbH-QI-46u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063.768115942029" y="1942.6339285714284"/>
+            <point key="canvasLocation" x="1973.913043478261" y="1942.6339285714284"/>
         </scene>
         <!--Category-->
         <scene sceneID="sSo-CV-eDa">
@@ -548,6 +548,7 @@
                         <segue destination="fSg-hz-RTf" kind="relationship" relationship="viewControllers" id="eOS-Ip-NnD"/>
                         <segue destination="UK2-bc-eYh" kind="relationship" relationship="viewControllers" id="Gue-fQ-YrV"/>
                         <segue destination="QGS-N5-lur" kind="relationship" relationship="viewControllers" id="iI1-87-V5k"/>
+                        <segue destination="kCm-iD-OR3" kind="relationship" relationship="viewControllers" id="7J5-sT-0uB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfe-9m-roW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -639,18 +640,18 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWB-bR-G57" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63.768115942028992" y="1703.5714285714284"/>
+            <point key="canvasLocation" x="973.91304347826099" y="1703.5714285714284"/>
         </scene>
         <!--Chat-->
         <scene sceneID="Umk-eR-0RL">
             <objects>
-                <viewController id="nD2-6S-dig" customClass="ChatViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newChat" id="nD2-6S-dig" customClass="ChatViewController" customModule="QuestBoardUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RWn-4k-NzT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZZ-m1-1ah">
-                                <rect key="frame" x="0.0" y="30" width="414" height="832"/>
+                                <rect key="frame" x="0.0" y="30" width="414" height="783"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -667,18 +668,19 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Chat" id="Zj7-JE-iL9"/>
+                    <navigationItem key="navigationItem" id="Rdb-6X-KGg"/>
                     <connections>
                         <outlet property="webWindow" destination="cZZ-m1-1ah" id="chO-ru-VhN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZA-Li-T61" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3916" y="938"/>
+            <point key="canvasLocation" x="-1780" y="2610"/>
         </scene>
-        <!--Chat Rooms-->
+        <!--Chat Room-->
         <scene sceneID="hw6-2f-BT7">
             <objects>
-                <viewController id="ow4-1W-pgF" customClass="ChatRoomViewController" customModule="ChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ow4-1W-pgF" customClass="ChatRoomViewController" customModule="QuestBoardUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kwn-Rf-yNW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -687,21 +689,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="chatRoomCell" rowHeight="82" id="sWk-hl-rfm" customClass="ChatRoomTableViewCell" customModule="ChatApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="82"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="chatRoomCell" rowHeight="82" id="sWk-hl-rfm" customClass="ChatRoomTableViewCell" customModule="QuestBoardUI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sWk-hl-rfm" id="Uo9-YR-Jtn">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mj-Aj-79O">
-                                                    <rect key="frame" x="111" y="16" width="283" height="21"/>
+                                                    <rect key="frame" x="111" y="21" width="283" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkP-bL-8Ul">
-                                                    <rect key="frame" x="111" y="47" width="283" height="20"/>
+                                                    <rect key="frame" x="111" y="52" width="283" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -740,14 +742,15 @@
                             <constraint firstItem="Sp3-SY-1DI" firstAttribute="trailing" secondItem="RO3-jR-bfR" secondAttribute="trailing" id="lpJ-dZ-0de"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chat Rooms" id="Prp-hY-wNe"/>
+                    <navigationItem key="navigationItem" title="Chat Room" id="St3-Sr-65s"/>
                     <connections>
                         <outlet property="tableView" destination="Sp3-SY-1DI" id="o9a-BC-RPO"/>
+                        <segue destination="nD2-6S-dig" kind="show" identifier="chatRoomToChat" id="8MF-eq-CeM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qW1-ll-11H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3632" y="164"/>
+            <point key="canvasLocation" x="-843" y="2142"/>
         </scene>
         <!--Quest Details View Controller-->
         <scene sceneID="cWL-rd-H36">
@@ -876,7 +879,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zs1-2b-NLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4282.608695652174" y="770.75892857142856"/>
+            <point key="canvasLocation" x="4686" y="1087"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hoU-aO-vkl">
@@ -893,14 +896,32 @@
             </objects>
             <point key="canvasLocation" x="813" y="-579"/>
         </scene>
+        <!--Chat Rooms-->
+        <scene sceneID="SAk-9J-9oq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kCm-iD-OR3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat Rooms" id="Prp-hY-wNe"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7as-ZB-3rS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ow4-1W-pgF" kind="relationship" relationship="rootViewController" id="zeL-gV-Vmz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="alk-wL-WGe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1691" y="1715"/>
+        </scene>
     </scenes>
     <resources>
         <image name="home-7.png" width="30" height="30"/>
         <image name="house-7.png" width="30" height="30"/>
         <image name="man-7.png" width="29" height="30"/>
-        <image name="network" catalog="system" width="128" height="121"/>
-        <image name="person_icon" width="64" height="64"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="person_icon" width="64" height="64"/>
         <image name="plus-simple-7.png" width="30" height="30"/>
         <image name="square-individual-nine-7.png" width="30" height="30"/>
         <namedColor name="AccentColor">
