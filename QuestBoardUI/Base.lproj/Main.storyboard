@@ -748,7 +748,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qW1-ll-11H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3632" y="164"/>
-        </scene>    
+        </scene>
         <!--Quest Details View Controller-->
         <scene sceneID="cWL-rd-H36">
             <objects>
