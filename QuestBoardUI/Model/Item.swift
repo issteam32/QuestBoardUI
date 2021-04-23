@@ -16,9 +16,8 @@ class Item{
     var questType: String!
     var name: String!
     var description: String!
-    var reward:Double!
+    var reward:String!
     var location:String!
     var imageLinks: [String]!
-    
-    
+    var skillRequired: String!
 }

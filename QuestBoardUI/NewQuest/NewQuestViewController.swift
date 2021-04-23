@@ -72,7 +72,7 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
         item.description = tbQuestDescription.text
         item.id = UUID().uuidString
         item.location = tbQuestLocation.text
-        item.reward = Double(tbQuestReward.text!)
+        item.reward = tbQuestReward.text
         
     }
 
