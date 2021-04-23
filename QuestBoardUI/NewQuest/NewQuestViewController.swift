@@ -23,7 +23,6 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
     @IBOutlet weak var tbQuestReward: UITextField!
     @IBOutlet weak var tbQuestLocation: UITextView!
     
-    
     @IBAction func btnDone(_ sender: Any) {
          //Create NS dictionary
         //send as json
@@ -54,7 +53,6 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
 
     }
     
-
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
