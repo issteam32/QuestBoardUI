@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0708766D6163E11FAFD3A3BE /* Pods_QuestBoardUI_QuestBoardUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A80FCE2873CCFD3A7F6B857 /* Pods_QuestBoardUI_QuestBoardUIUITests.framework */; };
+		6609682826305EBE00C489EB /* QuestTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6609682726305EBE00C489EB /* QuestTypeViewController.swift */; };
+		6618F255262DBFA0008326F4 /* QuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6618F254262DBFA0008326F4 /* QuestTableViewCell.swift */; };
+		6621E5742631D2C800BA6658 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621E5732631D2C800BA6658 /* HomeViewController.swift */; };
+		6621E5762631D42C00BA6658 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621E5752631D42C00BA6658 /* HomeTableViewCell.swift */; };
 		662682E1261E0CFD00562DCA /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662682E0261E0CFD00562DCA /* CategoryCollectionViewController.swift */; };
 		662682E3261E0DD900562DCA /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662682E2261E0DD900562DCA /* CategoryCollectionViewCell.swift */; };
 		662682E6261E125F00562DCA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662682E5261E125F00562DCA /* Category.swift */; };
 		662682EA261E13FD00562DCA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662682E9261E13FD00562DCA /* Constants.swift */; };
 		66270131261CC38500256749 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66270130261CC38500256749 /* TabBarViewController.swift */; };
+		662EF192262F33C300DBDAE1 /* QuestDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EF191262F33C300DBDAE1 /* QuestDetailsViewController.swift */; };
 		663315E126185A16001150A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663315E026185A16001150A2 /* LoginViewController.swift */; };
 		6639135525F4BF6E00FB5394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639135425F4BF6E00FB5394 /* AppDelegate.swift */; };
 		6639135725F4BF6E00FB5394 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639135625F4BF6E00FB5394 /* SceneDelegate.swift */; };
@@ -66,11 +71,16 @@
 		48974C50563822BD83CCC09D /* Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig"; path = "Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests/Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4A80FCE2873CCFD3A7F6B857 /* Pods_QuestBoardUI_QuestBoardUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestBoardUI_QuestBoardUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		649284EA32573C987D475226 /* Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests/Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6609682726305EBE00C489EB /* QuestTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestTypeViewController.swift; sourceTree = "<group>"; };
+		6618F254262DBFA0008326F4 /* QuestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestTableViewCell.swift; sourceTree = "<group>"; };
+		6621E5732631D2C800BA6658 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6621E5752631D42C00BA6658 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		662682E0261E0CFD00562DCA /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
 		662682E2261E0DD900562DCA /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		662682E5261E125F00562DCA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		662682E9261E13FD00562DCA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		66270130261CC38500256749 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		662EF191262F33C300DBDAE1 /* QuestDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDetailsViewController.swift; sourceTree = "<group>"; };
 		663315E026185A16001150A2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6639135125F4BF6E00FB5394 /* QuestBoardUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestBoardUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6639135425F4BF6E00FB5394 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +151,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6621E5722631D2B200BA6658 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6621E5732631D2C800BA6658 /* HomeViewController.swift */,
+				6621E5752631D42C00BA6658 /* HomeTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		662682E4261E124600562DCA /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +190,9 @@
 			children = (
 				662682E0261E0CFD00562DCA /* CategoryCollectionViewController.swift */,
 				6648F371261F45A500AC001F /* ItemsTableViewController.swift */,
+				6618F254262DBFA0008326F4 /* QuestTableViewCell.swift */,
+				662EF191262F33C300DBDAE1 /* QuestDetailsViewController.swift */,
+				6609682726305EBE00C489EB /* QuestTypeViewController.swift */,
 			);
 			path = QuestSelection;
 			sourceTree = "<group>";
@@ -200,6 +222,7 @@
 		6639135325F4BF6E00FB5394 /* QuestBoardUI */ = {
 			isa = PBXGroup;
 			children = (
+				6621E5722631D2B200BA6658 /* Home */,
 				6678B45826203270003395DE /* NewQuest */,
 				6648F366261F082400AC001F /* CategoryImage */,
 				6648F365261EF91A00AC001F /* CustomCells */,
@@ -576,12 +599,16 @@
 			files = (
 				66270131261CC38500256749 /* TabBarViewController.swift in Sources */,
 				663315E126185A16001150A2 /* LoginViewController.swift in Sources */,
+				6621E5742631D2C800BA6658 /* HomeViewController.swift in Sources */,
 				6678B45A2620328F003395DE /* NewQuestViewController.swift in Sources */,
 				6648F374261F5A6600AC001F /* Item.swift in Sources */,
 				66FDF0B5261B5F4F00155EDF /* LoginOrProfileNavigationViewController.swift in Sources */,
+				6621E5762631D42C00BA6658 /* HomeTableViewCell.swift in Sources */,
 				6639135925F4BF6E00FB5394 /* ViewController.swift in Sources */,
 				6639135525F4BF6E00FB5394 /* AppDelegate.swift in Sources */,
+				6609682826305EBE00C489EB /* QuestTypeViewController.swift in Sources */,
 				6639135725F4BF6E00FB5394 /* SceneDelegate.swift in Sources */,
+				6618F255262DBFA0008326F4 /* QuestTableViewCell.swift in Sources */,
 				662682E3261E0DD900562DCA /* CategoryCollectionViewCell.swift in Sources */,
 				6682ACEE26038F9000D16231 /* ChatViewController.swift in Sources */,
 				6648F372261F45A500AC001F /* ItemsTableViewController.swift in Sources */,
@@ -589,6 +616,7 @@
 				662682E1261E0CFD00562DCA /* CategoryCollectionViewController.swift in Sources */,
 				662682E6261E125F00562DCA /* Category.swift in Sources */,
 				662682EA261E13FD00562DCA /* Constants.swift in Sources */,
+				662EF192262F33C300DBDAE1 /* QuestDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
