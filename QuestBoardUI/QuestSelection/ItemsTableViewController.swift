@@ -11,7 +11,7 @@ class ItemsTableViewController: UITableViewController {
 
     
     var category: Category?
-    var questArray: [Item] = []
+    var questArray: [Quest] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +62,7 @@ class ItemsTableViewController: UITableViewController {
         showQuestView(questArray[indexPath.row])
     }
     
-    func showQuestView(_ item: Item)
+    func showQuestView(_ item: Quest)
     {
         
         //to push view without defining segueway
@@ -74,30 +74,30 @@ class ItemsTableViewController: UITableViewController {
     
     func loadQuest()
     {
-        let quest1 = Item()
-        quest1.id = "1"
-        quest1.name = "Quest1"
-        quest1.categoryId = "3"
+        let quest1 = Quest()
+        quest1.id = 1
+        quest1.title = "Quest1"
+        quest1.category = 3
         quest1.description = "This is the description for quest. Some help needed for XXXXXX location is at XXXXX"
         quest1.reward = "3000"
         quest1.location = "Some where in yishun"
         quest1.skillRequired = "Nil"
 
         
-        let quest2 = Item()
-        quest2.id = "2"
-        quest2.name = "Quest2"
-        quest1.categoryId = "3"
+        let quest2 = Quest()
+        quest2.id = 2
+        quest2.title = "Quest2"
+        quest1.category = 3
         quest2.description = "This is the description for quest2. Some help needed for XXXXXX location is at XXXXX"
         quest2.reward = "5000"
         quest2.location = "Some where in Serangoon"
         quest2.skillRequired = "Able to stand very long"
         
         
-        let quest3 = Item()
-        quest3.id = "3"
-        quest3.name = "Quest3"
-        quest1.categoryId = "3"
+        let quest3 = Quest()
+        quest3.id = 3
+        quest3.title = "Quest3"
+        quest1.category = 3
         quest3.description = "This is the description for quest3. Some help needed for XXXXXX location is at XXXXX"
         quest3.reward = "1000"
         quest3.location = "Some where in Bishan"

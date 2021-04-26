@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UITableViewController {
 
     
-    var questArray:[Item] = []
+    var questArray:[Quest] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +51,7 @@ class HomeViewController: UITableViewController {
     }
     
     
-    func showQuestView(_ item: Item)
+    func showQuestView(_ item: Quest)
     {
         
         //to push view without defining segueway

@@ -27,10 +27,10 @@ class QuestTableViewCell: UITableViewCell {
     }
     
     
-    func generateCell(_ item: Item)
+    func generateCell(_ item: Quest)
     {
         
-        questName.text = item.name
+        questName.text = item.title
         questDescription.text = item.description
         questReward.text = item.reward
         

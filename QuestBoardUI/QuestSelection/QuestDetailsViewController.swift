@@ -18,7 +18,7 @@ class QuestDetailsViewController: UIViewController {
     @IBOutlet weak var lbReward: UILabel!
     
     
-    var quest:Item!
+    var quest:Quest!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class QuestDetailsViewController: UIViewController {
         
         
         
-        lbName.text = quest.name
+        lbName.text = quest.title
         tvDescription.text = quest.description
         lbLocation.text = quest.location
         lbSkill.text = quest.skillRequired

@@ -22,29 +22,6 @@ struct Chat: Decodable {
     var senderId: String?
 }
 
-struct Quest: Decodable {
-    var awarded: Int?
-    var awardedTo: String?
-    var category: Int
-    var createdDate: String
-    var description: String
-    var difficultyLevel: String?
-    var id: Int
-    var location: String
-    var requestor: String
-    var reward: String?
-    var rewardType: Int?
-    var skillRequired: String?
-    var status: String
-    var title: String
-    var updatedDate: String
-}
-
-struct ApiResponse: Decodable {
-    var quests: [Quest]?
-    var chatRooms: [Chat]?
-}
-
 class ChatRoomTableViewCell: UITableViewCell {
     
     @IBOutlet weak var recipientName: UILabel!
