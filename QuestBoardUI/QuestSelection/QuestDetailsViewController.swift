@@ -25,9 +25,7 @@ class QuestDetailsViewController: UIViewController {
         
         print("\(quest.id)")
         //send quest id to WS to get info
-        
-        
-        
+                    
         lbName.text = quest.title
         tvDescription.text = quest.description
         lbLocation.text = quest.location
@@ -36,12 +34,13 @@ class QuestDetailsViewController: UIViewController {
         
         
     }
-    
+        
 
-    @IBAction func btnChat(_ sender: Any) {
+    @IBAction func btnPropose(_ sender: Any) {
+        
     }
     
-    @IBAction func btnAccept(_ sender: Any) {
+    @IBAction func btnChat(_ sender: Any) {
     }
     
     @IBAction func btnProfile(_ sender: Any) {

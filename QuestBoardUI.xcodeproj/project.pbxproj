@@ -50,6 +50,7 @@
 		6E46B75D263320EB00590F56 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E46B75B263320EB00590F56 /* ChatRoomViewController.swift */; };
 		6E46B7772633223200590F56 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6E46B7762633223200590F56 /* .gitignore */; };
 		6EB1E7D32636B80D00D1AFF4 /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648F373261F5A6600AC001F /* Quest.swift */; };
+		6EB1E7E82637321000D1AFF4 /* NewQuestProposalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB1E7E72637321000D1AFF4 /* NewQuestProposalViewController.swift */; };
 		B8221F1BA4A9DFA2D57E049C /* Pods_QuestBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C456EE114CBD4FE0052F0EB5 /* Pods_QuestBoardUITests.framework */; };
 		BF26A3CE1F6F65A74490412E /* Pods_QuestBoardUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739B633625F695ED4EF1928 /* Pods_QuestBoardUI.framework */; };
 /* End PBXBuildFile section */
@@ -123,6 +124,7 @@
 		6E46B75A263320EB00590F56 /* ChatRoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatRoomViewController.xib; path = QuestBoardUI/ChatRoomViewController.xib; sourceTree = SOURCE_ROOT; };
 		6E46B75B263320EB00590F56 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatRoomViewController.swift; path = QuestBoardUI/ChatRoomViewController.swift; sourceTree = SOURCE_ROOT; };
 		6E46B7762633223200590F56 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6EB1E7E72637321000D1AFF4 /* NewQuestProposalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuestProposalViewController.swift; sourceTree = "<group>"; };
 		8739B633625F695ED4EF1928 /* Pods_QuestBoardUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestBoardUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA88DCB5FA6E44620771B752 /* Pods-QuestBoardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardUITests.debug.xcconfig"; path = "Target Support Files/Pods-QuestBoardUITests/Pods-QuestBoardUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AADF3312CAE9CB7DB7DBB029 /* Pods-QuestBoardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardUITests.release.xcconfig"; path = "Target Support Files/Pods-QuestBoardUITests/Pods-QuestBoardUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 		6639135325F4BF6E00FB5394 /* QuestBoardUI */ = {
 			isa = PBXGroup;
 			children = (
+				6EB1E7E6263731F900D1AFF4 /* NewQuestProposal */,
 				6E46B74F263320B700590F56 /* ChatRoom */,
 				6E46B7492633209F00590F56 /* Chat */,
 				6E46B73F26331F7B00590F56 /* www */,
@@ -341,6 +344,14 @@
 				6E46B75A263320EB00590F56 /* ChatRoomViewController.xib */,
 			);
 			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		6EB1E7E6263731F900D1AFF4 /* NewQuestProposal */ = {
+			isa = PBXGroup;
+			children = (
+				6EB1E7E72637321000D1AFF4 /* NewQuestProposalViewController.swift */,
+			);
+			path = NewQuestProposal;
 			sourceTree = "<group>";
 		};
 		940CD03849122AA3BE9DDAD8 /* Pods */ = {
@@ -640,6 +651,7 @@
 				662682E6261E125F00562DCA /* Category.swift in Sources */,
 				662682EA261E13FD00562DCA /* Constants.swift in Sources */,
 				662EF192262F33C300DBDAE1 /* QuestDetailsViewController.swift in Sources */,
+				6EB1E7E82637321000D1AFF4 /* NewQuestProposalViewController.swift in Sources */,
 				66F9DCD826333CFF000D3CA0 /* ChatToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

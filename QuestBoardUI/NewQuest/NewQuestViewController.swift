@@ -11,7 +11,7 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
 
     typealias JSONDictionary = [String : Any]
     
-    let quest = Quest()
+    var quest = Quest()
     var category:Category!
  
     @IBOutlet weak var questNameErrMsg: UILabel!
@@ -57,7 +57,9 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
 //
 //        QuestLocationErrMsg.isHidden = false
 //        QuestLocationErrMsg.text = "Error"
-        print("hahahah")
+        self.quest = Quest()
+        viewInit()
+        self.showToast(message: "Exit new quest")
         self.tabBarController?.selectedIndex = 0
     }
     
@@ -83,27 +85,13 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
         super.viewDidAppear(animated)
         
         scrollView.contentSize = CGSize(width: 414, height: 1325)
-        
-        pickerData = ["Walk the Dog" , "Let\'s Dabao" , "Fix me" , "Get queueing"]
-        self.questCategory.dataSource = self
-        self.questCategory.delegate = self
-        
-        self.skillPicker.dataSource = self
-        self.skillPicker.delegate = self
-        
-        self.skillPickerView.isHidden = true
-        
-        self.tbCostConcern.isHidden = true
-        self.timingConcernDatePicker.isHidden = true
-        
-        self.constConcernLabel.isHidden = true
-        self.timingConcernLabel.isHidden = true
+        viewInit()
         pageInitData()
     }
     
     @IBAction func submitCreateQuest(_ sender: UIButton) {
-//        createQuest()
-        createQuestConcern(id: 1)
+        createQuest()
+//        createQuestConcern(id: 1)
     }
     
     @IBAction func switchCategoryChanged(_ sender: UISwitch) {
@@ -126,6 +114,23 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
             self.constConcernLabel.isHidden = true
             self.timingConcernLabel.isHidden = true
         }
+    }
+    
+    func viewInit() {
+        pickerData = ["Walk the Dog" , "Let\'s Dabao" , "Fix me" , "Get queueing"]
+        self.questCategory.dataSource = self
+        self.questCategory.delegate = self
+        
+        self.skillPicker.dataSource = self
+        self.skillPicker.delegate = self
+        
+        self.skillPickerView.isHidden = true
+        
+        self.tbCostConcern.isHidden = true
+        self.timingConcernDatePicker.isHidden = true
+        
+        self.constConcernLabel.isHidden = true
+        self.timingConcernLabel.isHidden = true
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -153,16 +158,17 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
     }
     
     func createQuest()
-    {        
-        self.quest.category = 0
+    {
         self.quest.categoryDesc = pickerData[questCategory.selectedRow(inComponent: 0)]
         self.quest.description = tvQuestDesc.text
         self.quest.location = tbQuestLocation.text
         self.quest.reward = tbQuestReward.text
         self.quest.category = (switchCategory.isOn) ? 1 : 0
-        self.quest.skillRequired = (skillPickerData.count > 0) ? skillPickerData[skillPicker.selectedRow(inComponent: 0)] : ""
-        self.quest.printMyself()
+        self.quest.skillRequired = (switchCategory.isOn && skillPickerData.count > 0) ? skillPickerData[skillPicker.selectedRow(inComponent: 0)] : ""
         self.quest.requestor = "yongjia"
+        self.quest.title = tbQuestName.text
+        self.quest.printMyself()
+        
         let headers = [
           "Content-Type": "application/json",
           "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJzcU5VcEZwcmZHU1BIVWF6YU5jQ3NoX2U1bmhrMTNmS1J3OGxiNzk1QlRBIn0.eyJleHAiOjE2MTk0NTg2NTAsImlhdCI6MTYxOTQyOTg1MCwianRpIjoiMmEyYTg1NzMtN2NkZS00OWE0LTk0OTktYjE4ZDg1OTZhYjA1IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnF1ZXN0c2JvdC54eXovYXV0aC9yZWFsbXMvUXVlc3Rib2FyZCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJjNzA5NTg2MC00MjFlLTQ4ZGYtYWFkYy04ZTM0OTcwYWUyYjIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJxdWVzdGJvYXJkLW1vYmlsZS1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiYjkyODZhYjktNGNiYi00ZmM5LWEzYzItNzU5OWUxMTc1MDA2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovLzM1LjE5Ny4xNDYuMjIxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoieW9uZ2ppYSBjaGFuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoieW9uZ2ppYSIsImdpdmVuX25hbWUiOiJ5b25namlhIiwiZmFtaWx5X25hbWUiOiJjaGFuIiwiZW1haWwiOiJ5b25namlhQGVtYWlsLmNvbSJ9.XziMIJAHZgUyYFBCtKBJ3k7CSkuC8RWiY-SxSxESphDnXD9O6Z1n4It1lIfWwXgG4A6jO_FZp_EG0ZQxxH-QlvPM0lQn-kBrCmvb-sirgM1CMSkQg58N2mE84gJhs0qlbLDI1fTmKU2mkV9LfPPdYNPmpnUL0D8a16681CCUrHXR8nS8qhLYmMlk7c7cIbkcyXw19guqDMkUOJTtOUJ5IlVHZMjPwwzE0ilbWgFgqbB394Lcu4ok7LQX6ip3ymdfBh-1z-hZx9quJZhORVcDlLhNEG_me45afYtvOZAyjBTrY3X1XJpRXO-5hDufifqpoHhggOLaVrm91qwFGxmSHA"
@@ -173,9 +179,10 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
                                    "location": self.quest.location!,
                                    "description": self.quest.description!,
                                    "category": self.quest.category,
-                                   "skillRequired": self.quest.skillRequired!,
+                                   "skillRequired": (switchCategory.isOn) ? self.quest.skillRequired! : "",
                                    "rewardType": self.quest.rewardType!,
-                                   "reward": self.quest.reward!]
+                                   "reward": self.quest.reward!,
+                                   "categoryDesc": self.quest.categoryDesc!]
 
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
 
@@ -196,10 +203,15 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
                 let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
                 if let responseJSON = responseJSON as? [String: Any] {
                     print(responseJSON)
-                    if let id = responseJSON["id"] as? Int {
-                        self.createQuestConcern(id: id)
+                    if self.quest.category == 1 {
+                        if let id = responseJSON["id"] as? Int {
+                            self.createQuestConcern(id: id)
+                            self.showToast(message: "Your quest is posted successfully")
+                        } else {
+                            self.showToast(message: "Concerns is not created")
+                        }
                     } else {
-                        // pop up error message
+                        self.showToast(message: "Your quest is posted successfully")
                     }
                 }
             } catch let error {
@@ -251,6 +263,7 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
                 let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
                 if let responseJSON = responseJSON as? [String: Any] {
                     print(responseJSON)
+                    self.showToast(message: "Concerns is created")
                 }
             } catch let error {
                 print(error.localizedDescription)
@@ -307,3 +320,26 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
     }
     
 }
+
+extension UIViewController {
+
+func showToast(message : String) {
+
+    let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 75, y: self.view.frame.size.height-200, width: 150, height: 35))
+    toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+    toastLabel.textColor = UIColor.white
+    toastLabel.font = .systemFont(ofSize: 15.0)
+    toastLabel.textAlignment = .center;
+    toastLabel.text = message
+    toastLabel.alpha = 1.0
+    toastLabel.layer.cornerRadius = 10;
+    toastLabel.clipsToBounds  =  true
+    DispatchQueue.main.async {
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 5.0, delay: 0.1, options: .curveEaseOut, animations: {
+             toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
+    }
+} }
