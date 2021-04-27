@@ -20,7 +20,7 @@ class NewQuestProposalViewController: UIViewController {
     @IBOutlet weak var sendProposalBtn: UIButton!
     
     let questId: Int = 1
-    let username: String = "yongjia"
+    var username: String = ""
     
     var moneyAnswerJsonTemp = "{\"concern\":\"money\",\"operator\":\"<\",\"evaluation\":\"#?\"}"
     var timeAnswerJsonTemp = "{\"concern\":\"time\",\"operator\":\"<\",\"evaluation\":\"#?\"}"
@@ -33,6 +33,7 @@ class NewQuestProposalViewController: UIViewController {
     
     func viewInit(){
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        self.username = MyProfileManager.myProfile!.userName!
         self.showToast(message: "View inited")
     }
     

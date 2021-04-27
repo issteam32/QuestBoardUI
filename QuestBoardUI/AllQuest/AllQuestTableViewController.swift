@@ -1,56 +1,31 @@
 //
-//  ItemsTableViewController.swift
+//  AllQuestTableViewController.swift
 //  QuestBoardUI
 //
-//  Created by Adam Teng Guan Tan on 8/4/21.
+//  Created by Adam Teng Guan Tan on 26/4/21.
 //
 
 import UIKit
 
-class ItemsTableViewController: UITableViewController {
+class AllQuestTableViewController: UITableViewController {
 
     
-    var category: Category?
-    var questArray: [Quest] = []
+    var questArray: [Item] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableView.tableFooterView = UIView()
-        self.title = category?.name
-        print("selected cat \(String(describing: category?.name))")
-//        if category != nil
-//        {
-//            loadQuest()
-//        }
-        
         loadQuest()
-        
-        }
-
-    // MARK: - Table view data source
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-
+        tableView.tableFooterView = UIView()
     }
 
-    
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
-        print(questArray.count)
-        return questArray.count
+        // #warning Incomplete implementation, return the number of rows
+       return questArray.count
     }
-
-  
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
-        
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! QuestTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! AllQuestTableViewCell
         
         cell.generateCell(questArray[indexPath.row])
         
@@ -62,47 +37,58 @@ class ItemsTableViewController: UITableViewController {
         showQuestView(questArray[indexPath.row])
     }
     
-    func showQuestView(_ item: Quest)
+    
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    
+    
+    func showQuestView(_ item: Item)
     {
         
         //to push view without defining segueway
         let questVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "questDetails") as! QuestDetailsViewController
         
         questVC.quest = item
-        questVC.isNew = true
+        questVC.isNew = false
         self.navigationController?.pushViewController(questVC, animated: true)
     }
     
+    
     func loadQuest()
     {
-        let quest1 = Quest()
-        quest1.id = 1
-        quest1.title = "Quest1"
-        quest1.category = 3
-        quest1.description = "This is the description for quest. Some help needed for XXXXXX location is at XXXXX"
+        let quest1 = Item()
+        quest1.id = "5"
+        quest1.name = "Quest5"
+        quest1.categoryId = "5"
+        quest1.description = "This is the description for quest5. Some help needed for XXXXXX location is at XXXXX"
         quest1.reward = "3000"
         quest1.location = "Some where in yishun"
         quest1.skillRequired = "Nil"
+        quest1.status = "Posted"
 
         
-        let quest2 = Quest()
-        quest2.id = 2
-        quest2.title = "Quest2"
-        quest1.category = 3
-        quest2.description = "This is the description for quest2. Some help needed for XXXXXX location is at XXXXX"
+        let quest2 = Item()
+        quest2.id = "6"
+        quest2.name = "Quest6"
+        quest2.categoryId = "6"
+        quest2.description = "This is the description for quest6. Some help needed for XXXXXX location is at XXXXX"
         quest2.reward = "5000"
         quest2.location = "Some where in Serangoon"
         quest2.skillRequired = "Able to stand very long"
+        quest2.status = "Posted"
         
         
-        let quest3 = Quest()
-        quest3.id = 3
-        quest3.title = "Quest3"
-        quest1.category = 3
-        quest3.description = "This is the description for quest3. Some help needed for XXXXXX location is at XXXXX"
+        let quest3 = Item()
+        quest3.id = "7"
+        quest3.name = "Quest7"
+        quest3.categoryId = "7"
+        quest3.description = "This is the description for quest7. Some help needed for XXXXXX location is at XXXXX"
         quest3.reward = "1000"
         quest3.location = "Some where in Bishan"
         quest3.skillRequired = "Able to run"
+        quest3.status = "Taken"
         
         
         questArray.append(quest1)

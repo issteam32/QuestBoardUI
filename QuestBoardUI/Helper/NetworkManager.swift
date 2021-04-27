@@ -13,7 +13,6 @@ public class NetworkManager {
     static var nHeaders: [String: String] = [String: String]()
     static let nApi = "https://questboard-api-gateway-pllorhkrga-as.a.run.app/api"
     static var isInitialised = false
-    static var nUsername = ""
     
     public static var sharedNetworkManager: NetworkManager = {
         let instance = NetworkManager()

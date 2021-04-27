@@ -33,6 +33,9 @@
 		6648F370261F125200AC001F /* queue.png in Resources */ = {isa = PBXBuildFile; fileRef = 6648F36F261F125200AC001F /* queue.png */; };
 		6648F372261F45A500AC001F /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648F371261F45A500AC001F /* ItemsTableViewController.swift */; };
 		6678B45A2620328F003395DE /* NewQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6678B4592620328F003395DE /* NewQuestViewController.swift */; };
+		66F13523263704D1001F35A3 /* AllQuestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F13522263704D1001F35A3 /* AllQuestTableViewController.swift */; };
+		66F135272637082F001F35A3 /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F135262637082F001F35A3 /* Quest.swift */; };
+		66F1352926371A74001F35A3 /* AllQuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1352826371A74001F35A3 /* AllQuestTableViewCell.swift */; };
 		66F7289D2620554B007BCFE0 /* message-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F7289C2620554B007BCFE0 /* message-7.png */; };
 		66F7289F26205573007BCFE0 /* house-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F7289E26205573007BCFE0 /* house-7.png */; };
 		66F728A12620558E007BCFE0 /* man-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F728A02620558E007BCFE0 /* man-7.png */; };
@@ -115,6 +118,9 @@
 		6648F371261F45A500AC001F /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 		6648F373261F5A6600AC001F /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
 		6678B4592620328F003395DE /* NewQuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuestViewController.swift; sourceTree = "<group>"; };
+		66F13522263704D1001F35A3 /* AllQuestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuestTableViewController.swift; sourceTree = "<group>"; };
+		66F135262637082F001F35A3 /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
+		66F1352826371A74001F35A3 /* AllQuestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuestTableViewCell.swift; sourceTree = "<group>"; };
 		66F7289C2620554B007BCFE0 /* message-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message-7.png"; sourceTree = "<group>"; };
 		66F7289E26205573007BCFE0 /* house-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-7.png"; sourceTree = "<group>"; };
 		66F728A02620558E007BCFE0 /* man-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-7.png"; sourceTree = "<group>"; };
@@ -256,6 +262,7 @@
 			children = (
 				6EF18B04263811F7005B2C15 /* Profile */,
 				6EB1E7E6263731F900D1AFF4 /* NewQuestProposal */,
+				66F13521263704A8001F35A3 /* AllQuest */,
 				6E46B74F263320B700590F56 /* ChatRoom */,
 				6E46B7492633209F00590F56 /* Chat */,
 				6E46B73F26331F7B00590F56 /* www */,
@@ -323,6 +330,15 @@
 				6678B4592620328F003395DE /* NewQuestViewController.swift */,
 			);
 			path = NewQuest;
+			sourceTree = "<group>";
+		};
+		66F13521263704A8001F35A3 /* AllQuest */ = {
+			isa = PBXGroup;
+			children = (
+				66F13522263704D1001F35A3 /* AllQuestTableViewController.swift */,
+				66F1352826371A74001F35A3 /* AllQuestTableViewCell.swift */,
+			);
+			path = AllQuest;
 			sourceTree = "<group>";
 		};
 		66FDF094261B43FA00155EDF /* icons */ = {
@@ -667,6 +683,7 @@
 				6E46B75D263320EB00590F56 /* ChatRoomViewController.swift in Sources */,
 				6621E5742631D2C800BA6658 /* HomeViewController.swift in Sources */,
 				6EF18AF626380EE4005B2C15 /* EverydayProfile.swift in Sources */,
+				66F1352926371A74001F35A3 /* AllQuestTableViewCell.swift in Sources */,
 				6678B45A2620328F003395DE /* NewQuestViewController.swift in Sources */,
 				66FDF0B5261B5F4F00155EDF /* LoginOrProfileNavigationViewController.swift in Sources */,
 				6621E5762631D42C00BA6658 /* HomeTableViewCell.swift in Sources */,
@@ -684,10 +701,12 @@
 				6E46B74B263320A000590F56 /* ChatViewController.swift in Sources */,
 				6EF18B0026381091005B2C15 /* SkillsetProfile.swift in Sources */,
 				662682E1261E0CFD00562DCA /* CategoryCollectionViewController.swift in Sources */,
+				66F135272637082F001F35A3 /* Quest.swift in Sources */,
 				662682E6261E125F00562DCA /* Category.swift in Sources */,
 				662682EA261E13FD00562DCA /* Constants.swift in Sources */,
 				662EF192262F33C300DBDAE1 /* QuestDetailsViewController.swift in Sources */,
 				6EB1E7E82637321000D1AFF4 /* NewQuestProposalViewController.swift in Sources */,
+				66F13523263704D1001F35A3 /* AllQuestTableViewController.swift in Sources */,
 				66F9DCD826333CFF000D3CA0 /* ChatToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

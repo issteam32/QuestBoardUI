@@ -42,7 +42,7 @@ class ChatViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
 //        print(js)
                 
         chatToken.token = NetworkManager.nToken
-        chatToken.senderId = NetworkManager.nUsername
+        chatToken.senderId = MyProfileManager.myProfile?.userName        
         
         print("senderId: \(chatToken.senderId!)")
         print("recipientId: \(chatToken.recipientId!)")

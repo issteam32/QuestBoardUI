@@ -17,8 +17,10 @@ class QuestDetailsViewController: UIViewController {
     
     @IBOutlet weak var lbReward: UILabel!
     
+    @IBOutlet weak var AcceptLabel: UIButton!
     
     var quest:Quest!
+    var isNew:Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,10 @@ class QuestDetailsViewController: UIViewController {
         lbSkill.text = quest.skillRequired
         lbReward.text = quest.reward
         
+        if(isNew == false)
+        {
+            AcceptLabel.isHidden = true
+        }
         
     }
         

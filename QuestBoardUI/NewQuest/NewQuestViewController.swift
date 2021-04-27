@@ -169,7 +169,7 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
         self.quest.reward = tbQuestReward.text
         self.quest.category = (switchCategory.isOn) ? 1 : 0
         self.quest.skillRequired = (switchCategory.isOn && skillPickerData.count > 0) ? skillPickerData[skillPicker.selectedRow(inComponent: 0)] : ""
-        self.quest.requestor = "yongjia"
+        self.quest.requestor = MyProfileManager.myProfile?.userName!
         self.quest.title = tbQuestName.text
         self.quest.printMyself()
         
