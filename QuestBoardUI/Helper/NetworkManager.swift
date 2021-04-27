@@ -52,6 +52,11 @@ public class NetworkManager {
                         print(responseJSON)
                         block(responseJSON)
                     }
+                    if let responseJSON = responseJSON as? [Any] {
+                        print("Any casted")
+                        let result = ["result": responseJSON]
+                        block(result)
+                    }
                 } catch let error {
                     print(error.localizedDescription)
                 }

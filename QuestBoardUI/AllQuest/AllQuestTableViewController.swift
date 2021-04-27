@@ -17,6 +17,10 @@ class AllQuestTableViewController: UITableViewController {
         loadQuest()
         tableView.tableFooterView = UIView()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        loadQuest()
+    }
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,19 +62,16 @@ class AllQuestTableViewController: UITableViewController {
     
     func loadQuest()
     {
-        
 //        NetworkManager.call(url:  "/get-user-quest" , json: ["type": "requestor"],  Completion: { (responseJSON) in
 //                            print(responseJSON)
 //            print("test")
 //                        })
 //
+        let parameters: [String : String] = ["type": "requestor"]
         
-        
-        let parameters: [String : Any] = ["type": "requestor"]
-        
-        NetworkManager.call(url: "/get-user-quest", json: parameters, Completion: { (response) in
+        NetworkManager.call(url: "/get-user-quest", json: parameters, Completion: {(response) in
             print("test")
-            print(response)
+            print(response["result"])
         })
         
         
