@@ -20,4 +20,7 @@ class Item{
     var location:String!
     var imageLinks: [String]!
     var skillRequired: String!
+    var status: String!
+    var requestorId:String!
+    var senderId:String!
 }
