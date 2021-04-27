@@ -153,7 +153,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ei8-Dh-bec">
-                                        <rect key="frame" x="37" y="335" width="33" height="21"/>
+                                        <rect key="frame" x="37" y="335" width="344" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -259,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lr-Pq-k5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1330" y="729"/>
+            <point key="canvasLocation" x="-1330.4347826086957" y="728.57142857142856"/>
         </scene>
         <!--Home-->
         <scene sceneID="5vn-dA-qvo">
@@ -318,7 +318,7 @@
         <!--Profile-->
         <scene sceneID="5Yy-3y-mFR">
             <objects>
-                <viewController storyboardIdentifier="loginView" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QGS-N5-lur" customClass="LoginViewController" customModule="QuestBoardUI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginView" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QGS-N5-lur" customClass="LoginViewController" customModule="QuestBoardUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qtd-em-OSl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

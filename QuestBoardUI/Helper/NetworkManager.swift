@@ -40,23 +40,25 @@ public class NetworkManager {
         request.allHTTPHeaderFields = nHeaders
         // insert json data to the request
         request.httpBody = jsonData
-
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else {
-                print(error?.localizedDescription ?? "No data")
-                return
-            }
-            do {
-                let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
-                if let responseJSON = responseJSON as? [String: Any] {
-                    print(responseJSON)
-                    block(responseJSON)
+        
+        if !nHeaders.isEmpty && nToken != "" {
+            let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                guard let data = data, error == nil else {
+                    print(error?.localizedDescription ?? "No data")
+                    return
                 }
-            } catch let error {
-                print(error.localizedDescription)
+                do {
+                    let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+                    if let responseJSON = responseJSON as? [String: Any] {
+                        print(responseJSON)
+                        block(responseJSON)
+                    }
+                } catch let error {
+                    print(error.localizedDescription)
+                }
             }
-        }
 
-        task.resume()
+            task.resume()
+        }
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 class LoginViewController: UIViewController{
 
 
-    
+    weak var delegate: LoginViewControllerDelegate?
     @IBOutlet weak var tbUserName: UITextField!
     @IBOutlet weak var tbPassword: UITextField!
     @IBOutlet weak var lbErrorMessage: UILabel!
@@ -29,7 +29,10 @@ class LoginViewController: UIViewController{
         }
     }
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        delegate?.loginControllerWillDisapear(self)
+    }
     
     @IBAction func btnLogin(_ sender: UIButton) {
         self.navigateToProfile()
@@ -85,6 +88,9 @@ class LoginViewController: UIViewController{
     }
     
     func navigateToProfile() {
+        if !MyProfileManager.profileIsInitialised {
+            MyProfileManager.initMyProfileManager()
+        }
         self.dismiss(animated: true, completion: nil)
     }
     
