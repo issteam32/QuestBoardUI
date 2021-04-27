@@ -58,6 +58,22 @@ class AllQuestTableViewController: UITableViewController {
     
     func loadQuest()
     {
+        
+//        NetworkManager.call(url:  "/get-user-quest" , json: ["type": "requestor"],  Completion: { (responseJSON) in
+//                            print(responseJSON)
+//            print("test")
+//                        })
+//
+        
+        
+        let parameters: [String : Any] = ["type": "requestor"]
+        
+        NetworkManager.call(url: "/get-user-quest", json: parameters, Completion: { (response) in
+            print("test")
+            print(response)
+        })
+        
+        
         let quest1 = Quest()
         quest1.id = 5
         quest1.title = "Quest5"

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0708766D6163E11FAFD3A3BE /* Pods_QuestBoardUI_QuestBoardUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A80FCE2873CCFD3A7F6B857 /* Pods_QuestBoardUI_QuestBoardUIUITests.framework */; };
+		660930B7263875CF00457A4F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660930B6263875CF00457A4F /* ProfileViewController.swift */; };
 		6609682826305EBE00C489EB /* QuestTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6609682726305EBE00C489EB /* QuestTypeViewController.swift */; };
 		6618F255262DBFA0008326F4 /* QuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6618F254262DBFA0008326F4 /* QuestTableViewCell.swift */; };
 		6621E5742631D2C800BA6658 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621E5732631D2C800BA6658 /* HomeViewController.swift */; };
@@ -59,7 +60,6 @@
 		6EF18AF626380EE4005B2C15 /* EverydayProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF18AF526380EE4005B2C15 /* EverydayProfile.swift */; };
 		6EF18AFB26380F8C005B2C15 /* MyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF18AFA26380F8C005B2C15 /* MyProfile.swift */; };
 		6EF18B0026381091005B2C15 /* SkillsetProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF18AFF26381091005B2C15 /* SkillsetProfile.swift */; };
-		6EF18B0626381212005B2C15 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF18B0526381212005B2C15 /* ProfileViewController.swift */; };
 		6EF18B0B2638602E005B2C15 /* LoginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF18B0A2638602E005B2C15 /* LoginViewControllerDelegate.swift */; };
 		B8221F1BA4A9DFA2D57E049C /* Pods_QuestBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C456EE114CBD4FE0052F0EB5 /* Pods_QuestBoardUITests.framework */; };
 		BF26A3CE1F6F65A74490412E /* Pods_QuestBoardUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739B633625F695ED4EF1928 /* Pods_QuestBoardUI.framework */; };
@@ -86,6 +86,7 @@
 		48974C50563822BD83CCC09D /* Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig"; path = "Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests/Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4A80FCE2873CCFD3A7F6B857 /* Pods_QuestBoardUI_QuestBoardUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestBoardUI_QuestBoardUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		649284EA32573C987D475226 /* Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests/Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		660930B6263875CF00457A4F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6609682726305EBE00C489EB /* QuestTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestTypeViewController.swift; sourceTree = "<group>"; };
 		6618F254262DBFA0008326F4 /* QuestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestTableViewCell.swift; sourceTree = "<group>"; };
 		6621E5732631D2C800BA6658 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +242,7 @@
 		6639134825F4BF6E00FB5394 = {
 			isa = PBXGroup;
 			children = (
+				660930B6263875CF00457A4F /* ProfileViewController.swift */,
 				6EC883FE26386D380099C4B1 /* Item.swift */,
 				6EC883FA26386D250099C4B1 /* Quest.swift */,
 				6E46B7762633223200590F56 /* .gitignore */,
@@ -691,6 +693,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660930B7263875CF00457A4F /* ProfileViewController.swift in Sources */,
 				6EC883FF26386D380099C4B1 /* Item.swift in Sources */,
 				6EB1E7D32636B80D00D1AFF4 /* Quest.swift in Sources */,
 				6EF18AEC2637F1CA005B2C15 /* NetworkManager.swift in Sources */,
@@ -712,7 +715,6 @@
 				6EF18B0B2638602E005B2C15 /* LoginViewControllerDelegate.swift in Sources */,
 				6618F255262DBFA0008326F4 /* QuestTableViewCell.swift in Sources */,
 				662682E3261E0DD900562DCA /* CategoryCollectionViewCell.swift in Sources */,
-				6EF18B0626381212005B2C15 /* ProfileViewController.swift in Sources */,
 				6648F372261F45A500AC001F /* ItemsTableViewController.swift in Sources */,
 				6E46B74B263320A000590F56 /* ChatViewController.swift in Sources */,
 				6EF18B0026381091005B2C15 /* SkillsetProfile.swift in Sources */,
