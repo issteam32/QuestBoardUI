@@ -14,12 +14,17 @@ class HomeViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         loadQuest()
-        
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if !NetworkManager.isInitialised {
+            self.tabBarController?.selectedIndex = 4;
+        }
+    }
+
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     

@@ -22,15 +22,12 @@ class CategoryCollectionViewController: UICollectionViewController {
     
     }
     
-    
-    override func viewDidAppear(_ animated: Bool)
-    {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        
+        if !NetworkManager.isInitialised {
+            self.tabBarController?.selectedIndex = 4;
+        }
     }
-
-
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items

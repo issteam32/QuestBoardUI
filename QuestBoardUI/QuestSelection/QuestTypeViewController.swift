@@ -15,6 +15,13 @@ class QuestTypeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if !NetworkManager.isInitialised {
+            self.tabBarController?.selectedIndex = 4;
+        }
+    }
+    
     @IBAction func btnEveryday(_ sender: Any) {
         
         performSegue(withIdentifier: "everyday", sender: self);

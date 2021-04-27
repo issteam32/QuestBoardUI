@@ -83,11 +83,15 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        scrollView.contentSize = CGSize(width: 414, height: 1325)
-        viewInit()
-        pageInitData()
+        if !NetworkManager.isInitialised {
+            self.tabBarController?.selectedIndex = 4;
+        } else {
+            scrollView.contentSize = CGSize(width: 414, height: 1325)
+            viewInit()
+            pageInitData()
+        }
     }
+    
     
     @IBAction func submitCreateQuest(_ sender: UIButton) {
         createQuest()
@@ -169,10 +173,10 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
         self.quest.title = tbQuestName.text
         self.quest.printMyself()
         
-        let headers = [
-          "Content-Type": "application/json",
-          "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJzcU5VcEZwcmZHU1BIVWF6YU5jQ3NoX2U1bmhrMTNmS1J3OGxiNzk1QlRBIn0.eyJleHAiOjE2MTk0NTg2NTAsImlhdCI6MTYxOTQyOTg1MCwianRpIjoiMmEyYTg1NzMtN2NkZS00OWE0LTk0OTktYjE4ZDg1OTZhYjA1IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnF1ZXN0c2JvdC54eXovYXV0aC9yZWFsbXMvUXVlc3Rib2FyZCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJjNzA5NTg2MC00MjFlLTQ4ZGYtYWFkYy04ZTM0OTcwYWUyYjIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJxdWVzdGJvYXJkLW1vYmlsZS1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiYjkyODZhYjktNGNiYi00ZmM5LWEzYzItNzU5OWUxMTc1MDA2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovLzM1LjE5Ny4xNDYuMjIxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoieW9uZ2ppYSBjaGFuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoieW9uZ2ppYSIsImdpdmVuX25hbWUiOiJ5b25namlhIiwiZmFtaWx5X25hbWUiOiJjaGFuIiwiZW1haWwiOiJ5b25namlhQGVtYWlsLmNvbSJ9.XziMIJAHZgUyYFBCtKBJ3k7CSkuC8RWiY-SxSxESphDnXD9O6Z1n4It1lIfWwXgG4A6jO_FZp_EG0ZQxxH-QlvPM0lQn-kBrCmvb-sirgM1CMSkQg58N2mE84gJhs0qlbLDI1fTmKU2mkV9LfPPdYNPmpnUL0D8a16681CCUrHXR8nS8qhLYmMlk7c7cIbkcyXw19guqDMkUOJTtOUJ5IlVHZMjPwwzE0ilbWgFgqbB394Lcu4ok7LQX6ip3ymdfBh-1z-hZx9quJZhORVcDlLhNEG_me45afYtvOZAyjBTrY3X1XJpRXO-5hDufifqpoHhggOLaVrm91qwFGxmSHA"
-        ]
+//        let headers = [
+//          "Content-Type": "application/json",
+//          "Authorization": "Bearer \(tmpToken)"
+//        ]
         
         let json: [String: Any] = ["title": self.quest.title!,
                                    "requestor": self.quest.requestor!,
@@ -184,49 +188,66 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
                                    "reward": self.quest.reward!,
                                    "categoryDesc": self.quest.categoryDesc!]
 
-        let jsonData = try? JSONSerialization.data(withJSONObject: json)
-
-        // create post request
-        let url = URL(string: "\(apiPath)/create-quest")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.allHTTPHeaderFields = headers
-        // insert json data to the request
-        request.httpBody = jsonData
-
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else {
-                print(error?.localizedDescription ?? "No data")
-                return
-            }
-            do {
-                let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
-                if let responseJSON = responseJSON as? [String: Any] {
-                    print(responseJSON)
-                    if self.quest.category == 1 {
-                        if let id = responseJSON["id"] as? Int {
-                            self.createQuestConcern(id: id)
-                            self.showToast(message: "Your quest is posted successfully")
-                        } else {
-                            self.showToast(message: "Concerns is not created")
-                        }
-                    } else {
-                        self.showToast(message: "Your quest is posted successfully")
-                    }
+        NetworkManager.call(url: "/create-quest", json: json, Completion: { (responseJSON) in
+            if self.quest.category == 1 {
+                if let id = responseJSON["id"] as? Int {
+                    self.createQuestConcern(id: id)
+                    self.showToast(message: "Your quest is posted successfully")
+                } else {
+                    self.showToast(message: "Concerns is not created")
                 }
-            } catch let error {
-                print(error.localizedDescription)
+            } else {
+                self.showToast(message: "Your quest is posted successfully")
+                DispatchQueue.main.async {
+                    self.pageInitData()
+                }
             }
-        }
-
-        task.resume()
+        })
+        
+//        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+//
+//        // create post request
+//        let url = URL(string: "\(apiPath)/create-quest")!
+//        var request = URLRequest(url: url)
+//        request.httpMethod = "POST"
+//        request.allHTTPHeaderFields = headers
+//        // insert json data to the request
+//        request.httpBody = jsonData
+//
+//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+//            guard let data = data, error == nil else {
+//                print(error?.localizedDescription ?? "No data")
+//                return
+//            }
+//            do {
+//                let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+//                if let responseJSON = responseJSON as? [String: Any] {
+//                    print(responseJSON)
+//                    if self.quest.category == 1 {
+//                        if let id = responseJSON["id"] as? Int {
+//                            self.createQuestConcern(id: id)
+//                            self.showToast(message: "Your quest is posted successfully")
+//                        } else {
+//                            self.showToast(message: "Concerns is not created")
+//                        }
+//                    } else {
+//                        self.showToast(message: "Your quest is posted successfully")
+//                        self.tabBarController?.selectedIndex = 0
+//                    }
+//                }
+//            } catch let error {
+//                print(error.localizedDescription)
+//            }
+//        }
+//
+//        task.resume()
     }
 
     func createQuestConcern(id: Int) {
-        let headers = [
-          "Content-Type": "application/json",
-          "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJzcU5VcEZwcmZHU1BIVWF6YU5jQ3NoX2U1bmhrMTNmS1J3OGxiNzk1QlRBIn0.eyJleHAiOjE2MTk0NTg2NTAsImlhdCI6MTYxOTQyOTg1MCwianRpIjoiMmEyYTg1NzMtN2NkZS00OWE0LTk0OTktYjE4ZDg1OTZhYjA1IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnF1ZXN0c2JvdC54eXovYXV0aC9yZWFsbXMvUXVlc3Rib2FyZCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJjNzA5NTg2MC00MjFlLTQ4ZGYtYWFkYy04ZTM0OTcwYWUyYjIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJxdWVzdGJvYXJkLW1vYmlsZS1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiYjkyODZhYjktNGNiYi00ZmM5LWEzYzItNzU5OWUxMTc1MDA2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovLzM1LjE5Ny4xNDYuMjIxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoieW9uZ2ppYSBjaGFuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoieW9uZ2ppYSIsImdpdmVuX25hbWUiOiJ5b25namlhIiwiZmFtaWx5X25hbWUiOiJjaGFuIiwiZW1haWwiOiJ5b25namlhQGVtYWlsLmNvbSJ9.XziMIJAHZgUyYFBCtKBJ3k7CSkuC8RWiY-SxSxESphDnXD9O6Z1n4It1lIfWwXgG4A6jO_FZp_EG0ZQxxH-QlvPM0lQn-kBrCmvb-sirgM1CMSkQg58N2mE84gJhs0qlbLDI1fTmKU2mkV9LfPPdYNPmpnUL0D8a16681CCUrHXR8nS8qhLYmMlk7c7cIbkcyXw19guqDMkUOJTtOUJ5IlVHZMjPwwzE0ilbWgFgqbB394Lcu4ok7LQX6ip3ymdfBh-1z-hZx9quJZhORVcDlLhNEG_me45afYtvOZAyjBTrY3X1XJpRXO-5hDufifqpoHhggOLaVrm91qwFGxmSHA"
-        ]
+//        let headers = [
+//          "Content-Type": "application/json",
+//          "Authorization": "Bearer \(tmpToken)"
+//        ]
         
         var json: [String: Any] = [String: Any]()
         if tbCostConcern.isHidden == false {
@@ -243,80 +264,56 @@ class NewQuestViewController: UIViewController , UIPickerViewDelegate , UIPicker
             json["time"] = ["context": "time", "concernValidation": validationJSON, "questId": id]
         }
         
-        let jsonData = try? JSONSerialization.data(withJSONObject: json)
-
-        // create post request
-        // let localhost = "http://127.0.0.1:8080/api"
-        let url = URL(string: "\(apiPath)/create-quest-user-concernss")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.allHTTPHeaderFields = headers
-        // insert json data to the request
-        request.httpBody = jsonData
-
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else {
-                print(error?.localizedDescription ?? "No data")
-                return
-            }
-            do {
-                let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
-                if let responseJSON = responseJSON as? [String: Any] {
-                    print(responseJSON)
-                    self.showToast(message: "Concerns is created")
-                }
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        }
-
-        task.resume()
-//        print(jsonData?.base64EncodedString())
+        NetworkManager.call(url: "/create-quest-user-concernss", json: json, Completion: { (response) in
+            self.showToast(message: "Concerns is created")
+        })
+        
+//        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+//
+//        // create post request
+//        // let localhost = "http://127.0.0.1:8080/api"
+//        let url = URL(string: "\(apiPath)/create-quest-user-concernss")!
+//        var request = URLRequest(url: url)
+//        request.httpMethod = "POST"
+//        request.allHTTPHeaderFields = headers
+//        // insert json data to the request
+//        request.httpBody = jsonData
+//
+//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+//            guard let data = data, error == nil else {
+//                print(error?.localizedDescription ?? "No data")
+//                return
+//            }
+//            do {
+//                let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+//                if let responseJSON = responseJSON as? [String: Any] {
+//                    print(responseJSON)
+//                    self.showToast(message: "Concerns is created")
+//                }
+//            } catch let error {
+//                print(error.localizedDescription)
+//            }
+//        }
+//
+//        task.resume()
     }
     
     func pageInitData() {
-        let headers = [
-          "Content-Type": "application/json",
-          "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJzcU5VcEZwcmZHU1BIVWF6YU5jQ3NoX2U1bmhrMTNmS1J3OGxiNzk1QlRBIn0.eyJleHAiOjE2MTk0NTg2NTAsImlhdCI6MTYxOTQyOTg1MCwianRpIjoiMmEyYTg1NzMtN2NkZS00OWE0LTk0OTktYjE4ZDg1OTZhYjA1IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnF1ZXN0c2JvdC54eXovYXV0aC9yZWFsbXMvUXVlc3Rib2FyZCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJjNzA5NTg2MC00MjFlLTQ4ZGYtYWFkYy04ZTM0OTcwYWUyYjIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJxdWVzdGJvYXJkLW1vYmlsZS1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiYjkyODZhYjktNGNiYi00ZmM5LWEzYzItNzU5OWUxMTc1MDA2IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovLzM1LjE5Ny4xNDYuMjIxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoieW9uZ2ppYSBjaGFuIiwicHJlZmVycmVkX3VzZXJuYW1lIjoieW9uZ2ppYSIsImdpdmVuX25hbWUiOiJ5b25namlhIiwiZmFtaWx5X25hbWUiOiJjaGFuIiwiZW1haWwiOiJ5b25namlhQGVtYWlsLmNvbSJ9.XziMIJAHZgUyYFBCtKBJ3k7CSkuC8RWiY-SxSxESphDnXD9O6Z1n4It1lIfWwXgG4A6jO_FZp_EG0ZQxxH-QlvPM0lQn-kBrCmvb-sirgM1CMSkQg58N2mE84gJhs0qlbLDI1fTmKU2mkV9LfPPdYNPmpnUL0D8a16681CCUrHXR8nS8qhLYmMlk7c7cIbkcyXw19guqDMkUOJTtOUJ5IlVHZMjPwwzE0ilbWgFgqbB394Lcu4ok7LQX6ip3ymdfBh-1z-hZx9quJZhORVcDlLhNEG_me45afYtvOZAyjBTrY3X1XJpRXO-5hDufifqpoHhggOLaVrm91qwFGxmSHA"
-        ]
         let parameters: [String : Any] = ["":""]
-
-        let postData = try? JSONSerialization.data(withJSONObject: parameters, options: [])
-
-        let request = NSMutableURLRequest(url: NSURL(string: "\(apiPath)/get-list-of-skills")! as URL,
-                                                cachePolicy: .useProtocolCachePolicy,
-                                            timeoutInterval: 10.0)
-        request.httpMethod = "POST"
-        request.allHTTPHeaderFields = headers
-        request.httpBody = postData! as Data
         
-        let session = URLSession.shared
-        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: {data, response, error in
-            guard error == nil else {
-                return
-            }
-            guard let data = data else {
-                return
-            }
+        NetworkManager.call(url: "/get-list-of-skills", json: parameters, Completion: { (response) in
+            print(response)
             
-            do {
-                if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: [String]] {
-                    let skills: [String] = json["skills"]!
-                    print(skills)
-                    for value in skills {
-                        self.skillPickerData.append(value as String)
-                    }
-                    DispatchQueue.main.async {
-                        self.skillPicker.reloadAllComponents()
-                    }
-                } else {
-                    print("convert failed")
-                }
-            } catch let error {
-                print(error.localizedDescription)
+            let skills: [String] = response["skills"] as! [String]
+            print(skills)
+            for value in skills {
+                self.skillPickerData.append(value as String)
+            }
+            DispatchQueue.main.async {
+                self.skillPicker.reloadAllComponents()
             }
         })
-        dataTask.resume()
+        
     }
     
 }
