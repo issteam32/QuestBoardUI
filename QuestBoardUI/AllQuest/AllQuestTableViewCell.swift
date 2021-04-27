@@ -26,12 +26,10 @@ class AllQuestTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func generateCell(_ item: Item)
+    func generateCell(_ item: Quest)
     {
-        
-        
         print(item.status)
-        item.requestorId = "123"
+        item.requestor = "123"
         if(item.status == "Posted") // the current user posted
         {
             statusColor.backgroundColor = UIColor.green
@@ -43,7 +41,7 @@ class AllQuestTableViewCell: UITableViewCell {
             status.text = "Taken"
         }
         
-        questName.text = item.name
+        questName.text = item.title
         questDescription.text = item.description
     }
 

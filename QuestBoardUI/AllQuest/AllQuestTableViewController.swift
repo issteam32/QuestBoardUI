@@ -10,7 +10,7 @@ import UIKit
 class AllQuestTableViewController: UITableViewController {
 
     
-    var questArray: [Item] = []
+    var questArray: [Quest] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,7 @@ class AllQuestTableViewController: UITableViewController {
     }
     
     
-    func showQuestView(_ item: Item)
+    func showQuestView(_ item: Quest)
     {
         
         //to push view without defining segueway
@@ -58,10 +58,10 @@ class AllQuestTableViewController: UITableViewController {
     
     func loadQuest()
     {
-        let quest1 = Item()
-        quest1.id = "5"
-        quest1.name = "Quest5"
-        quest1.categoryId = "5"
+        let quest1 = Quest()
+        quest1.id = 5
+        quest1.title = "Quest5"
+        quest1.category = 0
         quest1.description = "This is the description for quest5. Some help needed for XXXXXX location is at XXXXX"
         quest1.reward = "3000"
         quest1.location = "Some where in yishun"
@@ -69,10 +69,10 @@ class AllQuestTableViewController: UITableViewController {
         quest1.status = "Posted"
 
         
-        let quest2 = Item()
-        quest2.id = "6"
-        quest2.name = "Quest6"
-        quest2.categoryId = "6"
+        let quest2 = Quest()
+        quest2.id = 6
+        quest2.title = "Quest6"
+        quest2.category = 0
         quest2.description = "This is the description for quest6. Some help needed for XXXXXX location is at XXXXX"
         quest2.reward = "5000"
         quest2.location = "Some where in Serangoon"
@@ -80,10 +80,10 @@ class AllQuestTableViewController: UITableViewController {
         quest2.status = "Posted"
         
         
-        let quest3 = Item()
-        quest3.id = "7"
-        quest3.name = "Quest7"
-        quest3.categoryId = "7"
+        let quest3 = Quest()
+        quest3.id = 7
+        quest3.title = "Quest7"
+        quest3.category = 0
         quest3.description = "This is the description for quest7. Some help needed for XXXXXX location is at XXXXX"
         quest3.reward = "1000"
         quest3.location = "Some where in Bishan"
