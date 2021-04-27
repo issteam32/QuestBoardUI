@@ -20,6 +20,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var everydayProfileLevel: UILabel!
     @IBOutlet weak var autoAssignSwitch: UISwitch!
     @IBOutlet weak var everydayProfleExpBar: UIProgressView!
+    @IBOutlet weak var everydayProfileLevelLabel: UILabel!
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,13 @@ class ProfileViewController: UIViewController {
                 pageInitData()
             }
         }
+        self.autoAssignSwitch.addTarget(self, action: #selector(autoAssignSwitchChanged), for: .valueChanged)
+    }
+    
+    @IBAction func autoAssignSwitchChanged(_ sender: UISwitch) {
+        if !MyProfileManager.isEverydayProfileSetup && autoAssignSwitch.isOn {
+            self.showToast(message: "Auto assign enabled")
+        }
     }
     
     @IBAction func navigateToProfile(_ sender: Any) {
@@ -51,9 +59,20 @@ class ProfileViewController: UIViewController {
     func pageInitData() {
         username.text = MyProfileManager.myProfile?.userName
         email.text = MyProfileManager.myProfile?.email
-        everydayProfileTitle.text = MyProfileManager.everydayProfile?.title
-        everydayProfileLevel.text = "\(MyProfileManager.everydayProfile!.level!)"
-        everydayProfleExpBar.setProgress(Float(MyProfileManager.everydayProfile!.exp!), animated: true)
+        if let everydayProfileLvl = MyProfileManager.everydayProfile?.level as? Int {
+            everydayProfileTitle.text = MyProfileManager.everydayProfile?.title
+            everydayProfileLevel.text = "\(everydayProfileLvl)"
+            everydayProfleExpBar.setProgress(Float(MyProfileManager.everydayProfile!.exp!), animated: true)
+        } else {
+            everydayProfileTitle.text = "Not Setup"
+            everydayProfileTitle.textColor = .lightGray
+            everydayProfileLevel.text = "0"
+            everydayProfileLevel.textColor = .lightGray
+            everydayProfleExpBar.setProgress(0, animated: true)
+            everydayProfleExpBar.progressTintColor = .lightGray
+            everydayProfileLevelLabel.textColor = .lightGray
+            autoAssignSwitch.isOn = false
+        }
     }
     
     func navigateToLogin() {

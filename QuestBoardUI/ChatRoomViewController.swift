@@ -51,7 +51,6 @@ class ChatRoomViewController: UIViewController {
             self.tabBarController?.selectedIndex = 4;
         } else {
             getChatRooms()
-            self.tableView.reloadData()
         }
     }
     

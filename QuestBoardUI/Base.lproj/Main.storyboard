@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X66-lX-dLK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X66-lX-dLK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -100,7 +100,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYL-nW-CLR">
-                                        <rect key="frame" x="34" y="116" width="76" height="21"/>
+                                        <rect key="frame" x="34" y="116" width="347" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -114,7 +114,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email@email.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHS-9V-fhe">
-                                        <rect key="frame" x="34" y="188" width="133" height="21"/>
+                                        <rect key="frame" x="34" y="188" width="347" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -172,7 +172,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="83" id="mwm-Vc-hNC">
-                                                <rect key="frame" x="0.0" y="24.5" width="344" height="83"/>
+                                                <rect key="frame" x="0.0" y="28" width="344" height="83"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mwm-Vc-hNC" id="56Q-BH-7U1">
                                                     <rect key="frame" x="0.0" y="0.0" width="344" height="83"/>
@@ -249,17 +249,19 @@
                         <outlet property="email" destination="aHS-9V-fhe" id="LvX-xo-yWj"/>
                         <outlet property="emailLabel" destination="0me-N9-Xug" id="gkc-qF-14Y"/>
                         <outlet property="everydayProfileLevel" destination="HfO-Jz-YWP" id="OoU-FU-BLg"/>
+                        <outlet property="everydayProfileLevelLabel" destination="noo-Sn-AY4" id="GsI-2N-5Yd"/>
                         <outlet property="everydayProfileTitle" destination="ei8-Dh-bec" id="Aek-TF-qcC"/>
                         <outlet property="everydayProfleExpBar" destination="63S-za-Gwi" id="I2J-z9-H4Y"/>
                         <outlet property="mobileNumber" destination="E54-am-Tj7" id="CFO-Uk-mME"/>
                         <outlet property="mobileNumberLabel" destination="PIy-n5-Hq0" id="ESc-T7-fVU"/>
+                        <outlet property="skillsetProfileTableView" destination="kiA-Ji-QTw" id="tFn-CJ-w9K"/>
                         <outlet property="username" destination="KYL-nW-CLR" id="lc8-f9-oVu"/>
                         <outlet property="usernameLabel" destination="w2o-3D-VBy" id="GVk-Hr-6q0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lr-Pq-k5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1665" y="962"/>
+            <point key="canvasLocation" x="-1665.217391304348" y="961.60714285714278"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="5Yy-3y-mFR">
@@ -570,7 +572,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="200" id="jiV-2q-tYR" customClass="AllQuestTableViewCell" customModule="QuestBoardUI" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jiV-2q-tYR" id="KXK-7Q-gcc">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -763,7 +765,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="zr4-3c-52y" customClass="QuestTableViewCell" customModule="QuestBoardUI" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="150"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zr4-3c-52y" id="Pry-qq-v1P">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
@@ -970,7 +972,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="chatRoomCell" rowHeight="82" id="sWk-hl-rfm" customClass="ChatRoomTableViewCell" customModule="QuestBoardUI" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="82"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sWk-hl-rfm" id="Uo9-YR-Jtn">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
