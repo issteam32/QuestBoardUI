@@ -48,7 +48,7 @@ public class NetworkManager {
                 }
                 do {
                     let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
-                    if let responseJSON = responseJSON as? [String: Any] {
+                    if let responseJSON = responseJSON as? [String: Any] {                        
                         print(responseJSON)
                         block(responseJSON)
                     }

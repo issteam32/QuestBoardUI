@@ -19,7 +19,7 @@ class NewQuestProposalViewController: UIViewController {
     @IBOutlet weak var estimatedCompletionDatePicker: UIDatePicker!
     @IBOutlet weak var sendProposalBtn: UIButton!
     
-    let questId: Int = 1
+    let questId: Int = 2
     var username: String = ""
     
     var moneyAnswerJsonTemp = "{\"concern\":\"money\",\"operator\":\"<\",\"evaluation\":\"#?\"}"
@@ -51,7 +51,7 @@ class NewQuestProposalViewController: UIViewController {
    
     @IBAction func sendProposal(_ sender: Any) {
         self.createProposal()
-        self.showToast(message: "test message")
+//        self.showToast(message: "test message")
     }
     
     func createProposal() {
@@ -69,25 +69,50 @@ class NewQuestProposalViewController: UIViewController {
 //          "Authorization": "Bearer \(tmpToken)"
 //        ]
         
+        var proposaljson: [String: Any] = [String: Any]()
         var json: [String: Any] = [String: Any]()
         
-        var answersJson: [String] = [String]()
+//        var answersJson: [String] = [String]()
+        var answersJson = ""
         if estimatedCost != "" {
-            answersJson.append(moneyAnswerJson)
+            answersJson += moneyAnswerJson
         }
         
         if estimatedDate != "" {
-            answersJson.append(timeAnswerJson)
+            if answersJson.count > 0 {
+                answersJson += ",\(timeAnswerJson)"
+            } else {
+                answersJson += timeAnswerJson
+            }
         }
         
-        let concernAnswered: [String: Any] = ["version": 1, "concernAnswered": answersJson, "proposalDetail":""]
-        json["proposalDetails"] = proposalDetails
-        json["proposalJson"] = concernAnswered
-        json["questId"] = self.questId
-        json["username"] = self.username
+        let concernAnswered: String = "{\"version\":1,\"concernAnswered\":[\(answersJson)],\"proposalDetail\":\"\"}"
         
+//        let concernAnswered: [String: Any] = ["version": 1, "concernAnswered": answersJson, "proposalDetail":""]
+        proposaljson["proposalDetails"] = proposalDetails
+        proposaljson["proposalJson"] = concernAnswered
+        proposaljson["questId"] = self.questId
+        proposaljson["username"] = self.username
+        json["proposal"] = proposaljson
+        
+        var skillsetProfileJson: [[String: Any]] = [[String: Any]]()
+        if let skillsetProfiles = MyProfileManager.skillsetProfiles {
+            for ss in skillsetProfiles {
+                let ssp: [String: Any] = ["userId": ss.userId!, "skill": ss.skill!, "level": ss.professionalLevel!, "title": ss.professionalLevel!, "skillEndorsed": ss.skillEndorsed!]
+
+                skillsetProfileJson.append(ssp)
+            }
+        }
+        
+        json["skillSetProfileList"] = skillsetProfileJson
+        
+        print(json)
         NetworkManager.call(url: "/create-quest-proposal", json: json, Completion: {(responseJSON) in
-            self.showToast(message: "Proposal sent")
+            if let errorStatus = responseJSON["statusCode"] as? Int {
+                self.showToast(message: responseJSON["message"] as! String)
+            } else {
+                self.showToast(message: "Proposal sent")
+            }
             DispatchQueue.main.async {
                 self.dismiss(animated: false, completion: nil)
             }
