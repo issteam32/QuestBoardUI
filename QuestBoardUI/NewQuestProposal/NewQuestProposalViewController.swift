@@ -59,10 +59,10 @@ class NewQuestProposalViewController: UIViewController {
         let estimatedCost = tbEstimatedCost.text!
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        let estimatedDate = dateFormatter.string(from: estimatedCompletionDatePicker.date)
-        
+        let estimatedDate = Utils.convertDateFromStr(dtStr: dateFormatter.string(from: estimatedCompletionDatePicker.date))
+                
         let moneyAnswerJson = moneyAnswerJsonTemp.replacingOccurrences(of: "#?", with: estimatedCost)
-        let timeAnswerJson = timeAnswerJsonTemp.replacingOccurrences(of: "#?", with: estimatedDate)
+        let timeAnswerJson = timeAnswerJsonTemp.replacingOccurrences(of: "#?", with: String(format: "%f", estimatedDate))
         
 //        let headers = [
 //          "Content-Type": "application/json",
@@ -78,7 +78,7 @@ class NewQuestProposalViewController: UIViewController {
             answersJson += moneyAnswerJson
         }
         
-        if estimatedDate != "" {
+        if estimatedDate > 0 {
             if answersJson.count > 0 {
                 answersJson += ",\(timeAnswerJson)"
             } else {
