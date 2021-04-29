@@ -38,7 +38,17 @@ class AllQuestTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        showQuestView(questArray[indexPath.row])
+        
+        if(questArray[indexPath.row].status == "Taken")
+        {
+            showQuestView(questArray[indexPath.row])
+        }
+        
+        else
+        {
+            showProposeView(questArray[indexPath.row])
+        }
+       
     }
     
     
@@ -56,6 +66,14 @@ class AllQuestTableViewController: UITableViewController {
         
         questVC.quest = item
         questVC.isNew = false
+        self.navigationController?.pushViewController(questVC, animated: true)
+    }
+    
+    func showProposeView(_ item: Quest)
+    {
+        
+        //to push view without defining segueway
+        let questVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "allProposal") as! AllProposalTableViewController
         self.navigationController?.pushViewController(questVC, animated: true)
     }
     
@@ -112,5 +130,7 @@ class AllQuestTableViewController: UITableViewController {
         questArray.append(quest2)
         questArray.append(quest3)
     }
+
+    
 
 }

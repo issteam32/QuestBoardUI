@@ -27,6 +27,10 @@
 		6639136125F4BF7600FB5394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6639135F25F4BF7600FB5394 /* LaunchScreen.storyboard */; };
 		6639136C25F4BF7700FB5394 /* QuestBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639136B25F4BF7700FB5394 /* QuestBoardUITests.swift */; };
 		6639137725F4BF7700FB5394 /* QuestBoardUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639137625F4BF7700FB5394 /* QuestBoardUIUITests.swift */; };
+		6639F898263B03D7005EC8DE /* AllProposalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639F897263B03D7005EC8DE /* AllProposalTableViewController.swift */; };
+		6639F89A263B04D1005EC8DE /* AllProposalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639F899263B04D1005EC8DE /* AllProposalTableViewCell.swift */; };
+		6639F89C263B0A52005EC8DE /* Proposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639F89B263B0A52005EC8DE /* Proposal.swift */; };
+		6639F89E263B1C12005EC8DE /* ProposalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639F89D263B1C12005EC8DE /* ProposalDetailsViewController.swift */; };
 		6648F36A261F0FD400AC001F /* walkdog.png in Resources */ = {isa = PBXBuildFile; fileRef = 6648F369261F0FD400AC001F /* walkdog.png */; };
 		6648F36C261F11B700AC001F /* dabao.png in Resources */ = {isa = PBXBuildFile; fileRef = 6648F36B261F11B700AC001F /* dabao.png */; };
 		6648F36E261F120400AC001F /* repair.png in Resources */ = {isa = PBXBuildFile; fileRef = 6648F36D261F120400AC001F /* repair.png */; };
@@ -113,6 +117,10 @@
 		6639137225F4BF7700FB5394 /* QuestBoardUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuestBoardUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6639137625F4BF7700FB5394 /* QuestBoardUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestBoardUIUITests.swift; sourceTree = "<group>"; };
 		6639137825F4BF7700FB5394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6639F897263B03D7005EC8DE /* AllProposalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProposalTableViewController.swift; sourceTree = "<group>"; };
+		6639F899263B04D1005EC8DE /* AllProposalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProposalTableViewCell.swift; sourceTree = "<group>"; };
+		6639F89B263B0A52005EC8DE /* Proposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposal.swift; sourceTree = "<group>"; };
+		6639F89D263B1C12005EC8DE /* ProposalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposalDetailsViewController.swift; sourceTree = "<group>"; };
 		6648F369261F0FD400AC001F /* walkdog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walkdog.png; sourceTree = "<group>"; };
 		6648F36B261F11B700AC001F /* dabao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dabao.png; sourceTree = "<group>"; };
 		6648F36D261F120400AC001F /* repair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = repair.png; sourceTree = "<group>"; };
@@ -206,6 +214,7 @@
 				6EF18AF526380EE4005B2C15 /* EverydayProfile.swift */,
 				6EF18AFA26380F8C005B2C15 /* MyProfile.swift */,
 				6EF18AFF26381091005B2C15 /* SkillsetProfile.swift */,
+				6639F89B263B0A52005EC8DE /* Proposal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,6 +358,9 @@
 			children = (
 				66F13522263704D1001F35A3 /* AllQuestTableViewController.swift */,
 				66F1352826371A74001F35A3 /* AllQuestTableViewCell.swift */,
+				6639F897263B03D7005EC8DE /* AllProposalTableViewController.swift */,
+				6639F899263B04D1005EC8DE /* AllProposalTableViewCell.swift */,
+				6639F89D263B1C12005EC8DE /* ProposalDetailsViewController.swift */,
 			);
 			path = AllQuest;
 			sourceTree = "<group>";
@@ -701,15 +713,19 @@
 				6EF18AEC2637F1CA005B2C15 /* NetworkManager.swift in Sources */,
 				66270131261CC38500256749 /* TabBarViewController.swift in Sources */,
 				663315E126185A16001150A2 /* LoginViewController.swift in Sources */,
+				6639F89C263B0A52005EC8DE /* Proposal.swift in Sources */,
 				6EC88415263893990099C4B1 /* ProfileViewController.swift in Sources */,
 				6EF18AF1263804FC005B2C15 /* MyProfileManager.swift in Sources */,
 				6E46B75D263320EB00590F56 /* ChatRoomViewController.swift in Sources */,
 				6621E5742631D2C800BA6658 /* HomeViewController.swift in Sources */,
+				6639F89E263B1C12005EC8DE /* ProposalDetailsViewController.swift in Sources */,
 				6EF18AF626380EE4005B2C15 /* EverydayProfile.swift in Sources */,
 				66F1352926371A74001F35A3 /* AllQuestTableViewCell.swift in Sources */,
+				6639F898263B03D7005EC8DE /* AllProposalTableViewController.swift in Sources */,
 				6678B45A2620328F003395DE /* NewQuestViewController.swift in Sources */,
 				66FDF0B5261B5F4F00155EDF /* LoginOrProfileNavigationViewController.swift in Sources */,
 				6621E5762631D42C00BA6658 /* HomeTableViewCell.swift in Sources */,
+				6639F89A263B04D1005EC8DE /* AllProposalTableViewCell.swift in Sources */,
 				6EF18AFB26380F8C005B2C15 /* MyProfile.swift in Sources */,
 				6639135925F4BF6E00FB5394 /* ViewController.swift in Sources */,
 				6639135525F4BF6E00FB5394 /* AppDelegate.swift in Sources */,
