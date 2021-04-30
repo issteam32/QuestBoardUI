@@ -36,6 +36,7 @@
 		6648F36E261F120400AC001F /* repair.png in Resources */ = {isa = PBXBuildFile; fileRef = 6648F36D261F120400AC001F /* repair.png */; };
 		6648F370261F125200AC001F /* queue.png in Resources */ = {isa = PBXBuildFile; fileRef = 6648F36F261F125200AC001F /* queue.png */; };
 		6648F372261F45A500AC001F /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648F371261F45A500AC001F /* ItemsTableViewController.swift */; };
+		66491CB8263BA36B00825A23 /* AllQuestdetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66491CB7263BA36B00825A23 /* AllQuestdetailsViewController.swift */; };
 		6678B45A2620328F003395DE /* NewQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6678B4592620328F003395DE /* NewQuestViewController.swift */; };
 		66F13523263704D1001F35A3 /* AllQuestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F13522263704D1001F35A3 /* AllQuestTableViewController.swift */; };
 		66F1352926371A74001F35A3 /* AllQuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1352826371A74001F35A3 /* AllQuestTableViewCell.swift */; };
@@ -127,6 +128,7 @@
 		6648F36F261F125200AC001F /* queue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = queue.png; sourceTree = "<group>"; };
 		6648F371261F45A500AC001F /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 		6648F373261F5A6600AC001F /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
+		66491CB7263BA36B00825A23 /* AllQuestdetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuestdetailsViewController.swift; sourceTree = "<group>"; };
 		6678B4592620328F003395DE /* NewQuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuestViewController.swift; sourceTree = "<group>"; };
 		66F13522263704D1001F35A3 /* AllQuestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuestTableViewController.swift; sourceTree = "<group>"; };
 		66F135262637082F001F35A3 /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 				6639F897263B03D7005EC8DE /* AllProposalTableViewController.swift */,
 				6639F899263B04D1005EC8DE /* AllProposalTableViewCell.swift */,
 				6639F89D263B1C12005EC8DE /* ProposalDetailsViewController.swift */,
+				66491CB7263BA36B00825A23 /* AllQuestdetailsViewController.swift */,
 			);
 			path = AllQuest;
 			sourceTree = "<group>";
@@ -738,6 +741,7 @@
 				6E46B74B263320A000590F56 /* ChatViewController.swift in Sources */,
 				6EF18B0026381091005B2C15 /* SkillsetProfile.swift in Sources */,
 				662682E1261E0CFD00562DCA /* CategoryCollectionViewController.swift in Sources */,
+				66491CB8263BA36B00825A23 /* AllQuestdetailsViewController.swift in Sources */,
 				662682E6261E125F00562DCA /* Category.swift in Sources */,
 				662682EA261E13FD00562DCA /* Constants.swift in Sources */,
 				662EF192262F33C300DBDAE1 /* QuestDetailsViewController.swift in Sources */,

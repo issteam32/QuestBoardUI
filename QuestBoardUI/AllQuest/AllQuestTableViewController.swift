@@ -73,7 +73,7 @@ class AllQuestTableViewController: UITableViewController {
     {
         
         //to push view without defining segueway
-        let questVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "allProposal") as! AllProposalTableViewController
+        let questVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "allQuestDetails") as! AllQuestdetailsViewController
         self.navigationController?.pushViewController(questVC, animated: true)
     }
     
@@ -94,10 +94,10 @@ class AllQuestTableViewController: UITableViewController {
         
         
         let quest1 = Quest()
-        quest1.id = 5
-        quest1.title = "Quest5"
+        quest1.id = 2
+        quest1.title = "Quest2"
         quest1.category = 0
-        quest1.description = "This is the description for quest5. Some help needed for XXXXXX location is at XXXXX"
+        quest1.description = "This is the description for quest2. Some help needed for XXXXXX location is at XXXXX"
         quest1.reward = "3000"
         quest1.location = "Some where in yishun"
         quest1.skillRequired = "Nil"

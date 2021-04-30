@@ -33,7 +33,7 @@ class AllQuestTableViewCell: UITableViewCell {
         if(item.status == "Posted") // the current user posted
         {
             statusColor.backgroundColor = UIColor.green
-            status.text = "Poted"
+            status.text = "Posted"
         }
         else if(item.status == "Taken") //the current user taken de quest
         {
