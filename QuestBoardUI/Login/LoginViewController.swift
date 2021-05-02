@@ -4,7 +4,7 @@
 //
 //  Created by Adam Teng Guan Tan on 3/4/21.
 //
-
+import ProgressHUD
 import UIKit
 
 class LoginViewController: UIViewController{
@@ -35,7 +35,7 @@ class LoginViewController: UIViewController{
     }
     
     @IBAction func btnLogin(_ sender: UIButton) {
-        self.navigateToProfile()
+        ProgressHUD.show()
         if(tbUserName.text == "" || tbPassword.text == "")
         {
             lbErrorMessage.text = "User name or password is empty"
@@ -73,12 +73,14 @@ class LoginViewController: UIViewController{
                         
                         if(self.loginToken == true)
                         {
-                            DispatchQueue.main.async {                                
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+                                ProgressHUD.dismiss()
                                 self.navigateToProfile()
-                            }
+                            })
                         }
                     }
                 } catch let error {
+                    ProgressHUD.dismiss()
                     print(error.localizedDescription)
                 }
             }

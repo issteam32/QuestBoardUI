@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class AllQuestTableViewController: UITableViewController {
 
@@ -14,7 +15,7 @@ class AllQuestTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadQuest()
+//        loadQuest()
         tableView.tableFooterView = UIView()
     }
     
@@ -85,50 +86,88 @@ class AllQuestTableViewController: UITableViewController {
 //            print("test")
 //                        })
 //
+        ProgressHUD.show("Loading your quests...")
         let parameters: [String : String] = ["type": "requestor"]
         
         NetworkManager.call(url: "/get-user-quest", json: parameters, Completion: {(response) in
-            print("test")
-            print(response["result"])
+//            print(response["result"])
+            if let respJSON = response["result"] as? [Any] {
+                self.questArray = [Quest]()
+                print(respJSON)
+                guard let jsonArray = respJSON as? [[String: Any]] else {
+                      return
+                }
+                print("###############################")
+                print(jsonArray)
+                for dic in jsonArray {
+                    print("inside")
+                    print(dic)
+                    var quest = Quest()
+                    quest.id = dic["id"] as? Int
+                    quest.awarded = dic["awarded"] as? Int
+                    quest.awardedTo = dic["awardedTo"] as? String
+                    quest.category = dic["category"] as! Int
+                    quest.categoryDesc = dic["categoryDesc"] as? String
+                    quest.createdDate = dic["createdDate"] as? String
+                    quest.description = dic["description"] as? String
+                    quest.difficultyLevel = dic["difficultyLevel"] as? String
+                    quest.location = dic["location"] as? String
+                    quest.requestor = dic["requestor"] as? String
+                    quest.reward = dic["reward"] as? String
+                    quest.rewardType = dic["rewardType"] as? Int
+                    quest.skillRequired = dic["skillRequired"] as? String
+                    quest.status = dic["status"] as? String
+                    quest.title = dic["title"] as? String
+                    quest.updatedDate = dic["updatedDate"] as? String
+                    
+                    self.questArray.append(quest)
+                    
+                }
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                    ProgressHUD.dismiss()
+                }
+            }
         })
         
-        
-        let quest1 = Quest()
-        quest1.id = 2
-        quest1.title = "Quest2"
-        quest1.category = 0
-        quest1.description = "This is the description for quest2. Some help needed for XXXXXX location is at XXXXX"
-        quest1.reward = "3000"
-        quest1.location = "Some where in yishun"
-        quest1.skillRequired = "Nil"
-        quest1.status = "Posted"
-
-        
-        let quest2 = Quest()
-        quest2.id = 6
-        quest2.title = "Quest6"
-        quest2.category = 0
-        quest2.description = "This is the description for quest6. Some help needed for XXXXXX location is at XXXXX"
-        quest2.reward = "5000"
-        quest2.location = "Some where in Serangoon"
-        quest2.skillRequired = "Able to stand very long"
-        quest2.status = "Posted"
-        
-        
-        let quest3 = Quest()
-        quest3.id = 7
-        quest3.title = "Quest7"
-        quest3.category = 0
-        quest3.description = "This is the description for quest7. Some help needed for XXXXXX location is at XXXXX"
-        quest3.reward = "1000"
-        quest3.location = "Some where in Bishan"
-        quest3.skillRequired = "Able to run"
-        quest3.status = "Taken"
-        
-        
-        questArray.append(quest1)
-        questArray.append(quest2)
-        questArray.append(quest3)
+//
+//        let quest1 = Quest()
+//        quest1.id = 2
+//        quest1.title = "Quest2"
+//        quest1.category = 0
+//        quest1.description = "This is the description for quest2. Some help needed for XXXXXX location is at XXXXX"
+//        quest1.reward = "3000"
+//        quest1.location = "Some where in yishun"
+//        quest1.skillRequired = "Nil"
+//        quest1.status = "Posted"
+//
+//
+//        let quest2 = Quest()
+//        quest2.id = 6
+//        quest2.title = "Quest6"
+//        quest2.category = 0
+//        quest2.description = "This is the description for quest6. Some help needed for XXXXXX location is at XXXXX"
+//        quest2.reward = "5000"
+//        quest2.location = "Some where in Serangoon"
+//        quest2.skillRequired = "Able to stand very long"
+//        quest2.status = "Posted"
+//
+//
+//        let quest3 = Quest()
+//        quest3.id = 7
+//        quest3.title = "Quest7"
+//        quest3.category = 0
+//        quest3.description = "This is the description for quest7. Some help needed for XXXXXX location is at XXXXX"
+//        quest3.reward = "1000"
+//        quest3.location = "Some where in Bishan"
+//        quest3.skillRequired = "Able to run"
+//        quest3.status = "Taken"
+//
+//
+//        questArray.append(quest1)
+//        questArray.append(quest2)
+//        questArray.append(quest3)
     }
 
     

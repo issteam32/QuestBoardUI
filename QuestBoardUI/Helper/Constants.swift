@@ -13,3 +13,4 @@ public let kIMAHENAME = "imageName"
 public let kOBJECTID = "objectId"
 
 public let apiPath: String = "https://questboard-api-gateway-pllorhkrga-as.a.run.app/api"
+public let firstPageIndex = 3;
