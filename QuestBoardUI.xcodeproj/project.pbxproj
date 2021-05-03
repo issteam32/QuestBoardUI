@@ -1,0 +1,1094 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0708766D6163E11FAFD3A3BE /* Pods_QuestBoardUI_QuestBoardUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A80FCE2873CCFD3A7F6B857 /* Pods_QuestBoardUI_QuestBoardUIUITests.framework */; };
+		6609682826305EBE00C489EB /* QuestTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6609682726305EBE00C489EB /* QuestTypeViewController.swift */; };
+		6618F255262DBFA0008326F4 /* QuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6618F254262DBFA0008326F4 /* QuestTableViewCell.swift */; };
+		6621E5742631D2C800BA6658 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621E5732631D2C800BA6658 /* HomeViewController.swift */; };
+		6621E5762631D42C00BA6658 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621E5752631D42C00BA6658 /* HomeTableViewCell.swift */; };
+		662682E1261E0CFD00562DCA /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662682E0261E0CFD00562DCA /* CategoryCollectionViewController.swift */; };
+		662682E3261E0DD900562DCA /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662682E2261E0DD900562DCA /* CategoryCollectionViewCell.swift */; };
+		662682E6261E125F00562DCA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662682E5261E125F00562DCA /* Category.swift */; };
+		662682EA261E13FD00562DCA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662682E9261E13FD00562DCA /* Constants.swift */; };
+		66270131261CC38500256749 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66270130261CC38500256749 /* TabBarViewController.swift */; };
+		662EF192262F33C300DBDAE1 /* QuestDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EF191262F33C300DBDAE1 /* QuestDetailsViewController.swift */; };
+		663315E126185A16001150A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663315E026185A16001150A2 /* LoginViewController.swift */; };
+		6639135525F4BF6E00FB5394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639135425F4BF6E00FB5394 /* AppDelegate.swift */; };
+		6639135725F4BF6E00FB5394 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639135625F4BF6E00FB5394 /* SceneDelegate.swift */; };
+		6639135925F4BF6E00FB5394 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639135825F4BF6E00FB5394 /* ViewController.swift */; };
+		6639135C25F4BF6E00FB5394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6639135A25F4BF6E00FB5394 /* Main.storyboard */; };
+		6639135E25F4BF7600FB5394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6639135D25F4BF7600FB5394 /* Assets.xcassets */; };
+		6639136125F4BF7600FB5394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6639135F25F4BF7600FB5394 /* LaunchScreen.storyboard */; };
+		6639136C25F4BF7700FB5394 /* QuestBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639136B25F4BF7700FB5394 /* QuestBoardUITests.swift */; };
+		6639137725F4BF7700FB5394 /* QuestBoardUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639137625F4BF7700FB5394 /* QuestBoardUIUITests.swift */; };
+		6639F898263B03D7005EC8DE /* AllProposalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639F897263B03D7005EC8DE /* AllProposalTableViewController.swift */; };
+		6639F89A263B04D1005EC8DE /* AllProposalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639F899263B04D1005EC8DE /* AllProposalTableViewCell.swift */; };
+		6639F89C263B0A52005EC8DE /* Proposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639F89B263B0A52005EC8DE /* Proposal.swift */; };
+		6639F89E263B1C12005EC8DE /* ProposalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639F89D263B1C12005EC8DE /* ProposalDetailsViewController.swift */; };
+		6648F36A261F0FD400AC001F /* walkdog.png in Resources */ = {isa = PBXBuildFile; fileRef = 6648F369261F0FD400AC001F /* walkdog.png */; };
+		6648F36C261F11B700AC001F /* dabao.png in Resources */ = {isa = PBXBuildFile; fileRef = 6648F36B261F11B700AC001F /* dabao.png */; };
+		6648F36E261F120400AC001F /* repair.png in Resources */ = {isa = PBXBuildFile; fileRef = 6648F36D261F120400AC001F /* repair.png */; };
+		6648F370261F125200AC001F /* queue.png in Resources */ = {isa = PBXBuildFile; fileRef = 6648F36F261F125200AC001F /* queue.png */; };
+		6648F372261F45A500AC001F /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648F371261F45A500AC001F /* ItemsTableViewController.swift */; };
+		66491CB8263BA36B00825A23 /* AllQuestdetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66491CB7263BA36B00825A23 /* AllQuestdetailsViewController.swift */; };
+		6678B45A2620328F003395DE /* NewQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6678B4592620328F003395DE /* NewQuestViewController.swift */; };
+		66F13523263704D1001F35A3 /* AllQuestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F13522263704D1001F35A3 /* AllQuestTableViewController.swift */; };
+		66F1352926371A74001F35A3 /* AllQuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F1352826371A74001F35A3 /* AllQuestTableViewCell.swift */; };
+		66F7289D2620554B007BCFE0 /* message-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F7289C2620554B007BCFE0 /* message-7.png */; };
+		66F7289F26205573007BCFE0 /* house-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F7289E26205573007BCFE0 /* house-7.png */; };
+		66F728A12620558E007BCFE0 /* man-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F728A02620558E007BCFE0 /* man-7.png */; };
+		66F728A5262055C0007BCFE0 /* plus-simple-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F728A4262055BF007BCFE0 /* plus-simple-7.png */; };
+		66F728A7262055CA007BCFE0 /* server-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F728A6262055CA007BCFE0 /* server-7.png */; };
+		66F728A9262055D3007BCFE0 /* square-individual-nine-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F728A8262055D3007BCFE0 /* square-individual-nine-7.png */; };
+		66F728AB262055DC007BCFE0 /* star-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F728AA262055DC007BCFE0 /* star-7.png */; };
+		66F728AD262055E4007BCFE0 /* text-list-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F728AC262055E4007BCFE0 /* text-list-7.png */; };
+		66F9DCD826333CFF000D3CA0 /* ChatToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F9DCD726333CFF000D3CA0 /* ChatToken.swift */; };
+		66FDF0AB261B486500155EDF /* home-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FDF0A9261B486500155EDF /* home-7.png */; };
+		66FDF0B5261B5F4F00155EDF /* LoginOrProfileNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FDF0B4261B5F4F00155EDF /* LoginOrProfileNavigationViewController.swift */; };
+		6E40CC132639ABB900711354 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E40CC122639ABB900711354 /* Utils.swift */; };
+		6E46B74026331F7B00590F56 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 6E46B73F26331F7B00590F56 /* www */; };
+		6E46B74B263320A000590F56 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E46B74A2633209F00590F56 /* ChatViewController.swift */; };
+		6E46B75C263320EB00590F56 /* ChatRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E46B75A263320EB00590F56 /* ChatRoomViewController.xib */; };
+		6E46B75D263320EB00590F56 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E46B75B263320EB00590F56 /* ChatRoomViewController.swift */; };
+		6E46B7772633223200590F56 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6E46B7762633223200590F56 /* .gitignore */; };
+		6E7E5DAE263FEF4F00B21D54 /* NewProProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E5DAD263FEF4E00B21D54 /* NewProProfileViewController.swift */; };
+		6EB1E7D32636B80D00D1AFF4 /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648F373261F5A6600AC001F /* Quest.swift */; };
+		6EB1E7E82637321000D1AFF4 /* NewQuestProposalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB1E7E72637321000D1AFF4 /* NewQuestProposalViewController.swift */; };
+		6EC883FF26386D380099C4B1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC883FE26386D380099C4B1 /* Item.swift */; };
+		6EC88415263893990099C4B1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF18B0526381212005B2C15 /* ProfileViewController.swift */; };
+		6EF18AEC2637F1CA005B2C15 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF18AEB2637F1CA005B2C15 /* NetworkManager.swift */; };
+		6EF18AF1263804FC005B2C15 /* MyProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF18AF0263804FC005B2C15 /* MyProfileManager.swift */; };
+		6EF18AF626380EE4005B2C15 /* EverydayProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF18AF526380EE4005B2C15 /* EverydayProfile.swift */; };
+		6EF18AFB26380F8C005B2C15 /* MyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF18AFA26380F8C005B2C15 /* MyProfile.swift */; };
+		6EF18B0026381091005B2C15 /* SkillsetProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF18AFF26381091005B2C15 /* SkillsetProfile.swift */; };
+		6EF18B0B2638602E005B2C15 /* LoginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF18B0A2638602E005B2C15 /* LoginViewControllerDelegate.swift */; };
+		B8221F1BA4A9DFA2D57E049C /* Pods_QuestBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C456EE114CBD4FE0052F0EB5 /* Pods_QuestBoardUITests.framework */; };
+		BF26A3CE1F6F65A74490412E /* Pods_QuestBoardUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739B633625F695ED4EF1928 /* Pods_QuestBoardUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6639136825F4BF7700FB5394 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6639134925F4BF6E00FB5394 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6639135025F4BF6E00FB5394;
+			remoteInfo = QuestBoardUI;
+		};
+		6639137325F4BF7700FB5394 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6639134925F4BF6E00FB5394 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6639135025F4BF6E00FB5394;
+			remoteInfo = QuestBoardUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48974C50563822BD83CCC09D /* Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig"; path = "Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests/Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4A80FCE2873CCFD3A7F6B857 /* Pods_QuestBoardUI_QuestBoardUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestBoardUI_QuestBoardUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		649284EA32573C987D475226 /* Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests/Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		660930B6263875CF00457A4F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6609682726305EBE00C489EB /* QuestTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestTypeViewController.swift; sourceTree = "<group>"; };
+		6618F254262DBFA0008326F4 /* QuestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestTableViewCell.swift; sourceTree = "<group>"; };
+		6621E5732631D2C800BA6658 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6621E5752631D42C00BA6658 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		662682E0261E0CFD00562DCA /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
+		662682E2261E0DD900562DCA /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		662682E5261E125F00562DCA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		662682E9261E13FD00562DCA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		66270130261CC38500256749 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		662EF191262F33C300DBDAE1 /* QuestDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDetailsViewController.swift; sourceTree = "<group>"; };
+		663315E026185A16001150A2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6639135125F4BF6E00FB5394 /* QuestBoardUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestBoardUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6639135425F4BF6E00FB5394 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6639135625F4BF6E00FB5394 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6639135825F4BF6E00FB5394 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6639135B25F4BF6E00FB5394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6639135D25F4BF7600FB5394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6639136025F4BF7600FB5394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6639136225F4BF7600FB5394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6639136725F4BF7700FB5394 /* QuestBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuestBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6639136B25F4BF7700FB5394 /* QuestBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestBoardUITests.swift; sourceTree = "<group>"; };
+		6639136D25F4BF7700FB5394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6639137225F4BF7700FB5394 /* QuestBoardUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuestBoardUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6639137625F4BF7700FB5394 /* QuestBoardUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestBoardUIUITests.swift; sourceTree = "<group>"; };
+		6639137825F4BF7700FB5394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6639F897263B03D7005EC8DE /* AllProposalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProposalTableViewController.swift; sourceTree = "<group>"; };
+		6639F899263B04D1005EC8DE /* AllProposalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProposalTableViewCell.swift; sourceTree = "<group>"; };
+		6639F89B263B0A52005EC8DE /* Proposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposal.swift; sourceTree = "<group>"; };
+		6639F89D263B1C12005EC8DE /* ProposalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposalDetailsViewController.swift; sourceTree = "<group>"; };
+		6648F369261F0FD400AC001F /* walkdog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walkdog.png; sourceTree = "<group>"; };
+		6648F36B261F11B700AC001F /* dabao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dabao.png; sourceTree = "<group>"; };
+		6648F36D261F120400AC001F /* repair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = repair.png; sourceTree = "<group>"; };
+		6648F36F261F125200AC001F /* queue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = queue.png; sourceTree = "<group>"; };
+		6648F371261F45A500AC001F /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
+		6648F373261F5A6600AC001F /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
+		66491CB7263BA36B00825A23 /* AllQuestdetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuestdetailsViewController.swift; sourceTree = "<group>"; };
+		6678B4592620328F003395DE /* NewQuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuestViewController.swift; sourceTree = "<group>"; };
+		66F13522263704D1001F35A3 /* AllQuestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuestTableViewController.swift; sourceTree = "<group>"; };
+		66F135262637082F001F35A3 /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
+		66F1352826371A74001F35A3 /* AllQuestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuestTableViewCell.swift; sourceTree = "<group>"; };
+		66F7289C2620554B007BCFE0 /* message-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message-7.png"; sourceTree = "<group>"; };
+		66F7289E26205573007BCFE0 /* house-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-7.png"; sourceTree = "<group>"; };
+		66F728A02620558E007BCFE0 /* man-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-7.png"; sourceTree = "<group>"; };
+		66F728A4262055BF007BCFE0 /* plus-simple-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-simple-7.png"; sourceTree = "<group>"; };
+		66F728A6262055CA007BCFE0 /* server-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "server-7.png"; sourceTree = "<group>"; };
+		66F728A8262055D3007BCFE0 /* square-individual-nine-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-individual-nine-7.png"; sourceTree = "<group>"; };
+		66F728AA262055DC007BCFE0 /* star-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-7.png"; sourceTree = "<group>"; };
+		66F728AC262055E4007BCFE0 /* text-list-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-list-7.png"; sourceTree = "<group>"; };
+		66F9DCD726333CFF000D3CA0 /* ChatToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatToken.swift; sourceTree = "<group>"; };
+		66FDF0A9261B486500155EDF /* home-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-7.png"; sourceTree = "<group>"; };
+		66FDF0B4261B5F4F00155EDF /* LoginOrProfileNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrProfileNavigationViewController.swift; sourceTree = "<group>"; };
+		6E40CC122639ABB900711354 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		6E46B73F26331F7B00590F56 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		6E46B74A2633209F00590F56 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		6E46B75A263320EB00590F56 /* ChatRoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatRoomViewController.xib; path = QuestBoardUI/ChatRoomViewController.xib; sourceTree = SOURCE_ROOT; };
+		6E46B75B263320EB00590F56 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatRoomViewController.swift; path = QuestBoardUI/ChatRoomViewController.swift; sourceTree = SOURCE_ROOT; };
+		6E46B7762633223200590F56 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6E7E5DAD263FEF4E00B21D54 /* NewProProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProProfileViewController.swift; sourceTree = "<group>"; };
+		6E8CEB1126386B6A004F48A0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../../../../SwiftProjects/Item.swift; sourceTree = "<group>"; };
+		6EB1E7E72637321000D1AFF4 /* NewQuestProposalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuestProposalViewController.swift; sourceTree = "<group>"; };
+		6EC883FA26386D250099C4B1 /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Quest.swift; path = QuestBoardUI/Model/Quest.swift; sourceTree = "<group>"; };
+		6EC883FE26386D380099C4B1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Item.swift; path = QuestBoardUI/Model/Item.swift; sourceTree = "<group>"; };
+		6EF18AEB2637F1CA005B2C15 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6EF18AF0263804FC005B2C15 /* MyProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileManager.swift; sourceTree = "<group>"; };
+		6EF18AF526380EE4005B2C15 /* EverydayProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverydayProfile.swift; sourceTree = "<group>"; };
+		6EF18AFA26380F8C005B2C15 /* MyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfile.swift; sourceTree = "<group>"; };
+		6EF18AFF26381091005B2C15 /* SkillsetProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsetProfile.swift; sourceTree = "<group>"; };
+		6EF18B0526381212005B2C15 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6EF18B0A2638602E005B2C15 /* LoginViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerDelegate.swift; sourceTree = "<group>"; };
+		8739B633625F695ED4EF1928 /* Pods_QuestBoardUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestBoardUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA88DCB5FA6E44620771B752 /* Pods-QuestBoardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardUITests.debug.xcconfig"; path = "Target Support Files/Pods-QuestBoardUITests/Pods-QuestBoardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AADF3312CAE9CB7DB7DBB029 /* Pods-QuestBoardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardUITests.release.xcconfig"; path = "Target Support Files/Pods-QuestBoardUITests/Pods-QuestBoardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C456EE114CBD4FE0052F0EB5 /* Pods_QuestBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2727C3246A793CBFF5A2554 /* Pods-QuestBoardUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardUI.release.xcconfig"; path = "Target Support Files/Pods-QuestBoardUI/Pods-QuestBoardUI.release.xcconfig"; sourceTree = "<group>"; };
+		DEC1B456C5E130F155A16E72 /* Pods-QuestBoardUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestBoardUI.debug.xcconfig"; path = "Target Support Files/Pods-QuestBoardUI/Pods-QuestBoardUI.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6639134E25F4BF6E00FB5394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF26A3CE1F6F65A74490412E /* Pods_QuestBoardUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6639136425F4BF7700FB5394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8221F1BA4A9DFA2D57E049C /* Pods_QuestBoardUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6639136F25F4BF7700FB5394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0708766D6163E11FAFD3A3BE /* Pods_QuestBoardUI_QuestBoardUIUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6621E5722631D2B200BA6658 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6621E5732631D2C800BA6658 /* HomeViewController.swift */,
+				6621E5752631D42C00BA6658 /* HomeTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		662682E4261E124600562DCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E8CEB1126386B6A004F48A0 /* Item.swift */,
+				662682E5261E125F00562DCA /* Category.swift */,
+				6648F373261F5A6600AC001F /* Quest.swift */,
+				66F9DCD726333CFF000D3CA0 /* ChatToken.swift */,
+				6EF18AF526380EE4005B2C15 /* EverydayProfile.swift */,
+				6EF18AFA26380F8C005B2C15 /* MyProfile.swift */,
+				6EF18AFF26381091005B2C15 /* SkillsetProfile.swift */,
+				6639F89B263B0A52005EC8DE /* Proposal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		662682E7261E13DD00562DCA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				662682E9261E13FD00562DCA /* Constants.swift */,
+				6EF18AEB2637F1CA005B2C15 /* NetworkManager.swift */,
+				6EF18AF0263804FC005B2C15 /* MyProfileManager.swift */,
+				6EF18B0A2638602E005B2C15 /* LoginViewControllerDelegate.swift */,
+				6E40CC122639ABB900711354 /* Utils.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		663315DE26184CC9001150A2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				663315E026185A16001150A2 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		663315DF26184CD0001150A2 /* QuestSelection */ = {
+			isa = PBXGroup;
+			children = (
+				662682E0261E0CFD00562DCA /* CategoryCollectionViewController.swift */,
+				6648F371261F45A500AC001F /* ItemsTableViewController.swift */,
+				6618F254262DBFA0008326F4 /* QuestTableViewCell.swift */,
+				662EF191262F33C300DBDAE1 /* QuestDetailsViewController.swift */,
+				6609682726305EBE00C489EB /* QuestTypeViewController.swift */,
+			);
+			path = QuestSelection;
+			sourceTree = "<group>";
+		};
+		6639134825F4BF6E00FB5394 = {
+			isa = PBXGroup;
+			children = (
+				660930B6263875CF00457A4F /* ProfileViewController.swift */,
+				6EC883FE26386D380099C4B1 /* Item.swift */,
+				6EC883FA26386D250099C4B1 /* Quest.swift */,
+				6E46B7762633223200590F56 /* .gitignore */,
+				6639135325F4BF6E00FB5394 /* QuestBoardUI */,
+				6639136A25F4BF7700FB5394 /* QuestBoardUITests */,
+				6639137525F4BF7700FB5394 /* QuestBoardUIUITests */,
+				6639135225F4BF6E00FB5394 /* Products */,
+				940CD03849122AA3BE9DDAD8 /* Pods */,
+				C712BEDD34EFF8FE9AB2F5AB /* Frameworks */,
+				6E8CEB0D26386B3B004F48A0 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		6639135225F4BF6E00FB5394 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6639135125F4BF6E00FB5394 /* QuestBoardUI.app */,
+				6639136725F4BF7700FB5394 /* QuestBoardUITests.xctest */,
+				6639137225F4BF7700FB5394 /* QuestBoardUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6639135325F4BF6E00FB5394 /* QuestBoardUI */ = {
+			isa = PBXGroup;
+			children = (
+				6EF18B04263811F7005B2C15 /* Profile */,
+				6EB1E7E6263731F900D1AFF4 /* NewQuestProposal */,
+				66F13521263704A8001F35A3 /* AllQuest */,
+				6E46B74F263320B700590F56 /* ChatRoom */,
+				6E46B7492633209F00590F56 /* Chat */,
+				6E46B73F26331F7B00590F56 /* www */,
+				6621E5722631D2B200BA6658 /* Home */,
+				6678B45826203270003395DE /* NewQuest */,
+				6648F366261F082400AC001F /* CategoryImage */,
+				6648F365261EF91A00AC001F /* CustomCells */,
+				662682E7261E13DD00562DCA /* Helper */,
+				662682E4261E124600562DCA /* Model */,
+				66FDF0B1261B5A9300155EDF /* MainPage */,
+				663315DF26184CD0001150A2 /* QuestSelection */,
+				663315DE26184CC9001150A2 /* Login */,
+				6639135425F4BF6E00FB5394 /* AppDelegate.swift */,
+				6639135625F4BF6E00FB5394 /* SceneDelegate.swift */,
+				6639135825F4BF6E00FB5394 /* ViewController.swift */,
+				6639135A25F4BF6E00FB5394 /* Main.storyboard */,
+				6639135D25F4BF7600FB5394 /* Assets.xcassets */,
+				66FDF094261B43FA00155EDF /* icons */,
+				6639135F25F4BF7600FB5394 /* LaunchScreen.storyboard */,
+				6639136225F4BF7600FB5394 /* Info.plist */,
+			);
+			path = QuestBoardUI;
+			sourceTree = "<group>";
+		};
+		6639136A25F4BF7700FB5394 /* QuestBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6639136B25F4BF7700FB5394 /* QuestBoardUITests.swift */,
+				6639136D25F4BF7700FB5394 /* Info.plist */,
+			);
+			path = QuestBoardUITests;
+			sourceTree = "<group>";
+		};
+		6639137525F4BF7700FB5394 /* QuestBoardUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6639137625F4BF7700FB5394 /* QuestBoardUIUITests.swift */,
+				6639137825F4BF7700FB5394 /* Info.plist */,
+			);
+			path = QuestBoardUIUITests;
+			sourceTree = "<group>";
+		};
+		6648F365261EF91A00AC001F /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				662682E2261E0DD900562DCA /* CategoryCollectionViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		6648F366261F082400AC001F /* CategoryImage */ = {
+			isa = PBXGroup;
+			children = (
+				6648F36D261F120400AC001F /* repair.png */,
+				6648F36F261F125200AC001F /* queue.png */,
+				6648F36B261F11B700AC001F /* dabao.png */,
+				6648F369261F0FD400AC001F /* walkdog.png */,
+			);
+			path = CategoryImage;
+			sourceTree = "<group>";
+		};
+		6678B45826203270003395DE /* NewQuest */ = {
+			isa = PBXGroup;
+			children = (
+				6678B4592620328F003395DE /* NewQuestViewController.swift */,
+			);
+			path = NewQuest;
+			sourceTree = "<group>";
+		};
+		66F13521263704A8001F35A3 /* AllQuest */ = {
+			isa = PBXGroup;
+			children = (
+				66F13522263704D1001F35A3 /* AllQuestTableViewController.swift */,
+				66F1352826371A74001F35A3 /* AllQuestTableViewCell.swift */,
+				6639F897263B03D7005EC8DE /* AllProposalTableViewController.swift */,
+				6639F899263B04D1005EC8DE /* AllProposalTableViewCell.swift */,
+				6639F89D263B1C12005EC8DE /* ProposalDetailsViewController.swift */,
+				66491CB7263BA36B00825A23 /* AllQuestdetailsViewController.swift */,
+			);
+			path = AllQuest;
+			sourceTree = "<group>";
+		};
+		66FDF094261B43FA00155EDF /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				66F728AC262055E4007BCFE0 /* text-list-7.png */,
+				66F728AA262055DC007BCFE0 /* star-7.png */,
+				66F728A8262055D3007BCFE0 /* square-individual-nine-7.png */,
+				66F728A6262055CA007BCFE0 /* server-7.png */,
+				66F728A4262055BF007BCFE0 /* plus-simple-7.png */,
+				66F728A02620558E007BCFE0 /* man-7.png */,
+				66F7289C2620554B007BCFE0 /* message-7.png */,
+				66FDF0A9261B486500155EDF /* home-7.png */,
+				66F7289E26205573007BCFE0 /* house-7.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		66FDF0B1261B5A9300155EDF /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				66FDF0B4261B5F4F00155EDF /* LoginOrProfileNavigationViewController.swift */,
+				66270130261CC38500256749 /* TabBarViewController.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		6E46B7492633209F00590F56 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				6E46B74A2633209F00590F56 /* ChatViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		6E46B74F263320B700590F56 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				6E46B75B263320EB00590F56 /* ChatRoomViewController.swift */,
+				6E46B75A263320EB00590F56 /* ChatRoomViewController.xib */,
+			);
+			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		6E8CEB0D26386B3B004F48A0 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				66F135262637082F001F35A3 /* Quest.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		6EB1E7E6263731F900D1AFF4 /* NewQuestProposal */ = {
+			isa = PBXGroup;
+			children = (
+				6EB1E7E72637321000D1AFF4 /* NewQuestProposalViewController.swift */,
+			);
+			path = NewQuestProposal;
+			sourceTree = "<group>";
+		};
+		6EF18B04263811F7005B2C15 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6EF18B0526381212005B2C15 /* ProfileViewController.swift */,
+				6E7E5DAD263FEF4E00B21D54 /* NewProProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		940CD03849122AA3BE9DDAD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1B456C5E130F155A16E72 /* Pods-QuestBoardUI.debug.xcconfig */,
+				D2727C3246A793CBFF5A2554 /* Pods-QuestBoardUI.release.xcconfig */,
+				649284EA32573C987D475226 /* Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig */,
+				48974C50563822BD83CCC09D /* Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig */,
+				AA88DCB5FA6E44620771B752 /* Pods-QuestBoardUITests.debug.xcconfig */,
+				AADF3312CAE9CB7DB7DBB029 /* Pods-QuestBoardUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C712BEDD34EFF8FE9AB2F5AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8739B633625F695ED4EF1928 /* Pods_QuestBoardUI.framework */,
+				4A80FCE2873CCFD3A7F6B857 /* Pods_QuestBoardUI_QuestBoardUIUITests.framework */,
+				C456EE114CBD4FE0052F0EB5 /* Pods_QuestBoardUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6639135025F4BF6E00FB5394 /* QuestBoardUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6639137B25F4BF7700FB5394 /* Build configuration list for PBXNativeTarget "QuestBoardUI" */;
+			buildPhases = (
+				6B82EE7584048175B84D8A4D /* [CP] Check Pods Manifest.lock */,
+				6639134D25F4BF6E00FB5394 /* Sources */,
+				6639134E25F4BF6E00FB5394 /* Frameworks */,
+				6639134F25F4BF6E00FB5394 /* Resources */,
+				1CC57B59B7A0BE6B733418BE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuestBoardUI;
+			productName = QuestBoardUI;
+			productReference = 6639135125F4BF6E00FB5394 /* QuestBoardUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6639136625F4BF7700FB5394 /* QuestBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6639137E25F4BF7700FB5394 /* Build configuration list for PBXNativeTarget "QuestBoardUITests" */;
+			buildPhases = (
+				CA20F61AAC03D1CC9F373576 /* [CP] Check Pods Manifest.lock */,
+				6639136325F4BF7700FB5394 /* Sources */,
+				6639136425F4BF7700FB5394 /* Frameworks */,
+				6639136525F4BF7700FB5394 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6639136925F4BF7700FB5394 /* PBXTargetDependency */,
+			);
+			name = QuestBoardUITests;
+			productName = QuestBoardUITests;
+			productReference = 6639136725F4BF7700FB5394 /* QuestBoardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6639137125F4BF7700FB5394 /* QuestBoardUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6639138125F4BF7700FB5394 /* Build configuration list for PBXNativeTarget "QuestBoardUIUITests" */;
+			buildPhases = (
+				E109591F1BC418292C799057 /* [CP] Check Pods Manifest.lock */,
+				6639136E25F4BF7700FB5394 /* Sources */,
+				6639136F25F4BF7700FB5394 /* Frameworks */,
+				6639137025F4BF7700FB5394 /* Resources */,
+				BADFD120B58C432D4B1E18D5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6639137425F4BF7700FB5394 /* PBXTargetDependency */,
+			);
+			name = QuestBoardUIUITests;
+			productName = QuestBoardUIUITests;
+			productReference = 6639137225F4BF7700FB5394 /* QuestBoardUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6639134925F4BF6E00FB5394 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					6639135025F4BF6E00FB5394 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					6639136625F4BF7700FB5394 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 6639135025F4BF6E00FB5394;
+					};
+					6639137125F4BF7700FB5394 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 6639135025F4BF6E00FB5394;
+					};
+				};
+			};
+			buildConfigurationList = 6639134C25F4BF6E00FB5394 /* Build configuration list for PBXProject "QuestBoardUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6639134825F4BF6E00FB5394;
+			productRefGroup = 6639135225F4BF6E00FB5394 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6639135025F4BF6E00FB5394 /* QuestBoardUI */,
+				6639136625F4BF7700FB5394 /* QuestBoardUITests */,
+				6639137125F4BF7700FB5394 /* QuestBoardUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6639134F25F4BF6E00FB5394 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F728A12620558E007BCFE0 /* man-7.png in Resources */,
+				66F728AB262055DC007BCFE0 /* star-7.png in Resources */,
+				66F728A5262055C0007BCFE0 /* plus-simple-7.png in Resources */,
+				6648F36E261F120400AC001F /* repair.png in Resources */,
+				6639136125F4BF7600FB5394 /* LaunchScreen.storyboard in Resources */,
+				6E46B75C263320EB00590F56 /* ChatRoomViewController.xib in Resources */,
+				66F728A9262055D3007BCFE0 /* square-individual-nine-7.png in Resources */,
+				66F7289F26205573007BCFE0 /* house-7.png in Resources */,
+				6648F36A261F0FD400AC001F /* walkdog.png in Resources */,
+				66F728AD262055E4007BCFE0 /* text-list-7.png in Resources */,
+				66FDF0AB261B486500155EDF /* home-7.png in Resources */,
+				6E46B7772633223200590F56 /* .gitignore in Resources */,
+				6648F370261F125200AC001F /* queue.png in Resources */,
+				66F728A7262055CA007BCFE0 /* server-7.png in Resources */,
+				6E46B74026331F7B00590F56 /* www in Resources */,
+				6639135E25F4BF7600FB5394 /* Assets.xcassets in Resources */,
+				66F7289D2620554B007BCFE0 /* message-7.png in Resources */,
+				6648F36C261F11B700AC001F /* dabao.png in Resources */,
+				6639135C25F4BF6E00FB5394 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6639136525F4BF7700FB5394 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6639137025F4BF7700FB5394 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CC57B59B7A0BE6B733418BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuestBoardUI/Pods-QuestBoardUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuestBoardUI/Pods-QuestBoardUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuestBoardUI/Pods-QuestBoardUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B82EE7584048175B84D8A4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuestBoardUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BADFD120B58C432D4B1E18D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests/Pods-QuestBoardUI-QuestBoardUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests/Pods-QuestBoardUI-QuestBoardUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests/Pods-QuestBoardUI-QuestBoardUIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA20F61AAC03D1CC9F373576 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuestBoardUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E109591F1BC418292C799057 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuestBoardUI-QuestBoardUIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6639134D25F4BF6E00FB5394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC883FF26386D380099C4B1 /* Item.swift in Sources */,
+				6EB1E7D32636B80D00D1AFF4 /* Quest.swift in Sources */,
+				6EF18AEC2637F1CA005B2C15 /* NetworkManager.swift in Sources */,
+				66270131261CC38500256749 /* TabBarViewController.swift in Sources */,
+				663315E126185A16001150A2 /* LoginViewController.swift in Sources */,
+				6639F89C263B0A52005EC8DE /* Proposal.swift in Sources */,
+				6EC88415263893990099C4B1 /* ProfileViewController.swift in Sources */,
+				6EF18AF1263804FC005B2C15 /* MyProfileManager.swift in Sources */,
+				6E46B75D263320EB00590F56 /* ChatRoomViewController.swift in Sources */,
+				6E7E5DAE263FEF4F00B21D54 /* NewProProfileViewController.swift in Sources */,
+				6621E5742631D2C800BA6658 /* HomeViewController.swift in Sources */,
+				6639F89E263B1C12005EC8DE /* ProposalDetailsViewController.swift in Sources */,
+				6EF18AF626380EE4005B2C15 /* EverydayProfile.swift in Sources */,
+				66F1352926371A74001F35A3 /* AllQuestTableViewCell.swift in Sources */,
+				6639F898263B03D7005EC8DE /* AllProposalTableViewController.swift in Sources */,
+				6678B45A2620328F003395DE /* NewQuestViewController.swift in Sources */,
+				66FDF0B5261B5F4F00155EDF /* LoginOrProfileNavigationViewController.swift in Sources */,
+				6621E5762631D42C00BA6658 /* HomeTableViewCell.swift in Sources */,
+				6639F89A263B04D1005EC8DE /* AllProposalTableViewCell.swift in Sources */,
+				6EF18AFB26380F8C005B2C15 /* MyProfile.swift in Sources */,
+				6639135925F4BF6E00FB5394 /* ViewController.swift in Sources */,
+				6639135525F4BF6E00FB5394 /* AppDelegate.swift in Sources */,
+				6609682826305EBE00C489EB /* QuestTypeViewController.swift in Sources */,
+				6639135725F4BF6E00FB5394 /* SceneDelegate.swift in Sources */,
+				6EF18B0B2638602E005B2C15 /* LoginViewControllerDelegate.swift in Sources */,
+				6618F255262DBFA0008326F4 /* QuestTableViewCell.swift in Sources */,
+				662682E3261E0DD900562DCA /* CategoryCollectionViewCell.swift in Sources */,
+				6648F372261F45A500AC001F /* ItemsTableViewController.swift in Sources */,
+				6E46B74B263320A000590F56 /* ChatViewController.swift in Sources */,
+				6EF18B0026381091005B2C15 /* SkillsetProfile.swift in Sources */,
+				662682E1261E0CFD00562DCA /* CategoryCollectionViewController.swift in Sources */,
+				66491CB8263BA36B00825A23 /* AllQuestdetailsViewController.swift in Sources */,
+				662682E6261E125F00562DCA /* Category.swift in Sources */,
+				662682EA261E13FD00562DCA /* Constants.swift in Sources */,
+				662EF192262F33C300DBDAE1 /* QuestDetailsViewController.swift in Sources */,
+				6E40CC132639ABB900711354 /* Utils.swift in Sources */,
+				6EB1E7E82637321000D1AFF4 /* NewQuestProposalViewController.swift in Sources */,
+				66F13523263704D1001F35A3 /* AllQuestTableViewController.swift in Sources */,
+				66F9DCD826333CFF000D3CA0 /* ChatToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6639136325F4BF7700FB5394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6639136C25F4BF7700FB5394 /* QuestBoardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6639136E25F4BF7700FB5394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6639137725F4BF7700FB5394 /* QuestBoardUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6639136925F4BF7700FB5394 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6639135025F4BF6E00FB5394 /* QuestBoardUI */;
+			targetProxy = 6639136825F4BF7700FB5394 /* PBXContainerItemProxy */;
+		};
+		6639137425F4BF7700FB5394 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6639135025F4BF6E00FB5394 /* QuestBoardUI */;
+			targetProxy = 6639137325F4BF7700FB5394 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6639135A25F4BF6E00FB5394 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6639135B25F4BF6E00FB5394 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6639135F25F4BF7600FB5394 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6639136025F4BF7600FB5394 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6639137925F4BF7700FB5394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6639137A25F4BF7700FB5394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6639137C25F4BF7700FB5394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEC1B456C5E130F155A16E72 /* Pods-QuestBoardUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YEH4L8MWT9;
+				INFOPLIST_FILE = QuestBoardUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ISSTeam32.QuestBoardUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6639137D25F4BF7700FB5394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2727C3246A793CBFF5A2554 /* Pods-QuestBoardUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YEH4L8MWT9;
+				INFOPLIST_FILE = QuestBoardUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ISSTeam32.QuestBoardUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6639137F25F4BF7700FB5394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA88DCB5FA6E44620771B752 /* Pods-QuestBoardUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuestBoardUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ISSTeam32.QuestBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuestBoardUI.app/QuestBoardUI";
+			};
+			name = Debug;
+		};
+		6639138025F4BF7700FB5394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AADF3312CAE9CB7DB7DBB029 /* Pods-QuestBoardUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuestBoardUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ISSTeam32.QuestBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuestBoardUI.app/QuestBoardUI";
+			};
+			name = Release;
+		};
+		6639138225F4BF7700FB5394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649284EA32573C987D475226 /* Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuestBoardUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ISSTeam32.QuestBoardUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuestBoardUI;
+			};
+			name = Debug;
+		};
+		6639138325F4BF7700FB5394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48974C50563822BD83CCC09D /* Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuestBoardUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ISSTeam32.QuestBoardUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuestBoardUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6639134C25F4BF6E00FB5394 /* Build configuration list for PBXProject "QuestBoardUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6639137925F4BF7700FB5394 /* Debug */,
+				6639137A25F4BF7700FB5394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6639137B25F4BF7700FB5394 /* Build configuration list for PBXNativeTarget "QuestBoardUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6639137C25F4BF7700FB5394 /* Debug */,
+				6639137D25F4BF7700FB5394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6639137E25F4BF7700FB5394 /* Build configuration list for PBXNativeTarget "QuestBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6639137F25F4BF7700FB5394 /* Debug */,
+				6639138025F4BF7700FB5394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6639138125F4BF7700FB5394 /* Build configuration list for PBXNativeTarget "QuestBoardUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6639138225F4BF7700FB5394 /* Debug */,
+				6639138325F4BF7700FB5394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6639134925F4BF6E00FB5394 /* Project object */;
+}

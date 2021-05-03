@@ -1,0 +1,22 @@
+PODS:
+  - InputBarAccessoryView (5.3.1):
+    - InputBarAccessoryView/Core (= 5.3.1)
+  - InputBarAccessoryView/Core (5.3.1)
+  - ProgressHUD (13.6)
+
+DEPENDENCIES:
+  - InputBarAccessoryView
+  - ProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - InputBarAccessoryView
+    - ProgressHUD
+
+SPEC CHECKSUMS:
+  InputBarAccessoryView: 1f75d8c9f75e5e57f3ffac36ed58635a8005e0bc
+  ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
+
+PODFILE CHECKSUM: 22f606a36449e5bf6097aba3cbbf4a427621c629
+
+COCOAPODS: 1.10.1

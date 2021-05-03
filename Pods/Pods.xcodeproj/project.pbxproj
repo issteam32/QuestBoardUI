@@ -1,0 +1,1307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004900E763414D0803DC57A72FDF056A /* InputBarAccessoryView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA7EECFE2A2BBBFC080EF3E53328E32 /* InputBarAccessoryView-dummy.m */; };
+		02176485865EE79C0EE5BE37EAA8C527 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		112056E5122D1053A5D4421669A6EAAA /* InputBarAccessoryView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F4040A3E5C2F96220319019828354A /* InputBarAccessoryView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		167E4A126AE4FFD17CD07204C7021882 /* InputPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCE1FB8D7FF0A07F47614442F16A294 /* InputPlugin.swift */; };
+		1922CB0E864B0D9A572DB599BBC054D5 /* AttachmentManagerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5116B3C3685D8C5B7B5A8316A1857B5A /* AttachmentManagerDataSource.swift */; };
+		1C11A43A4416D242F3C9DCE638E6C709 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27452DA654A528108CF651C33D8405B /* ProgressHUD.swift */; };
+		1CB8436B20DA88014F950C9E079FEC06 /* AttachmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2135268C062883E022E064230D14DDF3 /* AttachmentsView.swift */; };
+		1E11A75D2A6405C52A9B206184D24F06 /* NSNotification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062B54B79A7C74149735F03F927B223 /* NSNotification+Extensions.swift */; };
+		1E934393966FD47F111D29EB9AE38171 /* InputBarAccessoryView+Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55284518BBF310F2E1E2D1469DF91579 /* InputBarAccessoryView+Availability.swift */; };
+		2701768E003CC3429076058079C6DA0C /* AutocompleteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09080B4DE9538DEB9658E3279DFEE9E8 /* AutocompleteManager.swift */; };
+		2A67C66A14B25634C30D052AB4F06EFC /* ImageAttachmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB296AED465346F5E166177A1297555 /* ImageAttachmentCell.swift */; };
+		33EE6218C7B328A46C8389C4882F6D83 /* Pods-QuestBoardUI-QuestBoardUIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1251FF80952B2FCB097EFE9DB300FBDE /* Pods-QuestBoardUI-QuestBoardUIUITests-dummy.m */; };
+		450E71EE1522114F0C3319E4FF17E712 /* NSMutableAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45416FAA2BEA4CEAF8F53759C282553C /* NSMutableAttributedString+Extensions.swift */; };
+		5224F5C72817EE72F02AA51CC39FA9D0 /* AutocompleteManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AEE6A66384AA31D024A8C844CC30D8 /* AutocompleteManagerDelegate.swift */; };
+		52F61E6AAAFBE9A0D717481E98BE7381 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83080507D2616AB206EB292A8D175C42 /* InputTextView.swift */; };
+		52F7BC394A180A5D0500A0BB56584CD6 /* HorizontalEdgePadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92978D41EC20D1D18D568DF81B04B2B4 /* HorizontalEdgePadding.swift */; };
+		5E9487E7A524A3C196D4157DE2EF2717 /* ProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E01309242B9975E823C63B12EFB7C46F /* ProgressHUD-dummy.m */; };
+		6B4683A3862B131DC083DE02D6F9DBCA /* ProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A6D0C440178DC2E60042615202727D /* ProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F8F50A3C49BD73C3DB2D11365A5E8AE /* KeyboardEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65D721B4598DD0CE8C8D8AF8C857F0 /* KeyboardEvent.swift */; };
+		7F7ABF44D5286E90C223218A0CB0449C /* AutocompleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781BA3517B5BB663B62B287CE0831793 /* AutocompleteCell.swift */; };
+		82305FE0639BB4C5525FF8914AD9B464 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0928F3800CC53B320D3A8E10C5D413EC /* UIView+AutoLayout.swift */; };
+		870031097728EE1EC2F04FC08A8F72B7 /* InputBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5650329F0348CF472A46DE5A6445C518 /* InputBarButtonItem.swift */; };
+		8BDED5D850EB241B21A0C7D2AE29E962 /* Pods-QuestBoardUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A6EAD465381D129427188201C95CB4 /* Pods-QuestBoardUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90EE59DE56D2DF968630AF7868D32DEC /* SeparatorLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF21D36900E3CF0C65F2BB82D228AF9 /* SeparatorLine.swift */; };
+		94F43ADF8F6A07C7A8D693AC700B0D3A /* InputBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC20CD9961547EB42063BD472AF41E3 /* InputBarViewController.swift */; };
+		99EEE6E81393E604F5BCD50D86D6B636 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261A4C396BE2113D0A32DF6F301E679 /* String+Extensions.swift */; };
+		A11BB0C206F62D63C353661BC3BC0D66 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CD60E5E55900C9FD69B1CA74F3C388 /* KeyboardManager.swift */; };
+		A158887123CB6F455E07C27547EEC017 /* AttachmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C29408507AB152DC843F7FCBFA8FBE3 /* AttachmentManager.swift */; };
+		A1A708CFC8A0AFC412B3796CE4FBD1E5 /* AutocompleteCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53FFA2CFE60FF2F87B8A61B858A34 /* AutocompleteCompletion.swift */; };
+		A4F396BDDA94981C5345E188BEF268D4 /* AttachmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3833231CAC67AB18BD020A05938F483D /* AttachmentCell.swift */; };
+		A867B6083DABD77C29D9B2AC13C269BC /* InputBarAccessoryViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB0D6E127E4A08B2DFC2C82957ECC0B /* InputBarAccessoryViewDelegate.swift */; };
+		A8B649B28E3983FBB3DD9F5B4197792C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		AD410CCF2669DAF8E4E12769283135F0 /* Pods-QuestBoardUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E806D4677BE4A39A61982BE52E8881 /* Pods-QuestBoardUI-dummy.m */; };
+		BE54E06D968CE8ED2AE5746FE6B13B65 /* NSConstraintLayoutSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2621F3A51C7BDB5A9330DDAC5375D6E /* NSConstraintLayoutSet.swift */; };
+		C452C64CBE61AA5225FB9E27D30C3C91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		C5A740BA72F0905430DF221EAF210F31 /* KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0BCFFA83193BA63920E9B073C29BDB /* KeyboardNotification.swift */; };
+		C79FC70E7D38CD786F2E36D860C71980 /* AutocompleteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F09559729390074F0A1E2ACDA725BAF /* AutocompleteTableView.swift */; };
+		C86EC46733E39279FA361F2441542322 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F9043A3AB26EDDF20AC7F7C74F5E13 /* UITextView+Extensions.swift */; };
+		D02E91DE7432281F97930196225807EB /* Pods-QuestBoardUI-QuestBoardUIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2C81EE097B51B5B20AA8FFA2E18750 /* Pods-QuestBoardUI-QuestBoardUIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0A86C8B48CF5EB6E21ACF8096943181 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		DFF81B181757D8F93CEC553724D77077 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		E16C78507D260DF315A9F9F4CBCBEB8C /* AutocompleteSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40082194D164451786D43F8312654477 /* AutocompleteSession.swift */; };
+		E2332858B254DD1E55E164FCF2C7BC58 /* InputBarAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DABCEFF1F1BCEE46E5DE23FC20CD22 /* InputBarAccessoryView.swift */; };
+		E551E2E28434D98EFF469810D9875D95 /* AttachmentManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D7E8F69B033505708F23D8555C462B /* AttachmentManagerDelegate.swift */; };
+		E5BDFA2B091DB04F21469F18CA0636BE /* InputStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA5383A27D05940FAFB5055711B999 /* InputStackView.swift */; };
+		E944566ECEC00FA3CA3C2B5CF1E8DD31 /* InputItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21388164B4DF5011939E6FD0F32A556E /* InputItem.swift */; };
+		ED4CBF1D9232302D01085FB459D50872 /* Pods-QuestBoardUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F6AAA363FB173A83D90381087BD33D /* Pods-QuestBoardUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F20E02DC1D739DA7D06D6F3676483582 /* Pods-QuestBoardUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F063D1889F00CD826E6426FE13AF9F /* Pods-QuestBoardUITests-dummy.m */; };
+		F314263665E706785EDAFEF3188E4B61 /* InputBarSendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933979A0C0EA6E0DBB06DBB3BB9212C8 /* InputBarSendButton.swift */; };
+		F418D9C114014FD0A15E30819C484641 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		FBD8366575DC2EA614D6F702350E222B /* AutocompleteManagerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D28021C0573DE33CB4F73881CEAE5D /* AutocompleteManagerDataSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22222B5EA66ADE261F036D4C7BDBECA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 022D0373DF61EE4E133BADB43CE7ED57;
+			remoteInfo = ProgressHUD;
+		};
+		3A433470F42753EBDFBBDC897CBE1D74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8C39DD486923E3933801D232041B590;
+			remoteInfo = InputBarAccessoryView;
+		};
+		3FB0D6D9C196E96E6590D4EA7F02330E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8C39DD486923E3933801D232041B590;
+			remoteInfo = InputBarAccessoryView;
+		};
+		6C8FD9F2406621BCB198B6D072992B4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD76F216B9ADADDC08AEB2A3DA56C81E;
+			remoteInfo = "Pods-QuestBoardUI";
+		};
+		FC27D05BA6AC334835899ED5D7E5C289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 022D0373DF61EE4E133BADB43CE7ED57;
+			remoteInfo = ProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0261A4C396BE2113D0A32DF6F301E679 /* String+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Sources/Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
+		02F6AAA363FB173A83D90381087BD33D /* Pods-QuestBoardUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuestBoardUI-umbrella.h"; sourceTree = "<group>"; };
+		05C924800082BFC5C352C4108E415DB8 /* Pods-QuestBoardUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuestBoardUI.debug.xcconfig"; sourceTree = "<group>"; };
+		09080B4DE9538DEB9658E3279DFEE9E8 /* AutocompleteManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutocompleteManager.swift; path = Sources/Plugins/AutocompleteManager/AutocompleteManager.swift; sourceTree = "<group>"; };
+		0928F3800CC53B320D3A8E10C5D413EC /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Extensions/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		0B0BCFFA83193BA63920E9B073C29BDB /* KeyboardNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardNotification.swift; path = Sources/KeyboardManager/KeyboardNotification.swift; sourceTree = "<group>"; };
+		0C7F5E6A9128C39413AE470010A0B540 /* ProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		0CCE1FB8D7FF0A07F47614442F16A294 /* InputPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputPlugin.swift; path = Sources/Protocols/InputPlugin.swift; sourceTree = "<group>"; };
+		0D3287058D2F13BD484A454154BEA62B /* ProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ProgressHUD.framework; path = ProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10E806D4677BE4A39A61982BE52E8881 /* Pods-QuestBoardUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuestBoardUI-dummy.m"; sourceTree = "<group>"; };
+		1251FF80952B2FCB097EFE9DB300FBDE /* Pods-QuestBoardUI-QuestBoardUIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuestBoardUI-QuestBoardUIUITests-dummy.m"; sourceTree = "<group>"; };
+		138A7E9A12D462C0613EB1DFB4E8236F /* ProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		17F9043A3AB26EDDF20AC7F7C74F5E13 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Extensions.swift"; path = "Sources/Extensions/UITextView+Extensions.swift"; sourceTree = "<group>"; };
+		1A65D721B4598DD0CE8C8D8AF8C857F0 /* KeyboardEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardEvent.swift; path = Sources/KeyboardManager/KeyboardEvent.swift; sourceTree = "<group>"; };
+		1BB296AED465346F5E166177A1297555 /* ImageAttachmentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageAttachmentCell.swift; path = Sources/Plugins/AttachmentManager/Views/ImageAttachmentCell.swift; sourceTree = "<group>"; };
+		1CA7EECFE2A2BBBFC080EF3E53328E32 /* InputBarAccessoryView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InputBarAccessoryView-dummy.m"; sourceTree = "<group>"; };
+		1F3D40C79343E98C83FBE8546B46073F /* Pods-QuestBoardUI-QuestBoardUIUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuestBoardUI-QuestBoardUIUITests-Info.plist"; sourceTree = "<group>"; };
+		2135268C062883E022E064230D14DDF3 /* AttachmentsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttachmentsView.swift; path = Sources/Plugins/AttachmentManager/Views/AttachmentsView.swift; sourceTree = "<group>"; };
+		21388164B4DF5011939E6FD0F32A556E /* InputItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputItem.swift; path = Sources/Protocols/InputItem.swift; sourceTree = "<group>"; };
+		23D7E8F69B033505708F23D8555C462B /* AttachmentManagerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttachmentManagerDelegate.swift; path = Sources/Plugins/AttachmentManager/Protocols/AttachmentManagerDelegate.swift; sourceTree = "<group>"; };
+		2CFE356DC311614B85859DA03491ECA3 /* Pods-QuestBoardUI-QuestBoardUIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuestBoardUI-QuestBoardUIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2FC20CD9961547EB42063BD472AF41E3 /* InputBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputBarViewController.swift; path = Sources/ViewControllers/InputBarViewController.swift; sourceTree = "<group>"; };
+		3833231CAC67AB18BD020A05938F483D /* AttachmentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttachmentCell.swift; path = Sources/Plugins/AttachmentManager/Views/AttachmentCell.swift; sourceTree = "<group>"; };
+		3A3AD19DA20D3914E99062CE7E157DD3 /* Pods-QuestBoardUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuestBoardUI-acknowledgements.plist"; sourceTree = "<group>"; };
+		3BCB3E0C75017A0763EA14C36AB51101 /* Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F9DE4A427A22A3D65C50A7CB499F8FC /* ProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		40082194D164451786D43F8312654477 /* AutocompleteSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutocompleteSession.swift; path = Sources/Plugins/AutocompleteManager/Models/AutocompleteSession.swift; sourceTree = "<group>"; };
+		42E8528004D0123659FA4F81E9CBC9A9 /* InputBarAccessoryView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InputBarAccessoryView.modulemap; sourceTree = "<group>"; };
+		449C9490D05DC9325BD72A2EDAE8D576 /* Pods-QuestBoardUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuestBoardUITests-Info.plist"; sourceTree = "<group>"; };
+		45416FAA2BEA4CEAF8F53759C282553C /* NSMutableAttributedString+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSMutableAttributedString+Extensions.swift"; path = "Sources/Extensions/NSMutableAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		498EDFBF0E102EE77CC0A78C4376996E /* Pods-QuestBoardUI-QuestBoardUIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuestBoardUI-QuestBoardUIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4AB979661EB1BD29A53ED8CD665C3917 /* InputBarAccessoryView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InputBarAccessoryView.debug.xcconfig; sourceTree = "<group>"; };
+		4F09559729390074F0A1E2ACDA725BAF /* AutocompleteTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutocompleteTableView.swift; path = Sources/Plugins/AutocompleteManager/Views/AutocompleteTableView.swift; sourceTree = "<group>"; };
+		5116B3C3685D8C5B7B5A8316A1857B5A /* AttachmentManagerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttachmentManagerDataSource.swift; path = Sources/Plugins/AttachmentManager/Protocols/AttachmentManagerDataSource.swift; sourceTree = "<group>"; };
+		5255FC95E13C23D6DAFF60DBDE61B13D /* Pods-QuestBoardUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuestBoardUI-Info.plist"; sourceTree = "<group>"; };
+		54868E75E806C9E6189B959C217EA2B1 /* Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		55284518BBF310F2E1E2D1469DF91579 /* InputBarAccessoryView+Availability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "InputBarAccessoryView+Availability.swift"; path = "Sources/Supporting/InputBarAccessoryView+Availability.swift"; sourceTree = "<group>"; };
+		5650329F0348CF472A46DE5A6445C518 /* InputBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputBarButtonItem.swift; path = Sources/Controls/InputBarButtonItem.swift; sourceTree = "<group>"; };
+		585B315D150F1223F5E38AF3C70E8536 /* ProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
+		5A6A63B55873F7DAB3566B48F92F50AA /* InputBarAccessoryView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InputBarAccessoryView.release.xcconfig; sourceTree = "<group>"; };
+		5BA2174503AAE21694A61B5016FDF3AE /* Pods-QuestBoardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuestBoardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C1B9DC7E4B2BBAF3C909F2C9B8DAF7F /* Pods-QuestBoardUI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuestBoardUI-frameworks.sh"; sourceTree = "<group>"; };
+		5D79710C848BFD78070F79ADF7859885 /* Pods_QuestBoardUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuestBoardUI.framework; path = "Pods-QuestBoardUI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67AEE6A66384AA31D024A8C844CC30D8 /* AutocompleteManagerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutocompleteManagerDelegate.swift; path = Sources/Plugins/AutocompleteManager/Protocols/AutocompleteManagerDelegate.swift; sourceTree = "<group>"; };
+		781BA3517B5BB663B62B287CE0831793 /* AutocompleteCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutocompleteCell.swift; path = Sources/Plugins/AutocompleteManager/Views/AutocompleteCell.swift; sourceTree = "<group>"; };
+		7AC53FFA2CFE60FF2F87B8A61B858A34 /* AutocompleteCompletion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutocompleteCompletion.swift; path = Sources/Plugins/AutocompleteManager/Models/AutocompleteCompletion.swift; sourceTree = "<group>"; };
+		7C29408507AB152DC843F7FCBFA8FBE3 /* AttachmentManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttachmentManager.swift; path = Sources/Plugins/AttachmentManager/AttachmentManager.swift; sourceTree = "<group>"; };
+		8062B54B79A7C74149735F03F927B223 /* NSNotification+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotification+Extensions.swift"; path = "Sources/Extensions/NSNotification+Extensions.swift"; sourceTree = "<group>"; };
+		80DABCEFF1F1BCEE46E5DE23FC20CD22 /* InputBarAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputBarAccessoryView.swift; path = Sources/InputBarAccessoryView.swift; sourceTree = "<group>"; };
+		81F063D1889F00CD826E6426FE13AF9F /* Pods-QuestBoardUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuestBoardUITests-dummy.m"; sourceTree = "<group>"; };
+		83080507D2616AB206EB292A8D175C42 /* InputTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputTextView.swift; path = Sources/Views/InputTextView.swift; sourceTree = "<group>"; };
+		861291C177866BE15DB57D5C562B559A /* Pods-QuestBoardUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuestBoardUI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8BB0D6E127E4A08B2DFC2C82957ECC0B /* InputBarAccessoryViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputBarAccessoryViewDelegate.swift; path = Sources/Protocols/InputBarAccessoryViewDelegate.swift; sourceTree = "<group>"; };
+		8CA09E18449DB34DF6756220B8299453 /* Pods_QuestBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuestBoardUITests.framework; path = "Pods-QuestBoardUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		912073EB5ABE505989EB32A475DE2AE9 /* InputBarAccessoryView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputBarAccessoryView-prefix.pch"; sourceTree = "<group>"; };
+		91D28021C0573DE33CB4F73881CEAE5D /* AutocompleteManagerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutocompleteManagerDataSource.swift; path = Sources/Plugins/AutocompleteManager/Protocols/AutocompleteManagerDataSource.swift; sourceTree = "<group>"; };
+		92978D41EC20D1D18D568DF81B04B2B4 /* HorizontalEdgePadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalEdgePadding.swift; path = Sources/Models/HorizontalEdgePadding.swift; sourceTree = "<group>"; };
+		933979A0C0EA6E0DBB06DBB3BB9212C8 /* InputBarSendButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputBarSendButton.swift; path = Sources/Controls/InputBarSendButton.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A096EA629373809CE8C402476CFC02A4 /* Pods-QuestBoardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuestBoardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6A6D0C440178DC2E60042615202727D /* ProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		B046B33B36BE7BED3171F1D8A5CE5CA5 /* InputBarAccessoryView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InputBarAccessoryView-Info.plist"; sourceTree = "<group>"; };
+		B6863CF9766AB199CA611F8545541712 /* Pods-QuestBoardUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuestBoardUI.release.xcconfig"; sourceTree = "<group>"; };
+		B73E32CD93BF663C76B2FCC974D2EC52 /* ProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ProgressHUD.modulemap; sourceTree = "<group>"; };
+		B81513B0B3333500DFFB1B1B179FB571 /* InputBarAccessoryView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = InputBarAccessoryView.framework; path = InputBarAccessoryView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBA54F61BFA00EF5F64AAA41954E625 /* Pods-QuestBoardUI-QuestBoardUIUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuestBoardUI-QuestBoardUIUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C27452DA654A528108CF651C33D8405B /* ProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressHUD.swift; path = ProgressHUD/Sources/ProgressHUD.swift; sourceTree = "<group>"; };
+		C3DA5383A27D05940FAFB5055711B999 /* InputStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputStackView.swift; path = Sources/Views/InputStackView.swift; sourceTree = "<group>"; };
+		CD2C81EE097B51B5B20AA8FFA2E18750 /* Pods-QuestBoardUI-QuestBoardUIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuestBoardUI-QuestBoardUIUITests-umbrella.h"; sourceTree = "<group>"; };
+		CF26EDBA09630EB8BB39C2A7BFD3B0FE /* Pods-QuestBoardUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QuestBoardUITests.modulemap"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D3CD60E5E55900C9FD69B1CA74F3C388 /* KeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardManager.swift; path = Sources/KeyboardManager/KeyboardManager.swift; sourceTree = "<group>"; };
+		D99842AAE224BC0767AB17F80142FB6A /* Pods_QuestBoardUI_QuestBoardUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuestBoardUI_QuestBoardUIUITests.framework; path = "Pods-QuestBoardUI-QuestBoardUIUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB00209B3F6AFAD9520A010E083A07E /* Pods-QuestBoardUI-QuestBoardUIUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QuestBoardUI-QuestBoardUIUITests.modulemap"; sourceTree = "<group>"; };
+		E01309242B9975E823C63B12EFB7C46F /* ProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		E2621F3A51C7BDB5A9330DDAC5375D6E /* NSConstraintLayoutSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSConstraintLayoutSet.swift; path = Sources/Models/NSConstraintLayoutSet.swift; sourceTree = "<group>"; };
+		E6CAD082D5AC41DE26C1BA60C58821A9 /* Pods-QuestBoardUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuestBoardUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F27A5D7A928BACA17A3E54729D22B626 /* Pods-QuestBoardUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuestBoardUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F6F4040A3E5C2F96220319019828354A /* InputBarAccessoryView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputBarAccessoryView-umbrella.h"; sourceTree = "<group>"; };
+		F9A6EAD465381D129427188201C95CB4 /* Pods-QuestBoardUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuestBoardUITests-umbrella.h"; sourceTree = "<group>"; };
+		FFB6929C6C22718E5B8F8FC992D3D8EB /* Pods-QuestBoardUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QuestBoardUI.modulemap"; sourceTree = "<group>"; };
+		FFF21D36900E3CF0C65F2BB82D228AF9 /* SeparatorLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeparatorLine.swift; path = Sources/Views/SeparatorLine.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FDA631B3768496823C30AA26756ADD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C452C64CBE61AA5225FB9E27D30C3C91 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		452D9A06FA28936AB3DBCB0C0A9CCB10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF81B181757D8F93CEC553724D77077 /* Foundation.framework in Frameworks */,
+				F418D9C114014FD0A15E30819C484641 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ED8B4BE218AC5BA7C7F3E98DF1652E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A86C8B48CF5EB6E21ACF8096943181 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5D1AC6A44EA5298211B84422142272 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8B649B28E3983FBB3DD9F5B4197792C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBEBA2D19E938946CDF6986A716B473D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02176485865EE79C0EE5BE37EAA8C527 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FBCDD974E721B15460B426FC1AC1F1E /* Pods-QuestBoardUI-QuestBoardUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDB00209B3F6AFAD9520A010E083A07E /* Pods-QuestBoardUI-QuestBoardUIUITests.modulemap */,
+				2CFE356DC311614B85859DA03491ECA3 /* Pods-QuestBoardUI-QuestBoardUIUITests-acknowledgements.markdown */,
+				498EDFBF0E102EE77CC0A78C4376996E /* Pods-QuestBoardUI-QuestBoardUIUITests-acknowledgements.plist */,
+				1251FF80952B2FCB097EFE9DB300FBDE /* Pods-QuestBoardUI-QuestBoardUIUITests-dummy.m */,
+				BFBA54F61BFA00EF5F64AAA41954E625 /* Pods-QuestBoardUI-QuestBoardUIUITests-frameworks.sh */,
+				1F3D40C79343E98C83FBE8546B46073F /* Pods-QuestBoardUI-QuestBoardUIUITests-Info.plist */,
+				CD2C81EE097B51B5B20AA8FFA2E18750 /* Pods-QuestBoardUI-QuestBoardUIUITests-umbrella.h */,
+				3BCB3E0C75017A0763EA14C36AB51101 /* Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig */,
+				54868E75E806C9E6189B959C217EA2B1 /* Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig */,
+			);
+			name = "Pods-QuestBoardUI-QuestBoardUIUITests";
+			path = "Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests";
+			sourceTree = "<group>";
+		};
+		3F9475D4206FFC38D08B48147C83CF2C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B73E32CD93BF663C76B2FCC974D2EC52 /* ProgressHUD.modulemap */,
+				E01309242B9975E823C63B12EFB7C46F /* ProgressHUD-dummy.m */,
+				3F9DE4A427A22A3D65C50A7CB499F8FC /* ProgressHUD-Info.plist */,
+				138A7E9A12D462C0613EB1DFB4E8236F /* ProgressHUD-prefix.pch */,
+				A6A6D0C440178DC2E60042615202727D /* ProgressHUD-umbrella.h */,
+				585B315D150F1223F5E38AF3C70E8536 /* ProgressHUD.debug.xcconfig */,
+				0C7F5E6A9128C39413AE470010A0B540 /* ProgressHUD.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ProgressHUD";
+			sourceTree = "<group>";
+		};
+		43B03500766CBB6B0B6A2573E54A9161 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C27452DA654A528108CF651C33D8405B /* ProgressHUD.swift */,
+				3F9475D4206FFC38D08B48147C83CF2C /* Support Files */,
+			);
+			name = ProgressHUD;
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		57966B819F1FB2728254E78FA0294E22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B81513B0B3333500DFFB1B1B179FB571 /* InputBarAccessoryView.framework */,
+				5D79710C848BFD78070F79ADF7859885 /* Pods_QuestBoardUI.framework */,
+				D99842AAE224BC0767AB17F80142FB6A /* Pods_QuestBoardUI_QuestBoardUIUITests.framework */,
+				8CA09E18449DB34DF6756220B8299453 /* Pods_QuestBoardUITests.framework */,
+				0D3287058D2F13BD484A454154BEA62B /* ProgressHUD.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		928D9E5F7432895178615857C7465ABB /* Pods-QuestBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF26EDBA09630EB8BB39C2A7BFD3B0FE /* Pods-QuestBoardUITests.modulemap */,
+				E6CAD082D5AC41DE26C1BA60C58821A9 /* Pods-QuestBoardUITests-acknowledgements.markdown */,
+				F27A5D7A928BACA17A3E54729D22B626 /* Pods-QuestBoardUITests-acknowledgements.plist */,
+				81F063D1889F00CD826E6426FE13AF9F /* Pods-QuestBoardUITests-dummy.m */,
+				449C9490D05DC9325BD72A2EDAE8D576 /* Pods-QuestBoardUITests-Info.plist */,
+				F9A6EAD465381D129427188201C95CB4 /* Pods-QuestBoardUITests-umbrella.h */,
+				A096EA629373809CE8C402476CFC02A4 /* Pods-QuestBoardUITests.debug.xcconfig */,
+				5BA2174503AAE21694A61B5016FDF3AE /* Pods-QuestBoardUITests.release.xcconfig */,
+			);
+			name = "Pods-QuestBoardUITests";
+			path = "Target Support Files/Pods-QuestBoardUITests";
+			sourceTree = "<group>";
+		};
+		9F04AAC8B73A9E827CFA297B49F1615E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42E8528004D0123659FA4F81E9CBC9A9 /* InputBarAccessoryView.modulemap */,
+				1CA7EECFE2A2BBBFC080EF3E53328E32 /* InputBarAccessoryView-dummy.m */,
+				B046B33B36BE7BED3171F1D8A5CE5CA5 /* InputBarAccessoryView-Info.plist */,
+				912073EB5ABE505989EB32A475DE2AE9 /* InputBarAccessoryView-prefix.pch */,
+				F6F4040A3E5C2F96220319019828354A /* InputBarAccessoryView-umbrella.h */,
+				4AB979661EB1BD29A53ED8CD665C3917 /* InputBarAccessoryView.debug.xcconfig */,
+				5A6A63B55873F7DAB3566B48F92F50AA /* InputBarAccessoryView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/InputBarAccessoryView";
+			sourceTree = "<group>";
+		};
+		A55A613837B9A1D7875D254ECC3DBCF9 /* InputBarAccessoryView */ = {
+			isa = PBXGroup;
+			children = (
+				EE8011402D44D227A8454F45AA391D54 /* Core */,
+				9F04AAC8B73A9E827CFA297B49F1615E /* Support Files */,
+			);
+			name = InputBarAccessoryView;
+			path = InputBarAccessoryView;
+			sourceTree = "<group>";
+		};
+		B1293F191D330F7FBBF31140F76B82BD /* Pods-QuestBoardUI */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6929C6C22718E5B8F8FC992D3D8EB /* Pods-QuestBoardUI.modulemap */,
+				861291C177866BE15DB57D5C562B559A /* Pods-QuestBoardUI-acknowledgements.markdown */,
+				3A3AD19DA20D3914E99062CE7E157DD3 /* Pods-QuestBoardUI-acknowledgements.plist */,
+				10E806D4677BE4A39A61982BE52E8881 /* Pods-QuestBoardUI-dummy.m */,
+				5C1B9DC7E4B2BBAF3C909F2C9B8DAF7F /* Pods-QuestBoardUI-frameworks.sh */,
+				5255FC95E13C23D6DAFF60DBDE61B13D /* Pods-QuestBoardUI-Info.plist */,
+				02F6AAA363FB173A83D90381087BD33D /* Pods-QuestBoardUI-umbrella.h */,
+				05C924800082BFC5C352C4108E415DB8 /* Pods-QuestBoardUI.debug.xcconfig */,
+				B6863CF9766AB199CA611F8545541712 /* Pods-QuestBoardUI.release.xcconfig */,
+			);
+			name = "Pods-QuestBoardUI";
+			path = "Target Support Files/Pods-QuestBoardUI";
+			sourceTree = "<group>";
+		};
+		B2E2927EF3593C90316FE77A24F3BF56 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1293F191D330F7FBBF31140F76B82BD /* Pods-QuestBoardUI */,
+				2FBCDD974E721B15460B426FC1AC1F1E /* Pods-QuestBoardUI-QuestBoardUIUITests */,
+				928D9E5F7432895178615857C7465ABB /* Pods-QuestBoardUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				E7C7782EBE7A38401DA807B99F817AA8 /* Pods */,
+				57966B819F1FB2728254E78FA0294E22 /* Products */,
+				B2E2927EF3593C90316FE77A24F3BF56 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E7C7782EBE7A38401DA807B99F817AA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A55A613837B9A1D7875D254ECC3DBCF9 /* InputBarAccessoryView */,
+				43B03500766CBB6B0B6A2573E54A9161 /* ProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE8011402D44D227A8454F45AA391D54 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3833231CAC67AB18BD020A05938F483D /* AttachmentCell.swift */,
+				7C29408507AB152DC843F7FCBFA8FBE3 /* AttachmentManager.swift */,
+				5116B3C3685D8C5B7B5A8316A1857B5A /* AttachmentManagerDataSource.swift */,
+				23D7E8F69B033505708F23D8555C462B /* AttachmentManagerDelegate.swift */,
+				2135268C062883E022E064230D14DDF3 /* AttachmentsView.swift */,
+				781BA3517B5BB663B62B287CE0831793 /* AutocompleteCell.swift */,
+				7AC53FFA2CFE60FF2F87B8A61B858A34 /* AutocompleteCompletion.swift */,
+				09080B4DE9538DEB9658E3279DFEE9E8 /* AutocompleteManager.swift */,
+				91D28021C0573DE33CB4F73881CEAE5D /* AutocompleteManagerDataSource.swift */,
+				67AEE6A66384AA31D024A8C844CC30D8 /* AutocompleteManagerDelegate.swift */,
+				40082194D164451786D43F8312654477 /* AutocompleteSession.swift */,
+				4F09559729390074F0A1E2ACDA725BAF /* AutocompleteTableView.swift */,
+				92978D41EC20D1D18D568DF81B04B2B4 /* HorizontalEdgePadding.swift */,
+				1BB296AED465346F5E166177A1297555 /* ImageAttachmentCell.swift */,
+				80DABCEFF1F1BCEE46E5DE23FC20CD22 /* InputBarAccessoryView.swift */,
+				55284518BBF310F2E1E2D1469DF91579 /* InputBarAccessoryView+Availability.swift */,
+				8BB0D6E127E4A08B2DFC2C82957ECC0B /* InputBarAccessoryViewDelegate.swift */,
+				5650329F0348CF472A46DE5A6445C518 /* InputBarButtonItem.swift */,
+				933979A0C0EA6E0DBB06DBB3BB9212C8 /* InputBarSendButton.swift */,
+				2FC20CD9961547EB42063BD472AF41E3 /* InputBarViewController.swift */,
+				21388164B4DF5011939E6FD0F32A556E /* InputItem.swift */,
+				0CCE1FB8D7FF0A07F47614442F16A294 /* InputPlugin.swift */,
+				C3DA5383A27D05940FAFB5055711B999 /* InputStackView.swift */,
+				83080507D2616AB206EB292A8D175C42 /* InputTextView.swift */,
+				1A65D721B4598DD0CE8C8D8AF8C857F0 /* KeyboardEvent.swift */,
+				D3CD60E5E55900C9FD69B1CA74F3C388 /* KeyboardManager.swift */,
+				0B0BCFFA83193BA63920E9B073C29BDB /* KeyboardNotification.swift */,
+				E2621F3A51C7BDB5A9330DDAC5375D6E /* NSConstraintLayoutSet.swift */,
+				45416FAA2BEA4CEAF8F53759C282553C /* NSMutableAttributedString+Extensions.swift */,
+				8062B54B79A7C74149735F03F927B223 /* NSNotification+Extensions.swift */,
+				FFF21D36900E3CF0C65F2BB82D228AF9 /* SeparatorLine.swift */,
+				0261A4C396BE2113D0A32DF6F301E679 /* String+Extensions.swift */,
+				17F9043A3AB26EDDF20AC7F7C74F5E13 /* UITextView+Extensions.swift */,
+				0928F3800CC53B320D3A8E10C5D413EC /* UIView+AutoLayout.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		34329C68EE494C9A7D2F8D22B37AF9DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4683A3862B131DC083DE02D6F9DBCA /* ProgressHUD-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51A1176E1DE10B14600563A51C0C906C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112056E5122D1053A5D4421669A6EAAA /* InputBarAccessoryView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9764047B3593A4F5E9DDDE7FAD41E5D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDED5D850EB241B21A0C7D2AE29E962 /* Pods-QuestBoardUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA28D787DEEF9E46B42764AB77922B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02E91DE7432281F97930196225807EB /* Pods-QuestBoardUI-QuestBoardUIUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC9B29F1DBBE671294D0DEB7D26844D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4CBF1D9232302D01085FB459D50872 /* Pods-QuestBoardUI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		022D0373DF61EE4E133BADB43CE7ED57 /* ProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A588342A0EA363B39903D2F09C2742FA /* Build configuration list for PBXNativeTarget "ProgressHUD" */;
+			buildPhases = (
+				34329C68EE494C9A7D2F8D22B37AF9DF /* Headers */,
+				4A69BE1865D112AC5437B7C41327E6D4 /* Sources */,
+				5ED8B4BE218AC5BA7C7F3E98DF1652E8 /* Frameworks */,
+				76E7DF4063802D6F445C963625FB16F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgressHUD;
+			productName = ProgressHUD;
+			productReference = 0D3287058D2F13BD484A454154BEA62B /* ProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		985978F9870D60C1633876D0708B0CBD /* Pods-QuestBoardUI-QuestBoardUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6FFFF755FD9CC0587A332F06BFC13E2 /* Build configuration list for PBXNativeTarget "Pods-QuestBoardUI-QuestBoardUIUITests" */;
+			buildPhases = (
+				CEA28D787DEEF9E46B42764AB77922B8 /* Headers */,
+				25F47830E094966E08E57B27323057E5 /* Sources */,
+				0FDA631B3768496823C30AA26756ADD9 /* Frameworks */,
+				2F5CA9FD904C7693BCBE693870F3E2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6974664BB1F49D28355E8D19940C7C8C /* PBXTargetDependency */,
+				03B4A90DF6C2AC5FD1C520788CA48F6B /* PBXTargetDependency */,
+			);
+			name = "Pods-QuestBoardUI-QuestBoardUIUITests";
+			productName = "Pods-QuestBoardUI-QuestBoardUIUITests";
+			productReference = D99842AAE224BC0767AB17F80142FB6A /* Pods_QuestBoardUI_QuestBoardUIUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD76F216B9ADADDC08AEB2A3DA56C81E /* Pods-QuestBoardUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A98FC95F9B391BA9CF9AF87CD1B5926 /* Build configuration list for PBXNativeTarget "Pods-QuestBoardUI" */;
+			buildPhases = (
+				FC9B29F1DBBE671294D0DEB7D26844D6 /* Headers */,
+				EBB761AE88D3F8E8DBB5F02ED32C47D4 /* Sources */,
+				CD5D1AC6A44EA5298211B84422142272 /* Frameworks */,
+				4B53CFFEF928ADE41A01C211A863ECBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6605870E3D74C2D659D3C5E8919AB399 /* PBXTargetDependency */,
+				3CD0405C021BCEB65CA71622B4BF1650 /* PBXTargetDependency */,
+			);
+			name = "Pods-QuestBoardUI";
+			productName = "Pods-QuestBoardUI";
+			productReference = 5D79710C848BFD78070F79ADF7859885 /* Pods_QuestBoardUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8C39DD486923E3933801D232041B590 /* InputBarAccessoryView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897885991C2B41A0B4CA322924E9B59B /* Build configuration list for PBXNativeTarget "InputBarAccessoryView" */;
+			buildPhases = (
+				51A1176E1DE10B14600563A51C0C906C /* Headers */,
+				68B1E072B78550C1153AFF9F9E86EFBD /* Sources */,
+				452D9A06FA28936AB3DBCB0C0A9CCB10 /* Frameworks */,
+				6D8A9314DBC067E83B749F99C0DECE5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InputBarAccessoryView;
+			productName = InputBarAccessoryView;
+			productReference = B81513B0B3333500DFFB1B1B179FB571 /* InputBarAccessoryView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8E31EEE42C81C0309BC98FFA6B57E3C /* Pods-QuestBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C7F30BA963D74BF560F11A26D707D41 /* Build configuration list for PBXNativeTarget "Pods-QuestBoardUITests" */;
+			buildPhases = (
+				9764047B3593A4F5E9DDDE7FAD41E5D7 /* Headers */,
+				EE63FAEC166D60A3EE6A7BA17DCA4C48 /* Sources */,
+				EBEBA2D19E938946CDF6986A716B473D /* Frameworks */,
+				EA1A7D28ACC449F2F415465A624F4DEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				094024424215146C9B5FD2457F7C0D01 /* PBXTargetDependency */,
+			);
+			name = "Pods-QuestBoardUITests";
+			productName = "Pods-QuestBoardUITests";
+			productReference = 8CA09E18449DB34DF6756220B8299453 /* Pods_QuestBoardUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 57966B819F1FB2728254E78FA0294E22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8C39DD486923E3933801D232041B590 /* InputBarAccessoryView */,
+				AD76F216B9ADADDC08AEB2A3DA56C81E /* Pods-QuestBoardUI */,
+				985978F9870D60C1633876D0708B0CBD /* Pods-QuestBoardUI-QuestBoardUIUITests */,
+				E8E31EEE42C81C0309BC98FFA6B57E3C /* Pods-QuestBoardUITests */,
+				022D0373DF61EE4E133BADB43CE7ED57 /* ProgressHUD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F5CA9FD904C7693BCBE693870F3E2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B53CFFEF928ADE41A01C211A863ECBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8A9314DBC067E83B749F99C0DECE5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76E7DF4063802D6F445C963625FB16F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1A7D28ACC449F2F415465A624F4DEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25F47830E094966E08E57B27323057E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33EE6218C7B328A46C8389C4882F6D83 /* Pods-QuestBoardUI-QuestBoardUIUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A69BE1865D112AC5437B7C41327E6D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9487E7A524A3C196D4157DE2EF2717 /* ProgressHUD-dummy.m in Sources */,
+				1C11A43A4416D242F3C9DCE638E6C709 /* ProgressHUD.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B1E072B78550C1153AFF9F9E86EFBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F396BDDA94981C5345E188BEF268D4 /* AttachmentCell.swift in Sources */,
+				A158887123CB6F455E07C27547EEC017 /* AttachmentManager.swift in Sources */,
+				1922CB0E864B0D9A572DB599BBC054D5 /* AttachmentManagerDataSource.swift in Sources */,
+				E551E2E28434D98EFF469810D9875D95 /* AttachmentManagerDelegate.swift in Sources */,
+				1CB8436B20DA88014F950C9E079FEC06 /* AttachmentsView.swift in Sources */,
+				7F7ABF44D5286E90C223218A0CB0449C /* AutocompleteCell.swift in Sources */,
+				A1A708CFC8A0AFC412B3796CE4FBD1E5 /* AutocompleteCompletion.swift in Sources */,
+				2701768E003CC3429076058079C6DA0C /* AutocompleteManager.swift in Sources */,
+				FBD8366575DC2EA614D6F702350E222B /* AutocompleteManagerDataSource.swift in Sources */,
+				5224F5C72817EE72F02AA51CC39FA9D0 /* AutocompleteManagerDelegate.swift in Sources */,
+				E16C78507D260DF315A9F9F4CBCBEB8C /* AutocompleteSession.swift in Sources */,
+				C79FC70E7D38CD786F2E36D860C71980 /* AutocompleteTableView.swift in Sources */,
+				52F7BC394A180A5D0500A0BB56584CD6 /* HorizontalEdgePadding.swift in Sources */,
+				2A67C66A14B25634C30D052AB4F06EFC /* ImageAttachmentCell.swift in Sources */,
+				1E934393966FD47F111D29EB9AE38171 /* InputBarAccessoryView+Availability.swift in Sources */,
+				004900E763414D0803DC57A72FDF056A /* InputBarAccessoryView-dummy.m in Sources */,
+				E2332858B254DD1E55E164FCF2C7BC58 /* InputBarAccessoryView.swift in Sources */,
+				A867B6083DABD77C29D9B2AC13C269BC /* InputBarAccessoryViewDelegate.swift in Sources */,
+				870031097728EE1EC2F04FC08A8F72B7 /* InputBarButtonItem.swift in Sources */,
+				F314263665E706785EDAFEF3188E4B61 /* InputBarSendButton.swift in Sources */,
+				94F43ADF8F6A07C7A8D693AC700B0D3A /* InputBarViewController.swift in Sources */,
+				E944566ECEC00FA3CA3C2B5CF1E8DD31 /* InputItem.swift in Sources */,
+				167E4A126AE4FFD17CD07204C7021882 /* InputPlugin.swift in Sources */,
+				E5BDFA2B091DB04F21469F18CA0636BE /* InputStackView.swift in Sources */,
+				52F61E6AAAFBE9A0D717481E98BE7381 /* InputTextView.swift in Sources */,
+				6F8F50A3C49BD73C3DB2D11365A5E8AE /* KeyboardEvent.swift in Sources */,
+				A11BB0C206F62D63C353661BC3BC0D66 /* KeyboardManager.swift in Sources */,
+				C5A740BA72F0905430DF221EAF210F31 /* KeyboardNotification.swift in Sources */,
+				BE54E06D968CE8ED2AE5746FE6B13B65 /* NSConstraintLayoutSet.swift in Sources */,
+				450E71EE1522114F0C3319E4FF17E712 /* NSMutableAttributedString+Extensions.swift in Sources */,
+				1E11A75D2A6405C52A9B206184D24F06 /* NSNotification+Extensions.swift in Sources */,
+				90EE59DE56D2DF968630AF7868D32DEC /* SeparatorLine.swift in Sources */,
+				99EEE6E81393E604F5BCD50D86D6B636 /* String+Extensions.swift in Sources */,
+				C86EC46733E39279FA361F2441542322 /* UITextView+Extensions.swift in Sources */,
+				82305FE0639BB4C5525FF8914AD9B464 /* UIView+AutoLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB761AE88D3F8E8DBB5F02ED32C47D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD410CCF2669DAF8E4E12769283135F0 /* Pods-QuestBoardUI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE63FAEC166D60A3EE6A7BA17DCA4C48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20E02DC1D739DA7D06D6F3676483582 /* Pods-QuestBoardUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03B4A90DF6C2AC5FD1C520788CA48F6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProgressHUD;
+			target = 022D0373DF61EE4E133BADB43CE7ED57 /* ProgressHUD */;
+			targetProxy = 22222B5EA66ADE261F036D4C7BDBECA2 /* PBXContainerItemProxy */;
+		};
+		094024424215146C9B5FD2457F7C0D01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-QuestBoardUI";
+			target = AD76F216B9ADADDC08AEB2A3DA56C81E /* Pods-QuestBoardUI */;
+			targetProxy = 6C8FD9F2406621BCB198B6D072992B4A /* PBXContainerItemProxy */;
+		};
+		3CD0405C021BCEB65CA71622B4BF1650 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProgressHUD;
+			target = 022D0373DF61EE4E133BADB43CE7ED57 /* ProgressHUD */;
+			targetProxy = FC27D05BA6AC334835899ED5D7E5C289 /* PBXContainerItemProxy */;
+		};
+		6605870E3D74C2D659D3C5E8919AB399 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = InputBarAccessoryView;
+			target = C8C39DD486923E3933801D232041B590 /* InputBarAccessoryView */;
+			targetProxy = 3A433470F42753EBDFBBDC897CBE1D74 /* PBXContainerItemProxy */;
+		};
+		6974664BB1F49D28355E8D19940C7C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = InputBarAccessoryView;
+			target = C8C39DD486923E3933801D232041B590 /* InputBarAccessoryView */;
+			targetProxy = 3FB0D6D9C196E96E6590D4EA7F02330E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		26075EF8C9E1F0AEB374876F83B052D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585B315D150F1223F5E38AF3C70E8536 /* ProgressHUD.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ProgressHUD/ProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProgressHUD/ProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ProgressHUD/ProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = ProgressHUD;
+				PRODUCT_NAME = ProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4FEF8006CB2693F61FD973CA33AFBCB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A096EA629373809CE8C402476CFC02A4 /* Pods-QuestBoardUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuestBoardUITests/Pods-QuestBoardUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuestBoardUITests/Pods-QuestBoardUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		549715BC941C95E0843DBBF72EB753EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05C924800082BFC5C352C4108E415DB8 /* Pods-QuestBoardUI.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuestBoardUI/Pods-QuestBoardUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuestBoardUI/Pods-QuestBoardUI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6690D4A5BF314F9E9F65AF0D77E86BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7F5E6A9128C39413AE470010A0B540 /* ProgressHUD.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ProgressHUD/ProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProgressHUD/ProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ProgressHUD/ProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = ProgressHUD;
+				PRODUCT_NAME = ProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D42048C8FF75F0675DC5D7CEEBF1507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A6A63B55873F7DAB3566B48F92F50AA /* InputBarAccessoryView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/InputBarAccessoryView/InputBarAccessoryView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InputBarAccessoryView/InputBarAccessoryView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/InputBarAccessoryView/InputBarAccessoryView.modulemap";
+				PRODUCT_MODULE_NAME = InputBarAccessoryView;
+				PRODUCT_NAME = InputBarAccessoryView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AEBBED4C4C48AC1493D7CF9D73420313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6863CF9766AB199CA611F8545541712 /* Pods-QuestBoardUI.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuestBoardUI/Pods-QuestBoardUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuestBoardUI/Pods-QuestBoardUI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DBF1388F7B89ACC5A05A484A46144A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BA2174503AAE21694A61B5016FDF3AE /* Pods-QuestBoardUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuestBoardUITests/Pods-QuestBoardUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuestBoardUITests/Pods-QuestBoardUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F267D95E487E177B843D106F5E66AC04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54868E75E806C9E6189B959C217EA2B1 /* Pods-QuestBoardUI-QuestBoardUIUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests/Pods-QuestBoardUI-QuestBoardUIUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests/Pods-QuestBoardUI-QuestBoardUIUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F50D03AB5E68B12FD0ED6D29FC0B12BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AB979661EB1BD29A53ED8CD665C3917 /* InputBarAccessoryView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/InputBarAccessoryView/InputBarAccessoryView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InputBarAccessoryView/InputBarAccessoryView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/InputBarAccessoryView/InputBarAccessoryView.modulemap";
+				PRODUCT_MODULE_NAME = InputBarAccessoryView;
+				PRODUCT_NAME = InputBarAccessoryView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE4921561E1D45619E15770E3FBAAC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BCB3E0C75017A0763EA14C36AB51101 /* Pods-QuestBoardUI-QuestBoardUIUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests/Pods-QuestBoardUI-QuestBoardUIUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuestBoardUI-QuestBoardUIUITests/Pods-QuestBoardUI-QuestBoardUIUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A98FC95F9B391BA9CF9AF87CD1B5926 /* Build configuration list for PBXNativeTarget "Pods-QuestBoardUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				549715BC941C95E0843DBBF72EB753EE /* Debug */,
+				AEBBED4C4C48AC1493D7CF9D73420313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C7F30BA963D74BF560F11A26D707D41 /* Build configuration list for PBXNativeTarget "Pods-QuestBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FEF8006CB2693F61FD973CA33AFBCB3 /* Debug */,
+				DBF1388F7B89ACC5A05A484A46144A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		897885991C2B41A0B4CA322924E9B59B /* Build configuration list for PBXNativeTarget "InputBarAccessoryView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50D03AB5E68B12FD0ED6D29FC0B12BF /* Debug */,
+				6D42048C8FF75F0675DC5D7CEEBF1507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A588342A0EA363B39903D2F09C2742FA /* Build configuration list for PBXNativeTarget "ProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26075EF8C9E1F0AEB374876F83B052D3 /* Debug */,
+				6690D4A5BF314F9E9F65AF0D77E86BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6FFFF755FD9CC0587A332F06BFC13E2 /* Build configuration list for PBXNativeTarget "Pods-QuestBoardUI-QuestBoardUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4921561E1D45619E15770E3FBAAC59 /* Debug */,
+				F267D95E487E177B843D106F5E66AC04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
