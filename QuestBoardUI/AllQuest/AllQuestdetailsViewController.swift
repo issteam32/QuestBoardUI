@@ -10,7 +10,7 @@ import UIKit
 class AllQuestdetailsViewController: UIViewController {
 
     //var quest = Quest()
-    var questArray: [Quest] = [Quest]()
+    var quest: Quest = Quest()
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var desc: UITextView!
@@ -22,9 +22,7 @@ class AllQuestdetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setQuest()
-       
-
+        initQuestView()
     }
     
     
@@ -39,7 +37,7 @@ class AllQuestdetailsViewController: UIViewController {
                         let questObject = Quest()
                         for (key, value) in quest {
                             if let q = value as? Quest {
-                                self.questArray.append(q)
+//                                self.questArray.append(q)
                             } else {
                                 print("cast failed")
                             }
@@ -55,7 +53,7 @@ class AllQuestdetailsViewController: UIViewController {
 //                                questObject.location = ssp["reward"] as? String
 //
                         }
-                        self.questArray.append(questObject)
+//                        self.questArray.append(questObject)
                     }
                 }
                 
@@ -72,19 +70,13 @@ class AllQuestdetailsViewController: UIViewController {
     }
     
     
-    func setQuest()
+    func initQuestView()
     {
-//        name.text = questArray[0].title
-//        desc.text = questArray[0].description
-//        location.text = questArray[0].location
-//        skillRequired.text = questArray[0].skillRequired
-//        reward.text = questArray[0].reward
-        
-        name.text = "Quest 2"
-        desc.text =  "I need someone to help me queue for the latest iphone"
-        location.text = "Orchard Apple store"
-        skillRequired.text = "No skill required"
-        reward.text = "$20"
+        name.text = quest.title
+        desc.text =  quest.description
+        location.text = quest.location
+        skillRequired.text = (quest.category == 1) ? quest.skillRequired : "No skill required"
+        reward.text = "\(quest.reward as? String)"
         
     }
 }

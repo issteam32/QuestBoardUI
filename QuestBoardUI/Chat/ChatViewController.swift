@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import WebKit
+import ProgressHUD
 
 class ChatViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     
@@ -21,6 +22,7 @@ class ChatViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ProgressHUD.show()
                 
         webWindow.uiDelegate = self
         webWindow.navigationDelegate = self
@@ -59,13 +61,15 @@ class ChatViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
             "<input id='username' name='username' type='hidden' value='\(chatToken.senderId!)' />" +
             "<input id='recipient' name='recipient' type='hidden' value='\(chatToken.recipientId!)' />" +
             "<input id='questid' name='questid' type='hidden' value='\(chatToken.questId!)' />" +
-            "<input id='token' name='token' type='hidden' value='\(chatToken.questId!)'/>" +
+            "<input id='token' name='token' type='hidden' value='\(chatToken.token!)'/>" +
             "<script>\(js)</script>" +
             "</body>" +
             "</html>"
 
         webWindow.loadHTMLString(fullhtml, baseURL: Bundle.main.resourceURL)
-
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+            ProgressHUD.dismiss()
+        })
     }
     
     override func viewDidAppear(_ animated: Bool) {

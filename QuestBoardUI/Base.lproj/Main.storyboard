@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X66-lX-dLK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X66-lX-dLK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -122,7 +122,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="83" id="mwm-Vc-hNC">
-                                                <rect key="frame" x="0.0" y="24.5" width="344" height="83"/>
+                                                <rect key="frame" x="0.0" y="28" width="344" height="83"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mwm-Vc-hNC" id="56Q-BH-7U1">
                                                     <rect key="frame" x="0.0" y="0.0" width="344" height="83"/>
@@ -522,7 +522,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="200" id="jiV-2q-tYR" customClass="AllQuestTableViewCell" customModule="QuestBoardUI" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jiV-2q-tYR" id="KXK-7Q-gcc">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -590,7 +590,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="144" id="ZSG-03-gVU" customClass="AllProposalTableViewCell" customModule="QuestBoardUI" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="144"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="144"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZSG-03-gVU" id="wIJ-fh-K5s">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
@@ -812,7 +812,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="zr4-3c-52y" customClass="QuestTableViewCell" customModule="QuestBoardUI" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="150"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zr4-3c-52y" id="Pry-qq-v1P">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
@@ -930,8 +930,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZZ-m1-1ah">
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZZ-m1-1ah">
                                 <rect key="frame" x="0.0" y="30" width="414" height="783"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -940,12 +941,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iqV-n4-y6L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="cZZ-m1-1ah" firstAttribute="leading" secondItem="iqV-n4-y6L" secondAttribute="leading" id="77u-jN-g9X"/>
-                            <constraint firstItem="cZZ-m1-1ah" firstAttribute="bottom" secondItem="iqV-n4-y6L" secondAttribute="bottom" id="BCN-Qs-k9O"/>
-                            <constraint firstItem="cZZ-m1-1ah" firstAttribute="top" secondItem="RWn-4k-NzT" secondAttribute="top" constant="30" id="mj9-nV-yGg"/>
-                            <constraint firstAttribute="trailing" secondItem="cZZ-m1-1ah" secondAttribute="trailing" id="yCc-yY-n9A"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Chat" id="Zj7-JE-iL9"/>
                     <navigationItem key="navigationItem" id="Rdb-6X-KGg"/>
@@ -970,7 +965,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="chatRoomCell" rowHeight="82" id="sWk-hl-rfm" customClass="ChatRoomTableViewCell" customModule="QuestBoardUI" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="82"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sWk-hl-rfm" id="Uo9-YR-Jtn">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>

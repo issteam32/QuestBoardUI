@@ -65,18 +65,22 @@ class LoginViewController: UIViewController{
                     if let responseJSON = responseJSON as? [String: Any] {
                         print(responseJSON)
                         
-                        let token = responseJSON["access_token"]
-                        NetworkManager.isInitialised = true
-                        NetworkManager.initToken(token: token as! String)
+                        if let token = responseJSON["access_token"] as? String {
+                            NetworkManager.isInitialised = true
+                            NetworkManager.initToken(token: token as! String)
                         
-                        self.loginToken = true
-                        
-                        if(self.loginToken == true)
-                        {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
-                                ProgressHUD.dismiss()
-                                self.navigateToProfile()
-                            })
+                            self.loginToken = true
+                            
+                            if(self.loginToken == true)
+                            {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+                                    ProgressHUD.dismiss()
+                                    self.navigateToProfile()
+                                })
+                            }
+                        } else {
+                            ProgressHUD.colorBackground = .systemRed                        
+                            ProgressHUD.showFailed()
                         }
                     }
                 } catch let error {

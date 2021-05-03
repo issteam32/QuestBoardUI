@@ -131,12 +131,17 @@ extension ChatRoomViewController: UITableViewDelegate {
         chatToken.chatId = chats[indexPath.row].chatId
         chatToken.id = chats[indexPath.row].id
         chatToken.questName = chats[indexPath.row].questName
-        chatToken.recipientId = chats[indexPath.row].recipientId
-        chatToken.senderId = chats[indexPath.row].senderId
+        chatToken.recipientId = chats[indexPath.row].senderId
+        chatToken.senderId = chats[indexPath.row].recipientId
         chatToken.token = token
                 
         //performSegue(withIdentifier: "chatRoomToChat", sender: chats[indexPath.row])
         
+        print(chatToken.questId!)
+        print(chatToken.chatId!)
+        print(chatToken.senderId!)
+        print(chatToken.recipientId!)
+        print("---------------------")
         let chatVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "newChat") as! ChatViewController
         chatVC.chatToken = self.chatToken
         self.navigationController?.pushViewController(chatVC, animated: true)
