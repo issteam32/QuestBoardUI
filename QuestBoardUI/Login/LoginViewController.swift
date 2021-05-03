@@ -73,6 +73,9 @@ class LoginViewController: UIViewController{
                             
                             if(self.loginToken == true)
                             {
+                                DispatchQueue.main.async {
+                                    MyProfileManager.initMyProfileManager()                                    
+                                }
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
                                     ProgressHUD.dismiss()
                                     self.navigateToProfile()

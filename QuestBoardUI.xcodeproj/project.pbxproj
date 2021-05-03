@@ -57,6 +57,7 @@
 		6E46B75C263320EB00590F56 /* ChatRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E46B75A263320EB00590F56 /* ChatRoomViewController.xib */; };
 		6E46B75D263320EB00590F56 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E46B75B263320EB00590F56 /* ChatRoomViewController.swift */; };
 		6E46B7772633223200590F56 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6E46B7762633223200590F56 /* .gitignore */; };
+		6E7E5DAE263FEF4F00B21D54 /* NewProProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E5DAD263FEF4E00B21D54 /* NewProProfileViewController.swift */; };
 		6EB1E7D32636B80D00D1AFF4 /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6648F373261F5A6600AC001F /* Quest.swift */; };
 		6EB1E7E82637321000D1AFF4 /* NewQuestProposalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB1E7E72637321000D1AFF4 /* NewQuestProposalViewController.swift */; };
 		6EC883FF26386D380099C4B1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC883FE26386D380099C4B1 /* Item.swift */; };
@@ -150,6 +151,7 @@
 		6E46B75A263320EB00590F56 /* ChatRoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatRoomViewController.xib; path = QuestBoardUI/ChatRoomViewController.xib; sourceTree = SOURCE_ROOT; };
 		6E46B75B263320EB00590F56 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatRoomViewController.swift; path = QuestBoardUI/ChatRoomViewController.swift; sourceTree = SOURCE_ROOT; };
 		6E46B7762633223200590F56 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6E7E5DAD263FEF4E00B21D54 /* NewProProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProProfileViewController.swift; sourceTree = "<group>"; };
 		6E8CEB1126386B6A004F48A0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../../../../SwiftProjects/Item.swift; sourceTree = "<group>"; };
 		6EB1E7E72637321000D1AFF4 /* NewQuestProposalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuestProposalViewController.swift; sourceTree = "<group>"; };
 		6EC883FA26386D250099C4B1 /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Quest.swift; path = QuestBoardUI/Model/Quest.swift; sourceTree = "<group>"; };
@@ -430,6 +432,7 @@
 			isa = PBXGroup;
 			children = (
 				6EF18B0526381212005B2C15 /* ProfileViewController.swift */,
+				6E7E5DAD263FEF4E00B21D54 /* NewProProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -720,6 +723,7 @@
 				6EC88415263893990099C4B1 /* ProfileViewController.swift in Sources */,
 				6EF18AF1263804FC005B2C15 /* MyProfileManager.swift in Sources */,
 				6E46B75D263320EB00590F56 /* ChatRoomViewController.swift in Sources */,
+				6E7E5DAE263FEF4F00B21D54 /* NewProProfileViewController.swift in Sources */,
 				6621E5742631D2C800BA6658 /* HomeViewController.swift in Sources */,
 				6639F89E263B1C12005EC8DE /* ProposalDetailsViewController.swift in Sources */,
 				6EF18AF626380EE4005B2C15 /* EverydayProfile.swift in Sources */,

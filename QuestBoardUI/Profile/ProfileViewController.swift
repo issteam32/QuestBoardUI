@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 
 class SkillsetProfileTableViewCell: UITableViewCell {
-    
+    @IBOutlet weak var skillTitle: UILabel!
+    @IBOutlet weak var skillLevel: UILabel!
+    @IBOutlet weak var skillProgress: UIProgressView!
 }
 
 class ProfileViewController: UIViewController {
@@ -29,18 +31,18 @@ class ProfileViewController: UIViewController {
     
     var skillsetProfiles: [SkillsetProfile] = [SkillsetProfile]()
     
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         skillsetProfileTableView.delegate = self
         skillsetProfileTableView.dataSource = self
         
-        if MyProfileManager.profileIsInitialised {
-            pageInitData()
-        }
+//        if MyProfileManager.profileIsInitialised {
+//            pageInitData()
+//        }
     }
     
-    public override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if !NetworkManager.isInitialised {
             self.navigateToLogin()
@@ -67,21 +69,46 @@ class ProfileViewController: UIViewController {
     }
     
     func pageInitData() {
-        username.text = MyProfileManager.myProfile?.userName
-        email.text = MyProfileManager.myProfile?.email
-        if let everydayProfileLvl = MyProfileManager.everydayProfile?.level as? Int {
-            everydayProfileTitle.text = MyProfileManager.everydayProfile?.title
-            everydayProfileLevel.text = "\(everydayProfileLvl)"
-            everydayProfleExpBar.setProgress(Float(MyProfileManager.everydayProfile!.exp!), animated: true)
+        if MyProfileManager.profileIsInitialised {
+//            if let userName = MyProfileManager.myProfile?.userName {
+//                username.text = userName
+//            }
+            guard let profile = MyProfileManager.myProfile else {
+                return
+            }
+            username.text = profile.userName! != nil ? profile.userName! : "loading..."
+            email.text = profile.email! != nil ? profile.email! : "loading..."
+//            if let emailAddr = MyProfileManager.myProfile?.email {
+//                email.text = emailAddr
+//            }
+            if let everydayProfileLvl = MyProfileManager.everydayProfile?.level as? Int {
+                everydayProfileTitle.text = MyProfileManager.everydayProfile?.title
+                everydayProfileLevel.text = "\(everydayProfileLvl)"
+                everydayProfleExpBar.setProgress(Float(MyProfileManager.everydayProfile!.exp!), animated: true)
+            } else {
+                everydayProfileTitle.text = "Not Setup"
+                everydayProfileTitle.textColor = .lightGray
+                everydayProfileLevel.text = "0"
+                everydayProfileLevel.textColor = .lightGray
+                everydayProfleExpBar.setProgress(0, animated: true)
+                everydayProfleExpBar.progressTintColor = .lightGray
+                everydayProfileLevelLabel.textColor = .lightGray
+                autoAssignSwitch.isOn = false
+            }
+            
+            if let proProfileCount = MyProfileManager.skillsetProfiles?.count as? Int {
+                if proProfileCount > 0 {
+                    self.skillsetProfiles = [SkillsetProfile]()
+                    if let proProfiles = MyProfileManager.skillsetProfiles as? [SkillsetProfile] {
+                        for ssp in proProfiles {
+                            self.skillsetProfiles.append(ssp)
+                        }
+                    }
+                }
+                self.skillsetProfileTableView.reloadData()
+            }
         } else {
-            everydayProfileTitle.text = "Not Setup"
-            everydayProfileTitle.textColor = .lightGray
-            everydayProfileLevel.text = "0"
-            everydayProfileLevel.textColor = .lightGray
-            everydayProfleExpBar.setProgress(0, animated: true)
-            everydayProfleExpBar.progressTintColor = .lightGray
-            everydayProfileLevelLabel.textColor = .lightGray
-            autoAssignSwitch.isOn = false
+            self.showToast(message: "Profile not fully loaded, please revisit this page later")
         }
     }
     
@@ -120,7 +147,12 @@ extension ProfileViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "skillsetCell", for: indexPath) as! SkillsetProfileTableViewCell
+  
+        let skillset = skillsetProfiles[indexPath.row]
         
+        cell.skillTitle?.text = skillset.skill
+        cell.skillLevel?.text = "\(skillset.professionalLevel as! Int)"
+        cell.skillProgress?.setProgress(Float(skillset.professionalExp!), animated: true)
 //        let chatRoom = chats[indexPath.row]
 //
 //        cell.questName?.text = (chatRoom.questName == "") ? "No quest title" : chatRoom.questName
